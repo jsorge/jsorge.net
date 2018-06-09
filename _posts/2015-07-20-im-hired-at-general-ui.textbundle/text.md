@@ -1,0 +1,17 @@
+---
+layout: post
+title: I’m Hired At General UI
+date: '2015-07-20 04:47:39'
+---
+
+On Friday I accepted an offer from [General UI](http://generalui.com), a local dev shop based in the Seattle’s Fremont neighborhood. Starting Monday I’m going to be their newest iOS developer, and starting on a streaming video project. To say I’m excited is an understatement.
+
+But I want to step back for a moment. I started this software developer journey a few years ago, in early 2012. I started by taking a few online tutorials through [CodeAcademy](https://www.codecademy.com) to learn some Javascript. I had the idea for [Scorebook](http://taphouse.io/scorebook) about a month later and dove into native iPhone apps. What I dove into was more than a few brick walls, but I dove in nonetheless. It was difficult; the most difficult thing I’ve ever done.
+
+Thankfully, I’m not the hero of this story. I had the motivation and desire to press on through the hard times because the Lord has enabled me to get to this position. I wasn’t sure how I would provide for a family and he’s given me a way. I wasn’t sure how I could possibly learn everything that goes into building great apps, and he’s opened my mind to absorb what I have. He is faithful, through the hard times and the good.
+
+Tomorrow begins a new journey. To be honest, I’m a bit nervous about it all. I have a fairly frequent battle with [impostor syndrome](http://www.hanselman.com/blog/ImAPhonyAreYou.aspx) and upon hearing some of the possible projects that I could be working on in my new venture, I started wondering if I’m up to it. The thing is, I know that I am. One thing that God has shown me over the last couple of years is that I can do this. I can’t do it without him, but he’s with me. So I can do this. I can learn, solve problems, build elegant code and good user experiences.
+
+Something that has been running through my mind is that I want my next thing to involve working with other people. This is a great opportunity in that I’ll be on teams of 3-8 people and I can work on lots of different project. I’ll probably be working in Objective-C and Swift. iPhone and iPad. Several different clients, with several different developer. All of these are chances for me to learn from other people and it’s going to be great.
+
+When I got the offer from the President, he closed the email with “Great things ahead…”. Bring it on. Let’s do this thing.
