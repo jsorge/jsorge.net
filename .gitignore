@@ -1,2 +1,4 @@
 .DS_Store
 .Ulysses*
+*feed.json
+*feed.rss
