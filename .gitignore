@@ -2,3 +2,6 @@
 .Ulysses*
 *feed.json
 *feed.rss
+*.marked
+/nginx/ssl
+logs
