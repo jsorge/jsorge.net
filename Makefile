@@ -1,7 +1,7 @@
 .PHONY: serve
 serve:
-	docker-compose -f docker-compose.yml up --build
+	docker-compose --verbose -f docker-compose.yml up --build
 
 .PHONY: docker-logs
 docker-logs:
-	docker-compose logs web
+	docker-compose logs maverick

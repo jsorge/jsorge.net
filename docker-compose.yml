@@ -1,17 +1,19 @@
 version: "3.3"
 services:
-  web:
-    image: jsorge/maverick
+  maverick:
+    image: jsorge/maverick:42810ef
     volumes:
       - ./Public:/app/Public
+      - ./Resources:/app/Resources
+      - ./siteconfig.yml:/app/SiteConfig.yml
   nginx:
     build:
       context: .
       dockerfile: ./nginx/Dockerfile-nginx
       args:
-        build_domain: jsorge.net
+        build_domain: jsorge.local
     environment:
-      CA_SSL: "true" # change to "true" for production
+      CA_SSL: "false" # change to "true" for production
     ports:
       - 80:80
       - 443:443
@@ -20,4 +22,4 @@ services:
       - ./nginx/ssl:/var/www/ssl
       - ./nginx/logs:/var/log/nginx
     depends_on:
-      - web
+      - maverick
