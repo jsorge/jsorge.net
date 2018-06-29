@@ -5,7 +5,7 @@ services:
     volumes:
       - ./Public:/app/Public
       - ./Resources:/app/Resources
-      - ./siteconfig.yml:/app/SiteConfig.yml
+      - ./SiteConfig.yml:/app/SiteConfig.yml
   nginx:
     build:
       context: .
