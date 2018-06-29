@@ -14,7 +14,7 @@ setup_letsencrypt() {
   echo "WELLKNOWN=\"$WEB_ROOT.well-known/acme-challenge\"" >> config
 
   # fetch stable version of dehydrated
-  curl "https://raw.githubusercontent.com/lukas2511/dehydrated/v0.6.2/dehydrated" > dehydrated
+  curl -o dehydrated "https://raw.githubusercontent.com/lukas2511/dehydrated/v0.6.2/dehydrated"
   chmod 755 dehydrated
 }
 
