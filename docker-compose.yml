@@ -11,9 +11,9 @@ services:
       context: .
       dockerfile: ./nginx/Dockerfile-nginx
       args:
-        build_domain: jsorge.local
+        build_domain: sorge.me
     environment:
-      CA_SSL: "false" # change to "true" for production
+      CA_SSL: "true" # change to "true" for production
     ports:
       - 80:80
       - 443:443

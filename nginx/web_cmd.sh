@@ -4,17 +4,21 @@
 setup_letsencrypt() {
 
   # create the directory that will serve ACME challenges
-  mkdir -p .well-known/acme-challenge
-  chmod -R 755 .well-known
+echo "Making Well Known"
+  mkdir -p $WEB_ROOT.well-known/acme-challenge
+  chmod -R 755 $WEB_ROOT.well-known
 
   # See https://github.com/lukas2511/dehydrated/blob/master/docs/domains_txt.md
-  echo "$DOMAIN www.$DOMAIN" > domains.txt
+  echo "$DOMAIN" > domains.txt
 
   # See https://github.com/lukas2511/dehydrated/blob/master/docs/wellknown.md
   echo "WELLKNOWN=\"$WEB_ROOT.well-known/acme-challenge\"" >> config
 
+  # Custom Config entries
+#  echo "CERTDIR=\"$SSL_CERT_HOME\"" >> config
+
   # fetch stable version of dehydrated
-  curl -o dehydrated "https://raw.githubusercontent.com/lukas2511/dehydrated/v0.6.2/dehydrated"
+  curl "https://raw.githubusercontent.com/lukas2511/dehydrated/v0.6.2/dehydrated" > dehydrated
   chmod 755 dehydrated
 }
 
@@ -69,11 +73,14 @@ if [ "$CA_SSL" = "true" ]; then
   # run in daemon mode so our script can continue
   nginx
 
+echo "printing the contents of $SSL_ROOT"y
+echo $(ls $SSL_ROOT)
+
   # accept the terms of letsencrypt/dehydrated
-  ./dehydrated --register --accept-terms
+  $SSL_ROOT/dehydrated --register --accept-terms
 
   # retrieve/renew SSL certs
-  ./dehydrated --cron
+  $SSL_ROOT/dehydrated --cron
 
   # copy the fresh certs to where Nginx expects to find them
   cp $SSL_ROOT/certs/$DOMAIN/fullchain.pem $SSL_ROOT/certs/$DOMAIN/privkey.pem $SSL_CERT_HOME
@@ -84,3 +91,4 @@ fi
 
 # start Nginx in foreground so Docker container doesn't exit
 nginx -g "daemon off;"
+
