@@ -4,8 +4,7 @@
       "url": "git@github.com:jsorge/jsorge.net.git",
       "branch": "master",
       "remote": "origin",
-      "path": "~/jsorge.net",
-      "deploy": "echo deploying"
+      "path": "~/jsorge.net"
     }
   ]
 }
