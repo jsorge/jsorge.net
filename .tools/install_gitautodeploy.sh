@@ -13,7 +13,7 @@ sudo cp gitautodeploy.config.json /etc/git-auto-deploy.conf.json
 sudo chown git-auto-deploy /etc/git-auto-deploy.conf.json
 
 # copy ssh keys
-sudo cp ~/.ssh/id_rsa /etc/git-auto-deploy/.ssh/
+sudo cp ~/.ssh/id_rsa /etc/git-auto-deploy/.ssh/id_rsa
 sudo chown -R git-auto-deploy:git-auto-deploy /etc/git-auto-deploy
 
 # make new user group that allows pulling
