@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Is It Ready?
-date: '2018-07-10 07:49:56'
+date: '2018-07-10 21:08:59'
 ---
 
 I’m hoping Maverick is almost ready to deploy on my server!
