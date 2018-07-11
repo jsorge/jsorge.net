@@ -1,7 +1,7 @@
 ---
-title: Klipsan Beach
-date: ‘2018-07-10 21:21:03’
 layout: post
+title: Klipsan Beach
+date: '2018-07-10 21:24:37'
 ---
 
 We spent the last weekend at [Klipsan Beach](http://klipsanbeachcottages.com), which is just a few minutes north of Long Beach, Washington. I’ve been coming here since I was a little kid, and my dad since he was a little kid. Now I’ve got little kids to bring and we’ve come every year since Atticus’s first summer in 2014.
