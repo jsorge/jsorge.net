@@ -2,16 +2,18 @@
 
 # verify that it's not installed
 
+wd=$(pwd)
+
 # install
 cd .tools
+mkdir vendor
+cd vendor
 git clone https://github.com/olipo186/Git-Auto-Deploy.git
-curl https://bootstrap.pypa.io/get-pip.py | python
+sudo apt-get install python-pip
 sudo pip install -r requirements.txt
 
 # copy config
-cd ..
-sudo cp gitautodeploy.config.json /.tools/git-atuo-deploy/config.json
-sudo chown git-auto-deploy /etc/git-auto-deploy.conf.json
+sudo cp $(wd)/gitautodeploy.config.json config.json
 
 # start the thing
-python -m .tools/git-auto-deploy/gitautodeploy --config .tools/git-auto-deploy/config.json
+python -m gitautodeploy --config config.json

@@ -5,3 +5,4 @@
 *.marked
 /nginx/ssl
 logs
+/.tools/vendor/*
