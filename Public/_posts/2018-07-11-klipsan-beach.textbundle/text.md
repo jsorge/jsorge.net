@@ -11,3 +11,5 @@ We rent a cottage which has an ocean view (and just a few minute walk through th
 ![](assets/DSC05982.jpg)
 
 ![](assets/DSC05936.jpg)
+
+We got some golf in on Sunday. I did pretty poorly but that’s to be expected when I haven’t practiced at all.
