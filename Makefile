@@ -1,5 +1,5 @@
 .PHONY: serve
-serve:
+serve: delete-autodeploy install-autodeploy
 	docker-compose -f docker-compose.yml up --build
 	
 .PHOY: down
@@ -18,5 +18,4 @@ install-autodeploy:
 
 .PHONY: delete-autodeploy
 delete-autodeploy:
-	service git-auto-deploy stop
-	sudo apt-get remove git-auto-deploy
+	sudo rm -rf ./.tools/vendor
