@@ -18,4 +18,5 @@ install-autodeploy:
 
 .PHONY: delete-autodeploy
 delete-autodeploy:
+	service git-auto-deploy stop
 	sudo apt-get remove git-auto-deploy
