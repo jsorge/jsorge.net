@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   maverick:
-    image: jsorge/maverick:2b16d71
+    image: jsorge/maverick:efe62eb
     volumes:
       - ./Public:/app/Public
       - ./Resources:/app/Resources
