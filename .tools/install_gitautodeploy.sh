@@ -24,8 +24,8 @@ sudo usermod -a -G maverick git-auto-deploy
 sudo usermod -a -G maverick $USER
 
 # make the group the owner of the working directory
-chgrp -R maverick .
-chmod -R g+swX .
+sudo chgrp -R maverick .
+sudo chmod -R g+swX .
 
 service git-auto-deploy start
 service git-auto-deploy status
