@@ -9,4 +9,4 @@ I was an ardent NetNewsWire user back in the day. Just out of view is the oldest
 
 The App Store went on to change my life, since I got into iOS programming.
 
-Yup, iOS man. It’s a thing
+Yup, iOS man. It’s a thing.
