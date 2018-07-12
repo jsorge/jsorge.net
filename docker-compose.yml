@@ -5,7 +5,7 @@ services:
     deploy:
       restart_policy:
         condition: on-failure
-        window: 10
+        window: 10s
     volumes:
       - ./Public:/app/Public
       - ./Resources:/app/Resources
