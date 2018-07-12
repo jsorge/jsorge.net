@@ -2,6 +2,10 @@ version: "3.3"
 services:
   maverick:
     image: jsorge/maverick:efe62eb
+    deploy:
+      restart_policy:
+        condition: on-failure
+        window: 10
     volumes:
       - ./Public:/app/Public
       - ./Resources:/app/Resources
