@@ -1,0 +1,14 @@
+Automations:
+- spin up of new server, add users
+- get down to 1 config file, have make "make" the others from that one
+	I think the best way to go may be to add the extra fileds I need to SiteConfig.yml
+- move nginx folder to .tools
+- move docker-compose.yml to .tools
+- install of docker compose
+	https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-16-04
+- automate installation of make on Ubuntu using apt-get
+Extras:
+	- Matomo analytics
+		https://oleb.net/blog/2018/05/how-i-do-analytics/
+	- fail2ban @nonblocker
+		- https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04
