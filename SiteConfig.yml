@@ -3,3 +3,6 @@ title: jsorge.net
 description: Christian, husband, dad, developer, batman aficianado
 url: https://jsorge.net
 batchSize: 5
+autodeploy:
+  url: git@github.com:jsorge/jsorge.net.git
+  directory: /var/www/jsorge.net
