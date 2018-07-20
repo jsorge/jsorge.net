@@ -1,7 +1,7 @@
 .PHONY: serve
 serve:
 	@ chmod +x .tools/spin_up.sh
-	./.tools/spin_up.sh
+	@ ./.tools/spin_up.sh
 	
 .PHOY: down
 down:
@@ -15,7 +15,8 @@ docker-logs:
 # https://github.com/olipo186/Git-Auto-Deploy
 .PHONY: install-autodeploy
 install-autodeploy:
-	./.tools/install_gitautodeploy.sh
+	@ chmod +x .tools/install_gitautodeploy.sh
+	@ ./.tools/install_gitautodeploy.sh
 
 .PHONY: delete-autodeploy
 delete-autodeploy:
