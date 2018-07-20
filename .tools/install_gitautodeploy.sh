@@ -29,7 +29,7 @@ eval $(parse_yaml $siteConfigPath)
 config=$(cat $template)
 config="${config/'{REPO_URL}'/$autodeploy_url}"
 config="${config/'{SITE_DIRECTORY}'/$autodeploy_directory}"
-echo $config > config.json
+echo "$config" > config.json
 
 # start the thing
 python -m gitautodeploy --config config.json

@@ -3,6 +3,7 @@
 *feed.json
 *rss
 *.marked
-/nginx/ssl
+/.tools/nginx/ssl
 logs
 /.tools/vendor/*
+/.tools/docker-compose.yml

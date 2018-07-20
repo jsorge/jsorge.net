@@ -1,6 +1,7 @@
 .PHONY: serve
 serve:
-	docker-compose -f docker-compose.yml up --build
+	@ chmod +x .tools/spin_up.sh
+	./.tools/spin_up.sh
 	
 .PHOY: down
 down:
