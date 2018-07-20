@@ -1,10 +1,10 @@
 {
   "repositories": [
     {
-      "url": "git@github.com:jsorge/jsorge.net.git",
+      "url": "{REPO_URL}",
       "branch": "master",
       "remote": "origin",
-      "path": "/var/www/jsorge.net"
+      "path": "{SITE_DIRECTORY}"
     }
   ]
 }

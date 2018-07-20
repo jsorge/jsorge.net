@@ -1,5 +1,16 @@
-metaDescription: I'm Jared Sorge and this is my website. I'm a Christian, husband, dad, developer, and batman aficianado.
+# The title of the website. Goes in the header.
 title: jsorge.net
+# The description of the website. Goes in the header.
 description: Christian, husband, dad, developer, batman aficianado
+# The root URL of the site
 url: https://jsorge.net
+# The description that goes in the <meta> tag in html. Not rendered.
+metaDescription: I'm Jared Sorge and this is my website. I'm a Christian, husband, dad, developer, and batman aficianado.
+# The number of posts that should go on the front page, and archive pages.
 batchSize: 5
+# Use this if you want to use the git autodeploy setup.
+autodeploy:
+  # The URL of the repository where the site will be kept.
+  url: git@github.com:jsorge/jsorge.net.git
+  # The directory on the server where the site repo will be kept.
+  directory: /var/www/jsorge.net
