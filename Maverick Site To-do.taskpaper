@@ -2,8 +2,8 @@ Automations:
 - spin up of new server, add users
 - get down to 1 config file, have make "make" the others from that one @done
 	I think the best way to go may be to add the extra fileds I need to SiteConfig.yml
-- move nginx folder to .tools
-- move docker-compose.yml to .tools 
+- move nginx folder to .tools @done
+- move docker-compose.yml to .tools @done
 - install of docker compose
 	https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-16-04
 - automate installation of make on Ubuntu using apt-get
