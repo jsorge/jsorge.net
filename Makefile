@@ -5,7 +5,7 @@ serve:
 	
 .PHOY: down
 down:
-	docker-compose down
+	docker-compose -f .tools/docker-compose.yml down
 
 .PHONY: docker-logs
 docker-logs:

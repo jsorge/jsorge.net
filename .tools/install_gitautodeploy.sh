@@ -32,4 +32,4 @@ config="${config/'{SITE_DIRECTORY}'/$autodeploy_directory}"
 echo "$config" > config.json
 
 # start the thing
-python -m gitautodeploy --config config.json
+python -m gitautodeploy --daemon-mode --config config.json
