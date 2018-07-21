@@ -89,7 +89,7 @@
 			   <input type="submit" value="Search" />
 			</form>
 			
-            <section class="copyright">All content copyright <a href="#(site.url)/">#(site.title)</a> &copy; #(site.year) &bull; All rights reserved. Made in Lynnwood.</section>
+            <section class="copyright">All content copyright <a href="#(site.url)/">#(site.title)</a> &copy; #(site.year) &bull; All rights reserved.</section>
         </div>
     </footer>
 
