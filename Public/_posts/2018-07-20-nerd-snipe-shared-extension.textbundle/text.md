@@ -18,7 +18,7 @@ I’m no shell script wizard, but it seemed that a run script build phase should
 
 APPEX_DIR=$BUILT_PRODUCTS_DIR/SharedExtension.appex
 INFO_PLIST=$APPEX_DIR/Info.plist
-suffix=richmessagenotification
+suffix=sharedextension
 
 if [ "$IS_EMPLOYEE" = YES ] ; then
 bundleID=io.taphouse.EmployeeApp.$suffix
