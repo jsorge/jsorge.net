@@ -35,7 +35,7 @@ plutil -replace CFBundleShortVersionString -string "$shortVersion" $INFO_PLIST
 plutil -replace CFBundleVersion -string "$version" $INFO_PLIST
 ```
 
-I’ve extracted out the short version and build values as build settings in each main app target and those get funneled into the script. In this sample I’ve hard-coded each app’s bundle ID to prefix the extension, but at Lyft these are build settings as well[1]().
+I’ve extracted out the short version and build values as build settings in each main app target and those get funneled into the script. In this sample I’ve hard-coded each app’s bundle ID to prefix the extension, but at Lyft these are build settings as well. (Pro-tip: make good use of xcconfig files because editing this stuff in Xcode is a huge pain, not to mention the possible merge conflicts that could arise in your project file.)
 
 I’ve got a build setting in one of my apps indicating what kind of app it is (in this case that is the `IS_EMPLOYEE` setting). Checking that will tell me the environment the script is running in. I setup 3 variables for each app and replace their values in the extension’s _already built_ Info.plist file. This is important, because it’s too late to change the file in my source directory.
 
@@ -52,5 +52,3 @@ Well, I don’t know. My best guess is that I might need to figure out how to re
 What I’ll probably wind up doing is have individual extensions (one for each app) and a shared framework that backs each. I think it will be easier to get going and more resilient to changes in tooling in the future.
 
 Unless you’ve got a way for me to get this done… 🙂
-
-[1](): Pro-tip: make good use of xcconfig files because editing this stuff in Xcode is a huge pain, not to mention the possible merge conflicts that could arise in your project file.
