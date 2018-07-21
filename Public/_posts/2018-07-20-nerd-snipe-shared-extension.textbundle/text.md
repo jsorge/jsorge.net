@@ -1,7 +1,7 @@
 ---
 filename: 2018-07-20-nerd-snipe-shared-extension
 layout: post
-title: Nerd Snipe: 2 Apps, 1 Extension
+title: ‘Nerd Snipe: 2 Apps, 1 Extension’
 date: '2018-07-20 22:28:25'
 ---
 
