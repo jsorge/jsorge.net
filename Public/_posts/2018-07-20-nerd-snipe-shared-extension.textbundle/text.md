@@ -43,7 +43,7 @@ So now I’ve got an Info.plist file with all the proper values. Each app will b
 
 But we don’t write apps for the simulator. We write them for phones. Let’s give that a shot.
 
-> 0x16b257000 +[MICodeSigningVerifier _validateSignatureAndCopyInfoForURL:withOptions:error:](): 147: Failed to verify code signature of /private/var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.KCRuNY/extracted/EmployeeApp.app/PlugIns/SharedExtension.appex : 0xe8008001 (An unknown error has occurred.)
+> 0x16b257000 +MICodeSigningVerifier _validateSignatureAndCopyInfoForURL:withOptions:error:: 147: Failed to verify code signature of /private/var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.KCRuNY/extracted/EmployeeApp.app/PlugIns/SharedExtension.appex : 0xe8008001 (An unknown error has occurred.)
 
 Dang. Looking at the build steps for my extension reveals that there’s a code signature step at the very end and changing the Info.plist afterwards seems to break that signature. So how do we get this done?
 
