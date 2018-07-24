@@ -9,7 +9,7 @@ echo "Making Well Known"
   chmod -R 755 $WEB_ROOT.well-known
 
   # See https://github.com/lukas2511/dehydrated/blob/master/docs/domains_txt.md
-  echo "$DOMAIN" > domains.txt
+  echo "$DOMAIN www.$DOMAIN" > domains.txt
 
   # See https://github.com/lukas2511/dehydrated/blob/master/docs/wellknown.md
   echo "WELLKNOWN=\"$WEB_ROOT.well-known/acme-challenge\"" >> config

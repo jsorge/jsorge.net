@@ -4,22 +4,22 @@ services:
     image: jsorge/maverick:efe62eb
     restart: on-failure
     volumes:
-      - ./Public:/app/Public
-      - ./Resources:/app/Resources
-      - ./SiteConfig.yml:/app/SiteConfig.yml
+      - ../Public:/app/Public
+      - ../Resources:/app/Resources
+      - ../SiteConfig.yml:/app/SiteConfig.yml
   nginx:
     build:
       context: .
       dockerfile: ./nginx/Dockerfile-nginx
       args:
-        build_domain: jsorge.net
+        build_domain: {CONFIG_DOMAIN}
     environment:
-      CA_SSL: "true" # change to "true" for production
+      CA_SSL: "true"
     ports:
       - 80:80
       - 443:443
     volumes:
-      - ./Public:/home/maverick/Public
+      - ../Public:/home/maverick/Public
       - ./nginx/ssl:/var/www/ssl
       - ./nginx/logs:/var/log/nginx
     depends_on:
