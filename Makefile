@@ -3,7 +3,7 @@ serve:
 	@ chmod +x .tools/spin_up.sh
 	@ ./.tools/spin_up.sh
 	
-.PHOY: down
+.PHONY: down
 down:
 	docker-compose -f .tools/docker-compose.yml down
 
