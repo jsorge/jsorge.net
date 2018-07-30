@@ -6,3 +6,5 @@ batchSize: 5
 autodeploy:
   url: git@github.com:jsorge/jsorge.net.git
   directory: /var/www/jsorge.net
+ssl:
+  contactEmail: jared@jsorge.net

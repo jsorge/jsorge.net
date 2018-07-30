@@ -15,7 +15,7 @@ echo "Making Well Known"
   echo "WELLKNOWN=\"$WEB_ROOT.well-known/acme-challenge\"" >> config
 
   # Custom Config entries
-#  echo "CERTDIR=\"$SSL_CERT_HOME\"" >> config
+ echo "CONTACT_EMAIL=\"$CONTACT_EMAIL\"" >> config
 
   # fetch stable version of dehydrated
   curl "https://raw.githubusercontent.com/lukas2511/dehydrated/v0.6.2/dehydrated" > dehydrated

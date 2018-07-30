@@ -13,6 +13,7 @@ services:
       dockerfile: ./nginx/Dockerfile-nginx
       args:
         build_domain: {CONFIG_DOMAIN}
+        contact_email: {CONFIG_EMAIL}
     environment:
       CA_SSL: "true"
     ports:
