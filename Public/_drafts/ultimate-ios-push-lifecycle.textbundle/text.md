@@ -57,7 +57,6 @@ This brings us to the uncomfortable reality: the payload contents as well as the
 \<col style="text-align:left;"/\>
 \<col style="text-align:left;"/\>
 \</colgroup\>
-
 \<thead\>
 \<tr\>
 \<th style="text-align:left;"\>App State\</th\>
@@ -65,7 +64,6 @@ This brings us to the uncomfortable reality: the payload contents as well as the
 \<th style="text-align:left;"\>Result\</th\>
 \</tr\>
 \</thead\>
-
 \<tbody\>
 \<tr\>
 \<td style="text-align:left;"\>Backgrounded\</td\>
