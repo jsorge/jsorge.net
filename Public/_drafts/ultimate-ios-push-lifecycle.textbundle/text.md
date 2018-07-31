@@ -40,7 +40,8 @@ This is going to get complicated. The short answer is: it depends. But you didn�
 	"sound": "fancy-ding",
 	"content-available": 1,
 	"category": "CUSTOM_MESSAGE",
-	"thread-id": "demo_chat"
+	"thread-id": "demo_chat",
+	"mutable-content": 1
   }
 }
 ```
@@ -85,6 +86,74 @@ This brings us to the uncomfortable reality: the payload contents as well as the
 </tbody>
 </table>
 
-So, if your app is running or has been backgrounded, you’ll be called. But if the user has killed your app, nothing happens. Bummer!
+So, if your app is running or has been backgrounded, you’ll be called. But if the user has killed your app, nothing happens. Bummer! The next question you may ask is if there is a way for your code to run every time a notification comes in. Indeed there is.
+
+Apple gives us two different extension points that let us run code when notifications arrive: [UNNotificationServiceExtension][2] and [UNNotificationContentExtension][3].
+
+#### Notification Service Extension
+
+With the service extension, the intention is that you are going to mutate the content of the extension before it is presented to the user. The typical use cases are for things like decrypting an end-to-end encrypted message, or attaching a photo to a notification. 
+
+There are 2 main requirements that your notification must meet in order for this extension to fire: Your payload must contain both `aps.alert.title` and `aps.alert.body` values, and `aps.mutable-content` must be set to 1. The payload we have above satisfies both of those requirements and would trigger our app’s service extension if it had one.
+
+It’s important to note that you cannot trigger a service extension with a silent push. The intention is for the extension to mutate a notification’s content, and silent pushes have no content.
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Payload</th>
+	<th style="text-align:left;">Result</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">aps.mutable-content = 1 &amp;&amp; aps.title != nil &amp;&amp; aps.body != nil</td>
+	<td style="text-align:left;">Extension Fires</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Anything else</td>
+	<td style="text-align:left;">Nothing</td>
+</tr>
+</tbody>
+</table>
+
+### Notification Content Extension
+
+The other extension type allows us to paint a custom view on top of a notification, instead of relying on the system to render the notification. Users get to see this custom view when they force press or long press a notification (or in Notification Center, they can swipe left on a notification and tap “View”). 
+
+When you include one of these with your app, the extension’s Info.plist file declares an array called `UNNotificationExtensionCategory`. Each of these categories maps to a notification’s `aps.category` value. To go back to our sample notification above, our app would have to register a content extension for the `CUSTOM_MESSAGE` category.
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Payload</th>
+	<th style="text-align:left;">Result</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">Extension&#8217;s UNNotificationExtensionCategory contains aps.category</td>
+	<td style="text-align:left;">Extension Fires</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Anything else</td>
+	<td style="text-align:left;">Nothing</td>
+</tr>
+</tbody>
+</table>
 
 [1]:	https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/PayloadKeyReference.html#//apple_ref/doc/uid/TP40008194-CH17-SW5
+[2]:	https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension
+[3]:	https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextension
