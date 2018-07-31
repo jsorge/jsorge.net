@@ -23,8 +23,40 @@ Notifications can be scheduled as a local notification, or delivered via push. B
 
 A push notification is a notification that comes in remotely. It may or may not display any content (ones that do not display content are referred to as silent pushes). It is important to note that apps _do not have to ask the user’s permission to deliver push notifications._ Silent pushes do not require user permission.
 
-You might want to send a notification that wakes up your app to fetch some content in the background, and a silent push is perfect for that task. This can be accomplished by setting the `aps. content-available` field to 1. More on this later on.
+You must register your app with the system in order to send a push. This is done with `UIApplication.shared.registerForRemoteNotifications()`. You’ll be called back with the result of this by implementing `application(UIApplication, didRegisterForRemoteNotificationsWithDeviceToken: Data)` for success, and `application(UIApplication, didFailToRegisterForRemoteNotificationsWithError: Error)` for failure. When the registration succeeds, you’ll get a device token that needs to be registered with your server that you’ll use to send a push.
 
-### When does my code run via push trigger?
+### When does my code run via push?
 
-This is going to get complicated. 
+This is going to get complicated. The short answer is: it depends. But you didn’t come here for short answers, so let’s dig in. We’ll start by looking at an actual notification payload. I’ll put in the stuff we need, but you can find [the full payload content reference here][1].
+
+```js
+{
+  "aps": {
+	"alert": {
+	  "title": "Our fancy notification",
+	  "body": "It is for teaching purposes only."
+	},
+	"badge": 13,
+	"sound": "fancy-ding",
+	"content-available": 1,
+	"category": "CUSTOM_MESSAGE",
+	"thread-id": "demo_chat"
+  }
+}
+```
+
+If you were to send this payload to a device, the user would see an alert with the title being the `aps.alert.title` value, the app icon would badge with the `aps.badge` value, and the sound would be the `aps.sound` value (assuming all the permissions were granted by the user).
+
+You might want to send a notification that wakes up your app to fetch some content in the background, and a silent push is perfect for that task. This can be accomplished by setting the `aps. content-available` field like the example. When the system receives this notification it may wake up your app. Wait, _may_ wake up? Why won’t it _always_ wake up the app?
+
+This brings us to the uncomfortable reality: the payload contents as well as the app state determine when your code is activated. Let’s look at a chart:
+
+| App State    | Payload                   | Result                                                              |
+| ------------ | ------------------------- | ------------------------------------------------------------------- |
+| Backgrounded | aps.content-available = 1 | `application(_:didReceiveRemoteNotification:fetchCompletionHandler:)` |
+| Running      | aps.content-available = 1 | `application(_:didReceiveRemoteNotification:fetchCompletionHandler:)` |
+| Killed       | aps.content-available = 1 | Nothing                                                             |
+
+So, if your app is running or has been backgrounded, you’ll be called. But if the user has killed your app, nothing happens. Bummer!
+
+[1]:	https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/PayloadKeyReference.html#//apple_ref/doc/uid/TP40008194-CH17-SW5
