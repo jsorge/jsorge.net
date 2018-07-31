@@ -51,34 +51,11 @@ You might want to send a notification that wakes up your app to fetch some conte
 
 This brings us to the uncomfortable reality: the payload contents as well as the app state determine when your code is activated. Let’s look at a chart:
 
-<table>
-<colgroup>
-<col style="text-align:left;"/>
-<col style="text-align:left;"/>
-<col style="text-align:left;"/>
-</colgroup>
-<thead>
-<tr>
-	<th style="text-align:left;">App State</th>
-	<th style="text-align:left;">Payload</th>
-	<th style="text-align:left;">Result</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-	<td style="text-align:left;">Backgrounded</td>
-	<td style="text-align:left;">aps.content-available = 1</td>
-	<td style="text-align:left;">application(<em>:didReceiveRemoteNotification:fetchCompletionHandler:) |<br/>
-| Running | aps.content-available = 1 | application(</em>:didReceiveRemoteNotification:fetchCompletionHandler:)</td>
-</tr>
-<tr>
-	<td style="text-align:left;">Killed</td>
-	<td style="text-align:left;">aps.content-available = 1</td>
-	<td style="text-align:left;">Nothing</td>
-</tr>
-</tbody>
-</table>
-
+| App State    | Payload                   | Result                                                                |
+| ------------ | ------------------------- | --------------------------------------------------------------------- |
+| Backgrounded | aps.content-available = 1 | `application(_:didReceiveRemoteNotification:fetchCompletionHandler:)` |
+| Running      | aps.content-available = 1 | `application(_:didReceiveRemoteNotification:fetchCompletionHandler:)` |
+| Killed       | aps.content-available = 1 | Nothing                                                               |
 So, if your app is running or has been backgrounded, you’ll be called. But if the user has killed your app, nothing happens. Bummer!
 
 [1]:	https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/PayloadKeyReference.html#//apple_ref/doc/uid/TP40008194-CH17-SW5
