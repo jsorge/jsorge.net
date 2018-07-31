@@ -1,7 +1,7 @@
 ---
-filename: 2018-07-31-ultimate-ios-push-lifecycle
+filename: 2018-07-31-ultimate-ios-notification-lifecycle
 layout: post
-title: The Ultimate Guide to iOS Push Lifecycles
+title: The Ultimate Guide to iOS Notification Lifecycles
 date: '2018-07-31 10:06:38'
 ---
 
@@ -113,7 +113,7 @@ It’s important to note that you cannot trigger a service extension with a sile
 
 <tbody>
 <tr>
-	<td style="text-align:left;">aps.mutable-content = 1 &amp;&amp; aps.title != nil &amp;&amp; aps.body != nil</td>
+	<td style="text-align:left;"><code>aps.mutable-content</code> = 1 &amp;&amp; <code>aps.title</code> != nil &amp;&amp; <code>aps.body</code> != nil</td>
 	<td style="text-align:left;">Extension Fires</td>
 </tr>
 <tr>
@@ -154,6 +154,17 @@ When you include one of these with your app, the extension’s Info.plist file d
 </tbody>
 </table>
 
+### One more thing
+
+There’s one last bit that I want to cover: The [UNUserNotificationCenterDelegate][4] protocol. A conformer will get called in two main cases: when your app is in the foreground and will present a notification, and when a notification is tapped on.
+
+When the user taps on one of your notifications, the app will fire up come to the foreground. It’s a good idea to register the notification center delegate at startup so you’ll get the `userNotificationCenter(_:didReceive:withCompletionHandler:)` call. This lets you properly handle the notification, otherwise your app will just come to the foreground and that’s it.
+
+### Wrap-up
+
+We’ve come a long ways, looking over the kinds of notifications we can have (interactive and silent), the different transport mechanisms for them (local and push), and how all these ways can interact with our code.
+
 [1]:	https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/PayloadKeyReference.html#//apple_ref/doc/uid/TP40008194-CH17-SW5
 [2]:	https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension
 [3]:	https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextension
+[4]:	https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate#
