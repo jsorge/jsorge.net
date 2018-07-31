@@ -57,6 +57,7 @@ This brings us to the uncomfortable reality: the payload contents as well as the
 <col style="text-align:left;"/>
 <col style="text-align:left;"/>
 </colgroup>
+
 <thead>
 <tr>
 	<th style="text-align:left;">App State</th>
@@ -64,12 +65,17 @@ This brings us to the uncomfortable reality: the payload contents as well as the
 	<th style="text-align:left;">Result</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 	<td style="text-align:left;">Backgrounded</td>
 	<td style="text-align:left;">aps.content-available = 1</td>
-	<td style="text-align:left;">application(<em>:didReceiveRemoteNotification:fetchCompletionHandler:) |<br/>
-| Running | aps.content-available = 1 | application(</em>:didReceiveRemoteNotification:fetchCompletionHandler:)</td>
+	<td style="text-align:left;"><code>application(_:didReceiveRemoteNotification:fetchCompletionHandler:)</code></td>
+</tr>
+<tr>
+	<td style="text-align:left;">Running</td>
+	<td style="text-align:left;">aps.content-available = 1</td>
+	<td style="text-align:left;"><code>application(_:didReceiveRemoteNotification:fetchCompletionHandler:)</code></td>
 </tr>
 <tr>
 	<td style="text-align:left;">Killed</td>
