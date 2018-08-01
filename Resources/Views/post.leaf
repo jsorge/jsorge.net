@@ -14,20 +14,6 @@
 	</main>
 }
 
-#set("cards") {
-	<!-- Twitter Cards -->
-	<meta property="twitter:card" content="summary" />
-	<meta property="twitter:site" content="@jsorgenet" />
-	<meta property="twitter:creator" content="@jsorge" />
-	<meta property="twitter:title" content="#(style.post.title)" />
-	<meta property="twitter:description" content="#(style.post.frontMatter.shortdescription)" />
-	<!-- Facebook Open Graph -->
-	<meta property="og:title" content="@(style.post.title) />
-	<meta property="og:site_name" content="jsorge.net" />
-	<meta property="og:url" content="#()" />
-	<meta property="og:description" content="#(style.post.frontMatter.shortdescription)" />
-}
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,7 +32,18 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
     <link rel="stylesheet" type="text/css" href="/styles/prism.css" />
     
-    #get(cards)
+	<!-- Twitter Cards -->
+	<meta property="twitter:card" content="summary" />
+	<meta property="twitter:site" content="@jsorgenet" />
+	<meta property="twitter:creator" content="@jsorge" />
+	<meta property="twitter:title" content="#(style.post.title)" />
+	<meta property="twitter:description" content="#(style.post.shortDescription)" />
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="#(title)" />
+	<meta property="og:site_name" content="jsorge.net" />
+	<meta property="og:url" content="#(style.post.url)" />
+	<meta property="og:description" content="#(style.post.shortDescription)" />
+
 </head>
 <body class="home-template">
 	<header class="site-head">
