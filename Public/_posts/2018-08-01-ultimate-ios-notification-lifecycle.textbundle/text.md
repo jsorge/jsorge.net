@@ -1,9 +1,9 @@
 ---
-filename: 2018-07-31-ultimate-ios-notification-lifecycle
+filename: 2018-08-01-ultimate-ios-notification-lifecycle
 layout: post
 title: The Ultimate Guide to iOS Notification Lifecycles
 shortdescription: Come along on a journey of exploration as we look at the life of notifications on iOS.
-date: '2018-07-31 10:06:38'
+date: '2018-08-01 10:06:38'
 ---
 
 I work on the notifications team at Lyft for my day job. One of the things that comes up frequently is the question of how can we trigger our code from a push notification (or even, “what is a push notification”). I’ve had these chats enough that it seemed relevant to put together what I hope to be the definitive answer. I hope it’s useful to you.
