@@ -1,5 +1,5 @@
 ---
-filename: 2018-08-01-ultimate-ios-notification-lifecycle
+filename: 2018-08-01-ultimate-ios-push-lifecycle
 layout: post
 title: The Ultimate Guide to iOS Notification Lifecycles
 shortdescription: Come along on a journey of exploration as we look at the life of notifications on iOS.
