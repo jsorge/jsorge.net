@@ -84,6 +84,16 @@ This brings us to the uncomfortable reality: the payload contents as well as the
 	<td style="text-align:left;">aps.content-available = 1</td>
 	<td style="text-align:left;">Nothing</td>
 </tr>
+<tr>
+	<td style="text-align:left;">Running</td>
+	<td style="text-align:left;">aps.content-available = 0</td>
+	<td style="text-align:left;">Nothing</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Backgrounded</td>
+	<td style="text-align:left;">aps.content-available = 0</td>
+	<td style="text-align:left;">Nothing</td>
+</tr>
 </tbody>
 </table>
 
