@@ -1,7 +1,7 @@
 title: jsorge.net
 description: Christian, husband, dad, developer, batman aficianado
 url: https://jsorge.net
-metaDescription: I'm Jared Sorge and this is my website. I'm a Christian, husband, dad, developer, and batman aficianado.
+metaDescription: By Jared Sorge.
 batchSize: 5
 autodeploy:
   url: git@github.com:jsorge/jsorge.net.git
