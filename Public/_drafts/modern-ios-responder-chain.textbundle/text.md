@@ -21,8 +21,6 @@ Before we dive in, there’s [another post worth your reading on the Black Pixel
 Let’s start with a code sample so we can be on the same page. You should be able to paste this into a brand new project and have it work (assuming Xcode 10 and Swift 4.2 here).
 
 ```swift
-import UIKit
-
 extension Selector {
     static let trigger = #selector(ViewController.somethingHappenedForAResponder(sender:forEvent:))
 }
