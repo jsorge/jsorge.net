@@ -16,7 +16,7 @@ So we know the problem we’re trying to solve. How does the responder chain wor
 func sendAction(_ action: Selector, to target: Any?, from sender: Any?, for event: UIEvent?) -> Bool
 ```
 
-Before we dive in, there’s [another post worth your reading on the Black Pixel blog from a few years ago](https://medium.com/bpxl-craft/event-delivery-on-ios-part-3-14463fba84b4). I’ll be rehashing some of their post here, and hopefully adding some helpful details as well.
+Before we dive in, there’s [another post worth your reading on the Black Pixel blog from a few years ago][1]. I’ll be rehashing some of their post here, and hopefully adding some helpful details as well.
 
 Let’s start with a code sample so we can be on the same page. You should be able to paste this into a brand new project and have it work (assuming Xcode 10 and Swift 4.2 here).
 
@@ -65,7 +65,20 @@ Most of this code is boilerplate to add the button and handle its touch. The cha
 3. iOS will walk each member of the responder chain and calls `responds(to:)` on each member. Both `UIView` and `UIViewController` inherit from `UIResponder` so they play in that chain.
 4. When the system finds a responder for the selector, it will be called with that method.
 
-// mind blown: `trigger` could have zero arguments on it and still work as a selector
+While our example here is as trivial as it gets, hopefully you can see some of the hidden power. We could have a table view (like they have in the Black Pixel post I linked to above), and each cell has a button. Tapping a cell’s button sends the action to the system, which will dispatch to the view controller and handle that action.
 
-While our example here is as trivial as it gets, hopefully you can see some of the hidden power. We could have a table view (like they have in the Black Pixel post I linked to above), and each cell has a button. Tapping a cell’s button sends the action  to the system, which will dispatch to the view controller and handle that action.
+There are 2 components from the Black Pixel example that I copied because of how good they are:
+1. I LOVE the `Selector` extension. This makes it super easy to reason about at the call site, and tucks the implementation bits away so that my caller need not know about what the selector is. Imagine having multiple of these call sites with the same `#selector...` syntax. This is so much nicer.
+2. I really like using a `UIEvent` subclass to send the data I need. In hindsight this is an obvious thing (because the `event` argument has to be of that subclass) but at first it didn’t occur to me.
 
+So now we have a good way of sending data using an event from one place to another, without having to pipe anything crazy through the system. 🎉
+
+While this technique is the right tool for a certain kind of job, it also has some sharp edges to be aware of. Here’s what I’ve noticed:
+* The selector being used must have the `@objc` decoration. This is to expose the method to the Objective-C runtime where all the “magic” happens.
+* The selector on our view controller could have 0, 1, or 2 parameters. However they must be ordered properly: `AnyObject`, then `UIEvent`. If you try to go with a single parameter of just a `UIEvent` you will get a runtime (funtime) crash.
+* You must have an argument in the `from` parameter in the `sendEvent` call. Otherwise the selector you pass will never be called
+* However, you can mess with the `trigger` definition. You could omit the arguments entirely and it will still work. While `Selector` is a type, I believe it’s just a compile-time thing. At runtime it compiles down to a string which is passed into the Objective-C `performSelector:` method call. This blows my mind.
+
+While Swift is taking the iOS developer world by storm, I think we shouldn’t neglect the tools we have at our disposal. The responder chain is an incredibly useful API to know how to use. If you’ve been in a situation where you are passing callbacks down a chain, or delegating every table view cell for a callback I highly suggest giving this technique a try. You might just be amazed at how much code you can delete.
+
+[1]:	https://medium.com/bpxl-craft/event-delivery-on-ios-part-3-14463fba84b4
