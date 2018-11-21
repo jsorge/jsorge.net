@@ -16,4 +16,4 @@ For about a year, the Mariners employed Dr. Lorena Martin. She came to a new rol
 
 A lot of the stories she recounts seem to be personal meetings without third parties to back them up. So we seem left in a he-said, she-said position with no real insight of what to think. If it's true, Dipoto, Servais, and McKay need to go. Full stop. I don't want them leading the Mariners, and I don't want to cheer for a team they lead. But if it's not true then Dr. Martin should say so immediately. 
 
-As a fan I don't know what to think. I just waant the truth to come out. And to root on my Mariners. One day they will win the World Series and I want to feel good about cheering them on to it.
+As a fan I don't know what to think. I just want the truth to come out. And to root on my Mariners. One day they will win the World Series and I want to feel good about cheering them on to it.
