@@ -2,7 +2,7 @@ title: jsorge.net
 description: Christian, husband, dad, developer, batman aficianado
 url: https://jsorge.net
 metaDescription: By Jared Sorge.
-batchSize: 5
+batchSize: 15
 autodeploy:
   url: git@github.com:jsorge/jsorge.net.git
   directory: /var/www/jsorge.net
