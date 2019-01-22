@@ -3,6 +3,7 @@ source .tools/parse_yaml.sh
 
 # verify that it's not installed
 if [ -d ".tools/vendor/Git-Auto-Deploy" ]; then
+  python -m gitautodeploy --daemon-mode --config config.json
   exit 0
 fi
 
@@ -30,6 +31,8 @@ config=$(cat $template)
 config="${config/'{REPO_URL}'/$autodeploy_url}"
 config="${config/'{SITE_DIRECTORY}'/$autodeploy_directory}"
 echo "$config" > config.json
+
+cd $wd
 
 # start the thing
 python -m gitautodeploy --daemon-mode --config config.json
