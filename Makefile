@@ -20,4 +20,4 @@ install-autodeploy:
 
 .PHONY: delete-autodeploy
 delete-autodeploy:
-	sudo rm -rf ./.tools/vendor/Git-Auto-Deploy
+	sudo rm -rf ./.tools/vendor
