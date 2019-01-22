@@ -8,3 +8,6 @@ autodeploy:
   directory: /var/www/jsorge.net
 ssl:
   contactEmail: jared@jsorge.net
+feedSize: 50
+sitesToPing:
+  - https://micro.blog/ping?url=https%3A%2F%2Fjsorge.net%2Ffeed.json

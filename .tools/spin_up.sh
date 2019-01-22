@@ -1,6 +1,8 @@
 #! /usr/bin/env bash
 source .tools/parse_yaml.sh
 
+docker pull jsorge/maverick:latest
+
 # setup variables
 wd=$(pwd)
 siteConfigPath="$wd/SiteConfig.yml"
@@ -13,5 +15,11 @@ trimmedurl=$(echo "$url" | awk -F/ '{print $3}')
 config="${config/'{CONFIG_DOMAIN}'/$trimmedurl}"
 config="${config/'{CONFIG_EMAIL}'/$ssl_contactEmail}"
 echo "$config" > $wd/.tools//docker-compose.yml
+
+# stop auto-deploy
+make delete-autodeploy
+
+# start auto-deploy
+make install-autodeploy
 
 docker-compose -f .tools/docker-compose.yml up --build
