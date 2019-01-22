@@ -16,9 +16,6 @@ config="${config/'{CONFIG_DOMAIN}'/$trimmedurl}"
 config="${config/'{CONFIG_EMAIL}'/$ssl_contactEmail}"
 echo "$config" > $wd/.tools//docker-compose.yml
 
-# stop auto-deploy
-make delete-autodeploy
-
 # start auto-deploy
 make install-autodeploy
 
