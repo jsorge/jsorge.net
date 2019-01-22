@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   maverick:
-    image: jsorge/maverick:ccec703
+    image: jsorge/maverick:latest
     restart: on-failure
     volumes:
       - ../Public:/app/Public
