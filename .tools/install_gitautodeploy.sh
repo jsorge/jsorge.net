@@ -3,7 +3,7 @@ source .tools/parse_yaml.sh
 
 # verify that it's not installed
 if [ -d ".tools/vendor/Git-Auto-Deploy" ]; then
-  python -m gitautodeploy --daemon-mode --config config.json
+  python -m gitautodeploy --daemon-mode --config .tools/vendor/Git-Auto-Deploy/config.json
   exit 0
 fi
 
