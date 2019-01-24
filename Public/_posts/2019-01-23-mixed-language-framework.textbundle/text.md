@@ -3,6 +3,7 @@ filename: 2019-01-23-mixed-language-framework.textbundle
 layout: post
 title: Mixing Swift and Objective-C in a Framework
 date: '2019-01-23 19:05:21'
+shortdescription: It's quite possible to use both Swift and Objective-C in a framework target. But it's not without some sharp edges. Let's go exploring together.
 ---
 If you've worked on an iOS app that has both Swift and Objective-C code you're likely well familiar with the rules for getting the two languages to talk to each other. A bridging header here, some `@objc` declarations there, and you're probably good to go.
 
