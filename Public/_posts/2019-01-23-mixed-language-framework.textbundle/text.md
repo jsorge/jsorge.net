@@ -21,7 +21,7 @@ Any header imported into the umbrella header can now be seen by Swift files belo
 ### Swift into Objective-C
 Like apps, frameworks rely on a generated header to expose Swift code to Objective-C. In our app we would import its generated header like so: `#import BiLingual-Swift.h`. But, in our framework files we need a modular import like this: `#import <BiLingual/BiLingual-Swift.h>`. Please, please, please only import these generated files in your implementation files. Importing them into headers is only asking for trouble.
 
-From here the standard rules apply. Your Swift classes need to be `NSObject`s and members need to be decorated with `@objc` in order to be seen by Objective-C. The one other thing to note is that the Swift types need to be `public` in order for visibility to Objective-C. I honestly don't know why this is at the moment[^1].
+From here the standard rules apply. Your Swift classes need to be `NSObject`s and members need to be decorated with `@objc` in order to be seen by Objective-C. The one other thing to note is that the Swift types need to be `public` in order for visibility to Objective-C. I honestly don't know why this is at the moment. I'm hoping that someone smarter than me ca point me to the reasoning for this. If you know, please [drop me a line](https://jsorge.net/about).
 
 ### Private Objective-C into Swift
 If you're like me, you're a stickler for having clean API boundaries. This means you may have some Objective-C classes that you don't want framework consumers to see but your Swift files might need them. Thankfully there is a good way to do this. You'll create a special module that is only visible inside the framework. Don't worry though, it's not as intimidating as it sounds.
@@ -39,5 +39,3 @@ We're making a module called `LanguageKit_Private`, and importing our private he
 
 ### Wrap-Up
 We've seen how to import public and private Objective-C into Swift, and public Swift into Objective-C. So go forth and worry no more about mixing your framework target languages!
-
-[^1]: I'm hoping that someone smarter than me ca point me to the reasoning for this. If you know, please [drop me a line](https://jsorge.net/about)
