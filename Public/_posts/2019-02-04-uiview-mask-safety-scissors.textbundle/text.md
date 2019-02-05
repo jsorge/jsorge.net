@@ -1,7 +1,7 @@
 ---
 filename: 2019-02-04-uiview-mask-safety-scissors
 layout: post
-title: On the Sharp Edges of UIView.mask.
+title: On the Sharp Edges of UIView.mask
 shortDescription: I lost some hours to figuring out how UIView's mask property works. Hopefully this will save you some time if you come across that property as well.
 date: '2019-02-04 19:27:34'
 ---
