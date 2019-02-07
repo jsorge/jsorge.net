@@ -41,3 +41,9 @@ But it was redrawing too often (during transitions especially). I decided to hav
 ![](assets/sad-mask.png)
 
 How in the world can the same code produce such different results?
+
+**Update**
+
+Thanks to [Tom Bunch](https://twitter.com/tbunch) for asking me about the state of our view controller's `superLayer`. At `viewWillAppear`, it has no super layer but at `viewDidLayoutSubviews` it has one. The class of the layer is a `UIWindowLayer` (which is a private class). Turns out that the super layer must apply some transform that causes our inversion to happen.
+
+To get around the problem of the too many redraws I have instead opted for a simple `hasAppliedCutout` boolean state check during `viewDidLayoutSubviews`. It's not the cleanest solution but it will work for what I need without too much extra fuss.
