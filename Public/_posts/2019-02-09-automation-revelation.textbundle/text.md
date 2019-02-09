@@ -18,3 +18,7 @@ Well, we've gotten deluged with snow in my neck of the woods so I figured I'd di
 Part of the spark for this was that I'd approached dates all wrong when I built Maverick. I used dates in my current time, not against UTC. I have posts automatically show up on [my microblog](https://mb.jsorge.net) using [micro.blog's](https://micro.blog) cross posting functionality and when my posts came over they were off by 8 hours or so (I'm in the Pacific time zone). So I had to go through all my posts and update times, then use dates that are UTC based (formatting them using an `ISO8601DateFormatter` and `.withInternetDateTime`).
 
 I should be all set now, and my posts showing up in the correct order on my microblog. Happy Saturday!
+
+**Update**
+
+[Here's the script that I wrote, in case you're interested 🙂](https://github.com/jsorge/jsorge.net/blob/master/tools/NewBlogPost.swift)
