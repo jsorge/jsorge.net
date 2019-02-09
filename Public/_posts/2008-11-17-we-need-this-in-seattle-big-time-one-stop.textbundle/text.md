@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: We need this in Seattle big-time. One stop shopping!
-date: '2008-11-17 07:59:58'
+layout: post
+date: 2008-11-16T23:59:58Z
+staticpage: false
 ---
 
 [We need this in Seattle big-time. One stop

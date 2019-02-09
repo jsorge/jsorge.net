@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Apple and Google in a LOST size battle
-date: '2010-05-22 07:56:23'
+layout: post
+date: 2010-05-22T00:56:23Z
+staticpage: false
 ---
 
 **[Apple and Google in a LOST size

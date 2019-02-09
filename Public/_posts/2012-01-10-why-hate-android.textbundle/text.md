@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Why hate Android?
-date: '2012-01-10 06:22:58'
+layout: post
+date: 2012-01-09T22:22:58Z
+staticpage: false
 ---
 
 **[Why hate Android?](http://parislemon.com/post/15604811641)**

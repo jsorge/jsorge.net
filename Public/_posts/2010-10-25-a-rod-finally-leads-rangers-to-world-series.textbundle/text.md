@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: A-Rod Finally Leads Rangers To World Series
-date: '2010-10-25 14:36:43'
+layout: post
+date: 2010-10-25T07:36:43Z
+staticpage: false
 ---
 
 **[A-Rod Finally Leads Rangers To World

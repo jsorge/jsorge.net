@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Bay Area Trip Pt. 1
-date: '2008-11-17 08:19:02'
+layout: post
+date: 2008-11-17T00:19:02Z
+staticpage: false
 ---
 
 I’ve been in the San Francisco/Oakland Bay area since Thursday evening.

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Help us choose our new floor material. Do you like the light or dark cherry?
-date: '2011-05-20 01:41:35'
+layout: post
+date: 2011-05-19T18:41:35Z
+staticpage: false
 ---
 
 Help us choose our new floor material. Do you like the light or dark

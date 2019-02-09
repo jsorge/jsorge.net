@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: The view from the kill zone at Safeco Field (section 136, row 10).
-date: '2010-06-01 03:53:00'
+layout: post
+date: 2010-05-31T20:53:00Z
+staticpage: false
 ---
 
 The view from the kill zone at Safeco Field (section 136, row 10).

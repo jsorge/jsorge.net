@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Storyboards and UIViewController Containment
-date: '2014-12-04 05:04:50'
+layout: post
+date: 2014-12-03T21:04:50Z
+staticpage: false
 ---
 
 When I built [Scorebook](http://taphouse.io/scorebook) I used Storyboards for all the UI. I'm a big fan of them overall, especially for navigation. One thing that I'd used a little but not much are the container views, and embedding another view controller into my view via that container.

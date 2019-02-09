@@ -1,8 +1,10 @@
 ---
-filename: 2019-01-17-scorebook-lives
-layout: post
+microblog: false
 title: Scorebook is Back!
-date: '2019-01-17 07:31:22'
+layout: post
+date: 2019-01-16T23:31:22Z
+staticpage: false
+filename: 2019-01-17-scorebook-lives
 ---
 TL;DR: [Scorebook has returned to the App Store!](https://itunes.apple.com/us/app/scorebook-game-journal/id897584352?ls=1&mt=8)
 

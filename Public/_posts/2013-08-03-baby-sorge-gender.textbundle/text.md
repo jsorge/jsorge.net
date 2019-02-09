@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: And the gender is...
-date: '2013-08-03 23:00:22'
+layout: post
+date: 2013-08-03T16:00:22Z
+staticpage: false
 ---
 
 ![Profile of Baby Sorge](assets/tumblr_inline_mqyxiz1ubN1qz4rgp.jpg)

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Apple streaming service coming soon?
-date: '2010-05-15 00:32:54'
+layout: post
+date: 2010-05-14T17:32:54Z
+staticpage: false
 ---
 
 **[Apple streaming service coming

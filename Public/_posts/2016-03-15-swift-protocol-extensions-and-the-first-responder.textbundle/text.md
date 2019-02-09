@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Swift Protocol Extensions and the First Responder
-date: '2016-03-15 15:40:36'
+layout: post
+date: 2016-03-15T08:40:36Z
+staticpage: false
 ---
 
 I tried to do something clever yesterday, and it didn't work. I don't think it's too clever (hopefully, but if I am please let me know).

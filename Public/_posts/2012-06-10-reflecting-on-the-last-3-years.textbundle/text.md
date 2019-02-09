@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Reflecting on the last 3 years
-date: '2012-06-10 17:34:41'
+layout: post
+date: 2012-06-10T10:34:41Z
+staticpage: false
 ---
 
 Three years ago I got laid off from my job at Mars Hill Church. The new

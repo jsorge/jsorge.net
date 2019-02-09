@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Ministry to Unmarried Adults in Your Local Church
-date: '2011-11-05 16:37:00'
+layout: post
+date: 2011-11-05T09:37:00Z
+staticpage: false
 ---
 
 **[Ministry to Unmarried Adults in Your Local

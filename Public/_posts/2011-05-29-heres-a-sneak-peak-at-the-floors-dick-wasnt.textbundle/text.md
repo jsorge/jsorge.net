@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Peak at the new floors
-date: '2011-05-29 00:22:19'
+layout: post
+date: 2011-05-28T17:22:19Z
+staticpage: false
 ---
 
 Here’s a sneak peak at the floors. Dick wasn’t able to finish them all

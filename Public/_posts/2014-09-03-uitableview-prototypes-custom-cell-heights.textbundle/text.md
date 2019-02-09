@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: UITableView Prototypes & Custom Cell Heights
-date: '2014-09-03 03:44:35'
+layout: post
+date: 2014-09-02T20:44:35Z
+staticpage: false
 ---
 
 I'm working on an app and building the UI with Storyboards on Xcode 6 and I've ran into an interesting problem. I have a `UITableView` with 2 defined prototypes, and I wanted them to each have their own heights. Seemed simple enough, since you can define row heights within the storyobard directly.

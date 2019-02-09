@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: An Electrical Problem
-date: '2014-08-31 23:55:03'
+layout: post
+date: 2014-08-31T16:55:03Z
+staticpage: false
 ---
 
 I got a new power outlet to replace the one on Emily's nightstand. This is one of those fancy [outlets with the USB plugs on it.](http://eshop.macsales.com/shop/accessories/power_adapters/USB/in_wall_outlets) I finally got around to installing it today and ran into some troubles.

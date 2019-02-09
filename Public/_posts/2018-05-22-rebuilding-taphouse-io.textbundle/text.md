@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Rebuilding taphouse.io
-date: '2018-05-22 05:11:30'
+layout: post
+date: 2018-05-21T22:11:30Z
+staticpage: false
 ---
 
 A few months ago, when I decided I needed to update JavaScript on my server that ran both my blog and company website, I broke the company site. I wrote it a few years ago using a very early iteration of the [Sails.js](https://sailsjs.com) framework. Fast forward to today and I want to bring it back. I also have been wanting to dabble in server-side Swift. [Enter Vapor](https://vapor.codes).

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: First Dark Knight Rises Image (It's Bane!)
-date: '2011-05-20 16:27:00'
+layout: post
+date: 2011-05-20T09:27:00Z
+staticpage: false
 ---
 
 **[First Dark Knight Rises Image (It's

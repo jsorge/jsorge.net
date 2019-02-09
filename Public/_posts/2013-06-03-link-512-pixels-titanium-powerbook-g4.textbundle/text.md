@@ -1,7 +1,9 @@
 ---
+microblog: false
+title: "Link: 512 Pixels \u2014 Titanium PowerBook G4"
 layout: post
-title: 'Link: 512 Pixels — Titanium PowerBook G4'
-date: '2013-06-03 14:57:00'
+date: 2013-06-03T07:57:00Z
+staticpage: false
 ---
 
 **[Link: 512 Pixels Titanium PowerBook

@@ -1,9 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Scorebook Sync Log 04 - Relationships
-date: '2015-04-07 14:22:01'
-tags:
-- scorebook-sync-log
+layout: post
+date: 2015-04-07T07:22:01Z
+staticpage: false
 ---
 
 I want to finish out my schema bit with a little bit on relationships. CloudKit fully supports relationships so you can associate your data with one record type to another. However it’s not exactly like you would expect in a relational database. CloudKit supports 1:1 and 1:many relationships, but not many:many. That’s not a problem for me but it may be for some. 

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: For all of you Twilight and/or soccer fans
-date: '2010-06-30 17:08:07'
+layout: post
+date: 2010-06-30T10:08:07Z
+staticpage: false
 ---
 
 For all of you Twilight and/or soccer fans

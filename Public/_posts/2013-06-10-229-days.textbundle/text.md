@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: 229 Days
-date: '2013-06-10 15:02:40'
+layout: post
+date: 2013-06-10T08:02:40Z
+staticpage: false
 ---
 
 It’s been 229 days since Apple’s last public presentation. Today is WWDC

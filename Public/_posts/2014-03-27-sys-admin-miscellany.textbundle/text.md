@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Sys. Admin Miscellany
-date: '2014-03-27 03:06:21'
+layout: post
+date: 2014-03-26T20:06:21Z
+staticpage: false
 ---
 
 The transition of the site seemed to go smoothly over the weekend. The problem was it went a bit *too* smoothly. Let me preface this short tale with a disclaimer that I'm not a system administrator by trade. I've not dabbled here before.

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Well That Didn't Work
-date: '2014-08-04 04:19:52'
+layout: post
+date: 2014-08-03T21:19:52Z
+staticpage: false
 ---
 
 When I left yesterday I had the crazy idea of writing my Bing Image fetcher in Swift. The main reason was that decoding the JSON sent back from a server requires lots of trial-and-error, and the playground seemed like the best place for that.

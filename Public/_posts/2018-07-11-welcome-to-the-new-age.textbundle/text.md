@@ -1,8 +1,10 @@
 ---
-filename: 2018-07-11-welcome-to-the-new-age
-layout: post
+microblog: false
 title: This is My New Site; It Looks Like The Old Site
-date: '2018-07-13 00:11:05'
+layout: post
+date: 2018-07-12T17:11:05Z
+staticpage: false
+filename: 2018-07-11-welcome-to-the-new-age
 ---
 
 I have launched my new website. If you’ve been around here before you might not notice anything different (if you’re a new reader – welcome! 👋). But I assure you, it’s different.

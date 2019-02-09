@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: God Wants You to Complain (Link)
-date: '2012-06-27 21:39:21'
+layout: post
+date: 2012-06-27T14:39:21Z
+staticpage: false
 ---
 
 **[God Wants You to Complain

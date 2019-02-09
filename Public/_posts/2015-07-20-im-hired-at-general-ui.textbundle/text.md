@@ -1,7 +1,9 @@
 ---
+microblog: false
+title: "I\u2019m Hired At General UI"
 layout: post
-title: I’m Hired At General UI
-date: '2015-07-20 04:47:39'
+date: 2015-07-19T21:47:39Z
+staticpage: false
 ---
 
 On Friday I accepted an offer from [General UI](http://generalui.com), a local dev shop based in the Seattle’s Fremont neighborhood. Starting Monday I’m going to be their newest iOS developer, and starting on a streaming video project. To say I’m excited is an understatement.

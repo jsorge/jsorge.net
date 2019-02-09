@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: There's always something
-date: '2011-05-26 06:39:00'
+layout: post
+date: 2011-05-25T23:39:00Z
+staticpage: false
 ---
 
 ![](http://media.tumblr.com/tumblr_llsih7GsgD1qzqppu.jpg)I went to work

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Scorebook Now Available!
-date: '2014-12-01 04:27:15'
+layout: post
+date: 2014-11-30T20:27:15Z
+staticpage: false
 ---
 
 ![](assets/Scorebook-Icon.png)

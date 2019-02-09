@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Bring on the chastising (also known as movies I've yet to see)
-date: '2012-06-07 14:54:25'
+layout: post
+date: 2012-06-07T07:54:25Z
+staticpage: false
 ---
 
 People who know me know that I love movies.

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Amazing Joke
-date: '2011-02-24 19:31:20'
+layout: post
+date: 2011-02-24T11:31:20Z
+staticpage: false
 ---
 
 [mrgan](http://mrgan.tumblr.com/post/3477839361):

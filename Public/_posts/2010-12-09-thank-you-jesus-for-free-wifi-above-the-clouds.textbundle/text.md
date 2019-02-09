@@ -1,8 +1,10 @@
 ---
-layout: post
+microblog: false
 title: Thank you Jesus for free wifi above the clouds! (Taken with Instagram at Friendly
   Skies)
-date: '2010-12-09 22:46:01'
+layout: post
+date: 2010-12-09T14:46:01Z
+staticpage: false
 ---
 
 Thank you Jesus for free wifi above the clouds! (Taken with

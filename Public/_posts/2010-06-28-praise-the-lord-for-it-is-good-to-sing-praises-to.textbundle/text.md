@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Psalm 147
-date: '2010-06-28 13:46:53'
+layout: post
+date: 2010-06-28T06:46:53Z
+staticpage: false
 ---
 
 > Praise the LORD! For it is good to sing praises to our God; for it is

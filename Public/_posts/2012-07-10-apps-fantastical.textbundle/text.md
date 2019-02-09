@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: 'Apps I love: Fantastical'
-date: '2012-07-10 05:13:10'
+layout: post
+date: 2012-07-09T22:13:10Z
+staticpage: false
 ---
 
 My love for [Fantastical](http://flexibits.com) was born out of my

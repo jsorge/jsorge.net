@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Analyzing a Failed Build
-date: '2017-07-13 06:32:27'
+layout: post
+date: 2017-07-12T23:32:27Z
+staticpage: false
 ---
 
 I’m getting to work on Scorebook again this week, thanks to zulily’s allowance for a hack week for tech employees. It’s really nice to be in that codebase, even if I’m now horrified by much of what I see past me doing in there. That’s a good sign of growth, right?

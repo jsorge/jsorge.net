@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Martin Scorsese Attends Free iMovie Demonstration At Apple Store
-date: '2010-08-30 19:18:23'
+layout: post
+date: 2010-08-30T12:18:23Z
+staticpage: false
 ---
 
 **[Martin Scorsese Attends Free iMovie Demonstration At Apple

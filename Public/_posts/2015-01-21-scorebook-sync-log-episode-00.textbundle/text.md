@@ -1,9 +1,9 @@
 ---
+microblog: false
+title: "Scorebook Sync Log \u2013 Episode 00"
 layout: post
-title: Scorebook Sync Log – Episode 00
-date: '2015-01-21 03:28:33'
-tags:
-- scorebook-sync-log
+date: 2015-01-20T19:28:33Z
+staticpage: false
 ---
 
 Before I start writing [sync code for Scorebook](http://jsorge.net/2015/01/05/scorebook-a-look-back-and-forward/), I figured I should learn about how CloudKit works. Here are some resources that I'm using.

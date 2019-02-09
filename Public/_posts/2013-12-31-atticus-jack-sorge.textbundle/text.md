@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Atticus Jack Sorge
-date: '2013-12-31 05:52:57'
+layout: post
+date: 2013-12-30T21:52:57Z
+staticpage: false
 ---
 
 ![Atticus Jack Sorge](assets/tumblr_inline_mynpkqnD161qzqppu.jpg)

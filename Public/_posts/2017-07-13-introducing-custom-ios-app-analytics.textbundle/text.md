@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Introducing Custom iOS App Analytics
-date: '2017-07-13 21:52:42'
+layout: post
+date: 2017-07-13T14:52:42Z
+staticpage: false
 ---
 
 TL;DR: Check out my new iOS framework for using CloudKit to track app analytics: [TPHCloudAnalytics](https://github.com/taphouseio/TPHCloudAnalytics).

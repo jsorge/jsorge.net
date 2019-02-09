@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Flooring Poll Update
-date: '2011-05-20 22:02:04'
+layout: post
+date: 2011-05-20T15:02:04Z
+staticpage: false
 ---
 
 After much discussion, Emily and I have decided to go with the darker of

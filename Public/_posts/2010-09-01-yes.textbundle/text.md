@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: YES!
-date: '2010-09-01 00:33:31'
+layout: post
+date: 2010-08-31T17:33:31Z
+staticpage: false
 ---
 
 **[YES!](http://www.apple.com/pr/library/2010/08/31alert.html)**

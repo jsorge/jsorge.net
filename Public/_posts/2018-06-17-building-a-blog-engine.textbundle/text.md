@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Building a Blog Engine
-date: '2018-06-17 14:40:21'
+layout: post
+date: 2018-06-17T07:40:21Z
+staticpage: false
 ---
 
 For the last few months I’ve been [thinking about what to do with my blog setup.](https://jsorge.net/2018/04/15/reconsidering-my-blogging-setup/) I experimented a bit with Jekyll but that ended up not really appealing to me. In the consideration of switching platforms I realized I wanted something that would be easy to move (and not be beholden to should the need to move again arise). Markdown text files check that box; but what about images?

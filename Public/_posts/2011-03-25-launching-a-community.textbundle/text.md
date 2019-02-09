@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Launching a Community
-date: '2011-03-25 20:05:06'
+layout: post
+date: 2011-03-25T13:05:06Z
+staticpage: false
 ---
 
 Last night we launched our new community group at the condo. We had 13

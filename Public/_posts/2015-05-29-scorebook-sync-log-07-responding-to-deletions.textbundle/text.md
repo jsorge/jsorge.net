@@ -1,9 +1,9 @@
 ---
+microblog: false
+title: "Scorebook Sync Log 07 \u2013 Responding to Deletions"
 layout: post
-title: Scorebook Sync Log 07 – Responding to Deletions
-date: '2015-05-29 04:21:54'
-tags:
-- scorebook-sync-log
+date: 2015-05-28T21:21:54Z
+staticpage: false
 ---
 
 (Thanks to David Hoang for the [encouragement to post this](https://twitter.com/davidhoang/status/604136066673565696))

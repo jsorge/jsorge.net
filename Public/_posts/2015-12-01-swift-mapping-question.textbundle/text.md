@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Swift Array Mapping Question
-date: '2015-12-01 19:01:51'
+layout: post
+date: 2015-12-01T11:01:51Z
+staticpage: false
 ---
 
 I have an array that contains objects, and those objects have arrays that I want to collapse into a single array.

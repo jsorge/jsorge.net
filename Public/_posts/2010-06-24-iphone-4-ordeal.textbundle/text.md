@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: The iPhone 4 Ordeal
-date: '2010-06-24 07:16:00'
+layout: post
+date: 2010-06-24T00:16:00Z
+staticpage: false
 ---
 
 Today, my iPhone 4 arrived via FedEx. I found it on my desk waiting for

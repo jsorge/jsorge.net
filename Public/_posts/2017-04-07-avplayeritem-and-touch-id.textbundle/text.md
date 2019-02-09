@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: AVAsset and ... Touch ID?
-date: '2017-04-07 05:33:05'
+layout: post
+date: 2017-04-06T22:33:05Z
+staticpage: false
 ---
 
 Last week I ran into a crazy bug where trying to create an `AVAsset` instance triggered Touch ID to come up on my screen. Not only was I baffled, I was slightly concerned I wouldn’t be able to figure out what caused this to happen or how to work around it.

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: View sizing problems
-date: '2016-05-27 14:37:35'
+layout: post
+date: 2016-05-27T07:37:35Z
+staticpage: false
 ---
 
 I have a custom view that I’m putting together for our app at [zulily](https://www.zulily.com). The view has a `UIImageView`, and a label that’s centered in its X and Y. I’m building this whole view in code.

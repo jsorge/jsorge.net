@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Balloons in my cubicle!
-date: '2011-08-01 16:20:36'
+layout: post
+date: 2011-08-01T09:20:36Z
+staticpage: false
 ---
 
 Balloons in my cubicle!

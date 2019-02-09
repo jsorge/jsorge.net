@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Introducing Scorebook
-date: '2014-10-27 23:25:05'
+layout: post
+date: 2014-10-27T16:25:05Z
+staticpage: false
 ---
 
 This is a big day for me. Huge, even. Today I am announcing my first app. I call it Scorebook.

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Baptized.
-date: '2012-08-02 04:41:11'
+layout: post
+date: 2012-08-01T21:41:11Z
+staticpage: false
 ---
 
 Baptized.

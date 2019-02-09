@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: original
-date: '2012-04-18 21:36:02'
+layout: post
+date: 2012-04-18T14:36:02Z
+staticpage: false
 ---
 
 **[original](http://mattgemmell.com/2012/04/13/augmented-paper/)**

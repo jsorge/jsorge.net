@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Proxying Vapor 3 Using nginx and Docker
-date: '2018-06-19 16:00:00'
+layout: post
+date: 2018-06-19T09:00:00Z
+staticpage: false
 ---
 
 Vapor is a framework for running server side code, all built in Swift. There’s a great post by [bygri about how to build a Vapor app using Docker.](https://bygri.github.io/2018/05/14/developing-deploying-vapor-docker.html) If any of what I’ve just said is confusing, I highly recommend reading that post before getting started here.

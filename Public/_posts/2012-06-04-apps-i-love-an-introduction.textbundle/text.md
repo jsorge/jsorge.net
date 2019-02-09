@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: 'Apps I love: An Introduction'
-date: '2012-06-04 00:32:38'
+layout: post
+date: 2012-06-03T17:32:38Z
+staticpage: false
 ---
 
 I’m something of an app junkie. I remember looking forward to the old

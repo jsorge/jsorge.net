@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Arch Enemies (via 22 Words)
-date: '2011-07-01 15:24:00'
+layout: post
+date: 2011-07-01T08:24:00Z
+staticpage: false
 ---
 
 Arch Enemies (via 22 Words)

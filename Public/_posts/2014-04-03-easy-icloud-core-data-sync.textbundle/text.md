@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: '"Easy" iCloud Core Data Sync'
-date: '2014-04-03 03:49:33'
+layout: post
+date: 2014-04-02T20:49:33Z
+staticpage: false
 ---
 
 I'm writing a small app that will allow me to save drafts of posts to the site, and I'm trying some things that I've learned lately. 

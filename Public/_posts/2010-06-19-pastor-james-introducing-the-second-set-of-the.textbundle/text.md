@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: 'Pastor James introducing the second set of the #furlan benefit.'
-date: '2010-06-19 04:15:19'
+layout: post
+date: 2010-06-18T21:15:19Z
+staticpage: false
 ---
 
 Pastor James introducing the second set of the \#furlan benefit.

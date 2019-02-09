@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: I had no idea unborn babies took up so much space.
-date: '2013-11-03 00:00:49'
+layout: post
+date: 2013-11-02T17:00:49Z
+staticpage: false
 ---
 
 I had no idea unborn babies took up so much space.

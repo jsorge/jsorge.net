@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Finally, some clarity on church fonts
-date: '2010-06-28 17:55:23'
+layout: post
+date: 2010-06-28T10:55:23Z
+staticpage: false
 ---
 
 **[Finally, some clarity on church

@@ -1,9 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Scorebook Sync Log 03 - Schema Design
-date: '2015-04-01 03:59:18'
-tags:
-- scorebook-sync-log
+layout: post
+date: 2015-03-31T20:59:18Z
+staticpage: false
 ---
 
 Building a schema on CloudKit is pretty straightforward. You get a `CKRecord` object and treat it like a dictionary. There are a few data types they can take (`NSString`, `NSNumber`, `NSData` to name a few) and it’s a key/value pair to get the data on the record. Once you have a record created, you save it to the database and your RecordType (i.e. a database table) is created. Simple. But there is a trick associated with related data.

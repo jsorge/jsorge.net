@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Pretty rocks. I love the macro focus on my camera.
-date: '2010-07-18 01:47:06'
+layout: post
+date: 2010-07-17T18:47:06Z
+staticpage: false
 ---
 
 Pretty rocks. I love the macro focus on my camera.

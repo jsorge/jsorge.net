@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Finding My Next Thing
-date: '2015-06-25 04:19:14'
+layout: post
+date: 2015-06-24T21:19:14Z
+staticpage: false
 ---
 
 My last day working at [Solomon Solution](http://gosolomon.com) was Friday. It's weird to think about, that it's been almost a week. My family and I went over to eastern Washington on a 4 day trip to a remote lake house over the weekend so I have been offline for the last while, and that's why I haven't written about my current job search.

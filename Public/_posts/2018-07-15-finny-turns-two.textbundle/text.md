@@ -1,8 +1,10 @@
 ---
-filename: 2018-07-15-finny-turns-two
-layout: post
+microblog: false
 title: Finny Turns 2
-date: '2018-07-15 15:37:47'
+layout: post
+date: 2018-07-15T08:37:47Z
+staticpage: false
+filename: 2018-07-15-finny-turns-two
 ---
 
 ![](assets/DraggedImage.png)

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Reconsidering My Blogging Setup
-date: '2018-04-15 17:01:34'
+layout: post
+date: 2018-04-15T10:01:34Z
+staticpage: false
 ---
 
 I have a very on-again, off-again habit of writing. Sometimes I’ll have a lot to write about, and often I’ll go long stretches without writing much. I backed Micro.blog on its Kicskatarter the day it came out (happy birthday to me!), and it’s gotten me thinking about what blogging _even is_. Whoa.

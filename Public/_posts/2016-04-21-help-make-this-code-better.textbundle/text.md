@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Help Make This Code Better
-date: '2016-04-21 19:44:50'
+layout: post
+date: 2016-04-21T12:44:50Z
+staticpage: false
 ---
 
 I’m working on a chunk of code that validates whether or not an array of NSURLQueryItems contains a URL whose host is one of our email domains. The main idea is that when a link comes in via universal links, we need to attribute the click for our tracking. However, if we don’t know how to handle the link explicitly, it will get transformed into an internal URI that bounces to the mobile web (don’t fixate on this part, the main idea is that I need to search through the query items of the URI).

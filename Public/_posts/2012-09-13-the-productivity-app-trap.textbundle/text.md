@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: The Productivity App Trap
-date: '2012-09-13 05:27:55'
+layout: post
+date: 2012-09-12T22:27:55Z
+staticpage: false
 ---
 
 I’ve definitely felt more than a bit overwhelmed lately. I’m in a season

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: 'Apps I Love: Instacast'
-date: '2013-06-04 15:00:07'
+layout: post
+date: 2013-06-04T08:00:07Z
+staticpage: false
 ---
 
 I listen to a lot of podcasts. My collection seems to expand and

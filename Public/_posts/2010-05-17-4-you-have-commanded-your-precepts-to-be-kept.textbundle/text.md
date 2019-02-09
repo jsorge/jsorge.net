@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: 4 Psalm 119
-date: '2010-05-17 15:36:11'
+layout: post
+date: 2010-05-17T08:36:11Z
+staticpage: false
 ---
 
 > 4 You have commanded your precepts to be kept diligently. 5 Oh that my

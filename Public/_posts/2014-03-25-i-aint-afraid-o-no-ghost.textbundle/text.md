@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: I ain't afraid o' no Ghost
-date: '2014-03-25 01:03:23'
+layout: post
+date: 2014-03-24T18:03:23Z
+staticpage: false
 ---
 
 After 6 years on Tumblr, I've decided to make the move to another blogging platform. This new site is being powered by Ghost, the new node.js backed blogging software. I'm hosting it using [Digital Ocean](https://www.digitalocean.com/?refcode=b54194754f24) on an Ubuntu Linux server.

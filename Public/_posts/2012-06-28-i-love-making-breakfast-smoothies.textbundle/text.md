@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: I love making breakfast smoothies!
-date: '2012-06-28 14:39:27'
+layout: post
+date: 2012-06-28T07:39:27Z
+staticpage: false
 ---
 
 I love making breakfast smoothies!

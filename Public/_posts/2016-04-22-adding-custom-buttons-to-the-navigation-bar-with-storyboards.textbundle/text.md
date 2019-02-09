@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Adding Custom Buttons to the Navigation Bar with Storyboards
-date: '2016-04-22 04:16:58'
+layout: post
+date: 2016-04-21T21:16:58Z
+staticpage: false
 ---
 
 Andrew Bancroft has a great [writeup showing how to add buttons to a navigation bar in storyboards](https://www.andrewcbancroft.com/2016/04/14/adding-buttons-to-the-navigation-bar-with-storyboards/). I’ve used that technique a lot over the course of my working in iOS. There have also been times where I want my own custom button inside of the navigation bar. So I thought I’d extend his original to cover the custom buttons.

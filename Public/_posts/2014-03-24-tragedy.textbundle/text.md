@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Tragedy
-date: '2014-03-24 05:34:06'
+layout: post
+date: 2014-03-23T22:34:06Z
+staticpage: false
 ---
 
 You might have noticed a large change in how this site looks. For a little while I've been wanting to move from tumblr to a different platform. That platform is Ghost, and I'm going to write an introductory post shortly; however there have been a couple of things that overshadow a site change.

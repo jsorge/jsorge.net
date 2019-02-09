@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Waiting for Step Brothers to start at Redhook.
-date: '2010-07-23 02:08:58'
+layout: post
+date: 2010-07-22T19:08:58Z
+staticpage: false
 ---
 
 Waiting for Step Brothers to start at Redhook.

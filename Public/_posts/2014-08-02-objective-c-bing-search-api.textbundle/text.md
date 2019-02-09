@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Objective-C Bing Search API
-date: '2014-08-02 16:31:10'
+layout: post
+date: 2014-08-02T09:31:10Z
+staticpage: false
 ---
 
 I'm working on a new app that will need to search a web API for images. Google Image search's API was deprecated long ago and it's not clear if they have anything to replace it. So I'm going with Bing.

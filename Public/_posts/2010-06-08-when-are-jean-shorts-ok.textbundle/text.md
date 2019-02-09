@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: When are jean shorts ok?
-date: '2010-06-08 16:55:43'
+layout: post
+date: 2010-06-08T09:55:43Z
+staticpage: false
 ---
 
 When are jean shorts ok?

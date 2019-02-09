@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Boxes of rejected beans called Belly Flops. $9 a bag.
-date: '2008-11-17 23:00:24'
+layout: post
+date: 2008-11-17T15:00:24Z
+staticpage: false
 ---
 
 [Boxes of rejected beans called Belly Flops. \$9 a

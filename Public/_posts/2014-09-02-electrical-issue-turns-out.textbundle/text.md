@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Electrical Issue - Turns out...
-date: '2014-09-02 00:49:00'
+layout: post
+date: 2014-09-01T17:49:00Z
+staticpage: false
 ---
 
 I'm an idiot. Or at least, not electrician-smart. I got a new outlet for my side and installed it. Still no power. I then came to the conclusion that the outlet has to be switched, and that the Power2U isn't compatible. 

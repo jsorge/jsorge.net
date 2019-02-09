@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Added a couple new posters to my cubicle today.
-date: '2011-01-10 18:28:51'
+layout: post
+date: 2011-01-10T10:28:51Z
+staticpage: false
 ---
 
 Added a couple new posters to my cubicle today.

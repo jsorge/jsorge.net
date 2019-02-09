@@ -1,7 +1,9 @@
 ---
+microblog: false
+title: "HP\u2019s PC Addiction"
 layout: post
-title: HP’s PC Addiction
-date: '2012-02-27 05:00:39'
+date: 2012-02-26T21:00:39Z
+staticpage: false
 ---
 
 **[HPs PC

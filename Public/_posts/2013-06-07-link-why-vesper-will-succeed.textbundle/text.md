@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: 'Link: Why Vesper will Succeed'
-date: '2013-06-07 00:25:58'
+layout: post
+date: 2013-06-06T17:25:58Z
+staticpage: false
 ---
 
 **[Link: Why Vesper will

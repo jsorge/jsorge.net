@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Spent my lunch with Emily getting this.
-date: '2011-06-28 21:31:34'
+layout: post
+date: 2011-06-28T14:31:34Z
+staticpage: false
 ---
 
 Spent my lunch with Emily getting this.

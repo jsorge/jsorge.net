@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: About
-date: '2014-03-22 17:07:00'
+layout: post
+date: 2014-03-22T10:07:00Z
+staticpage: false
 ---
 
 ![Me](http://media.tumblr.com/ae1cd74d05073f1c382748d90a996307/tumblr_inline_mns7h1PFCg1qzqppu.png)

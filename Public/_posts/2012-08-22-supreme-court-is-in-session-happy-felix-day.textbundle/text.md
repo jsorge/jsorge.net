@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Supreme Court is in session. Happy Felix Day!
-date: '2012-08-22 02:32:08'
+layout: post
+date: 2012-08-21T19:32:08Z
+staticpage: false
 ---
 
 Supreme Court is in session. Happy Felix Day!

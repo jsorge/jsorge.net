@@ -1,9 +1,9 @@
 ---
+microblog: false
+title: "Scorebook Sync Log 08 \u2013 User Switching"
 layout: post
-title: Scorebook Sync Log 08 – User Switching
-date: '2015-06-10 03:46:05'
-tags:
-- scorebook-sync-log
+date: 2015-06-09T20:46:05Z
+staticpage: false
 ---
 
 I’m feeling really confident in the things that I’ve put into sync in Scorebook. But now I’m starting to handle edge cases. Things like what happens when a user uses Scorebook without a current iCloud account, or how do I handle it when they log out and/or login again as a different user?

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: What I'm Doing Now
-date: '2015-11-03 05:34:34'
+layout: post
+date: 2015-11-02T21:34:34Z
+staticpage: false
 ---
 
 *updated 5/6/2016*

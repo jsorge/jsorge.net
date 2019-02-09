@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: 3 Days with Apple Watch
-date: '2015-04-28 14:27:41'
+layout: post
+date: 2015-04-28T07:27:41Z
+staticpage: false
 ---
 
 I placed my order for a Space Gray 42mm Apple Watch Sport at 12:03 PST, and was one of the fortunate ones to have it delivered  on launch day last Friday. It came in the later afternoon and I’ve spent the last few days getting to know it. I’ve got a few thoughts that I hope will be helpful to those waiting for theirs to arrive or wondering what the experience is like.

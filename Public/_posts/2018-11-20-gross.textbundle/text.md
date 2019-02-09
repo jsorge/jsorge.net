@@ -1,9 +1,11 @@
 ---
-filename: 2018-11-20-gross
-layout: post
+microblog: false
 title: Gross
+layout: post
+date: 2018-11-20T12:48:38Z
+staticpage: false
 shortDescription: <Abbreviated description>
-date: '2018-11-20 20:48:38'
+filename: 2018-11-20-gross
 ---
 
 In the second grade my dad took me to my first Mariners game. It was in the Kingdome against the Blue Jays and I really had no interest in going. We got there after the game started and got to our seats to the right of the press box. At some point during the game a foul ball came up to us (hit by backup catcher Matt Sinatro). A guy near us caught it and handed me the ball. I was hooked.

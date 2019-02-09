@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: What will Apple call a smaller iPad?
-date: '2012-07-16 04:39:34'
+layout: post
+date: 2012-07-15T21:39:34Z
+staticpage: false
 ---
 
 There has been lots of speculation around the possibility of a smaller

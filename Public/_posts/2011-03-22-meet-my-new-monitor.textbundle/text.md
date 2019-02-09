@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Meet my new monitor.
-date: '2011-03-22 23:06:27'
+layout: post
+date: 2011-03-22T16:06:27Z
+staticpage: false
 ---
 
 Meet my new monitor.

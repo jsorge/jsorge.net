@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Table View in a Table View
-date: '2016-02-17 04:50:01'
+layout: post
+date: 2016-02-16T20:50:01Z
+staticpage: false
 ---
 
 I’m working on a redesigned implementation of the order status screen for my [day job](https://www.zulily.com), and one of the design challenges has been to list the products ordered on a given order (which itself is in a list of orders). Enter `UITableView`! It’s a trusted class that every iOS programmer should know intimate details about.

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: FileMaker Clipboard Assistant - OS X App
-date: '2013-11-21 18:17:00'
+layout: post
+date: 2013-11-21T10:17:00Z
+staticpage: false
 ---
 
 #### The Problem

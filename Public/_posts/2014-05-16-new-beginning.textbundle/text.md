@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: New Beginning
-date: '2014-05-16 14:18:01'
+layout: post
+date: 2014-05-16T07:18:01Z
+staticpage: false
 ---
 
 Today is my last day working at MicroK12. All told I've worked there for nearly 12.5 years in two stints, and done all the jobs there from retail sales to service to developer. It's been a crazy ride that started when I was 16. 

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Twins!
-date: '2014-11-14 18:21:48'
+layout: post
+date: 2014-11-14T10:21:48Z
+staticpage: false
 ---
 
 ![Twins!](assets/2014-11-11-08-18-2.jpg)

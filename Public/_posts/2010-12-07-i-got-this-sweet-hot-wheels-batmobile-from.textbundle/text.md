@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: I got this sweet Hot Wheels Batmobile from @samsonpak (Taken with instagram)
-date: '2010-12-07 18:55:10'
+layout: post
+date: 2010-12-07T10:55:10Z
+staticpage: false
 ---
 
 I got this sweet Hot Wheels Batmobile from @samsonpak (Taken with

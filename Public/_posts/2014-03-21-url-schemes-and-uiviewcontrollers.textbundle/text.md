@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: URL Schemes and UIViewControllers
-date: '2014-03-21 14:00:15'
+layout: post
+date: 2014-03-21T07:00:15Z
+staticpage: false
 ---
 
 Our last 3 assignments in class this quarter have all been building on each other to create a photo list and location tagging app. It's really lightweight, and this last part of it involved adding a URL scheme for extra credit.

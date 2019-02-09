@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Kitchen Upgrade
-date: '2011-03-16 05:28:13'
+layout: post
+date: 2011-03-15T22:28:13Z
+staticpage: false
 ---
 
 This last week has been filled with much work in the kitchen by Emily

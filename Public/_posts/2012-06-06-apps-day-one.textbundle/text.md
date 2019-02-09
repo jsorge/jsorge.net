@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: 'Apps I Love: Day One'
-date: '2012-06-06 13:48:10'
+layout: post
+date: 2012-06-06T06:48:10Z
+staticpage: false
 ---
 
 ![](http://media.tumblr.com/tumblr_m5761dQ9LX1qzqppu.png)

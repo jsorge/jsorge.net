@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: I'm  Microblogging
-date: '2017-04-28 20:29:39'
+layout: post
+date: 2017-04-28T13:29:39Z
+staticpage: false
 ---
 
 I backed [Manton Reece](http://www.manton.org)'s Kickstarter project for [micro.blog](http://micro.blog) back in January. Invites started rolling out this week and I got mine the other day. If you're interested, I'm setup at [http://jsorge.micro.blog](http://jsorge.micro.blog).

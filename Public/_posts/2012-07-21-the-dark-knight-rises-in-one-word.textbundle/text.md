@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: The Dark Knight Rises in one word
-date: '2012-07-21 02:57:10'
+layout: post
+date: 2012-07-20T19:57:10Z
+staticpage: false
 ---
 
 Awesome.

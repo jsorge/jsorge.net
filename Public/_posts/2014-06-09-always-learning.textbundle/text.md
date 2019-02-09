@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Always Learning
-date: '2014-06-09 04:06:56'
+layout: post
+date: 2014-06-08T21:06:56Z
+staticpage: false
 ---
 
 There have been a couple big things come together this week: [Apple held WWDC](http://www.macworld.com/article/2358681/yosemite-falls-and-eight-is-enough.html) and I am on the verge of completing the iOS development certificate that I [started back in September.](http://jsorge.net/2013/10/03/back-to-school/) I just wrapped up all the homework and our last class is tomorrow.

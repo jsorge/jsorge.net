@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: My new job
-date: '2010-06-16 16:22:44'
+layout: post
+date: 2010-06-16T09:22:44Z
+staticpage: false
 ---
 
 I’ve accepted a new position within my company

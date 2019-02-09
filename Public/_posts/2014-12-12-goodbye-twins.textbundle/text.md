@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Goodbye Twins
-date: '2014-12-12 00:17:10'
+layout: post
+date: 2014-12-11T16:17:10Z
+staticpage: false
 ---
 
 ![Our sweet babies](assets/Twin-Footprints-1.jpg)

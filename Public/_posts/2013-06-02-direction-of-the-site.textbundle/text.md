@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Direction of the site
-date: '2013-06-02 20:11:00'
+layout: post
+date: 2013-06-02T13:11:00Z
+staticpage: false
 ---
 
 If you look down the page just a post or two, the dates on them might

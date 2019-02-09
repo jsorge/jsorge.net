@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Meet Sheldon. No filter necessary. Thanks for the help Emily! (Taken with instagram)
-date: '2010-12-15 06:28:03'
+layout: post
+date: 2010-12-14T22:28:03Z
+staticpage: false
 ---
 
 Meet Sheldon. No filter necessary. Thanks for the help Emily! (Taken

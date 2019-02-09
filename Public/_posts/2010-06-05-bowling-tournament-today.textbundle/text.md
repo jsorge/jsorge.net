@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Bowling Tournament Today
-date: '2010-06-05 23:24:30'
+layout: post
+date: 2010-06-05T16:24:30Z
+staticpage: false
 ---
 
 I participated in my second 9 pin no-tap tournament at Robin Hood Lanes

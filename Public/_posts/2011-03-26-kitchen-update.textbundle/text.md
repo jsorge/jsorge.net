@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Kitchen Update
-date: '2011-03-26 17:26:02'
+layout: post
+date: 2011-03-26T10:26:02Z
+staticpage: false
 ---
 
 This week we got the cabinet frames painted and put new paper on the

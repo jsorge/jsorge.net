@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: The view from our seats. GO HAWKS!! (Taken with Instagram at Candlestick Park)
-date: '2010-12-12 21:54:25'
+layout: post
+date: 2010-12-12T13:54:25Z
+staticpage: false
 ---
 
 The view from our seats. GO HAWKS!! (Taken with

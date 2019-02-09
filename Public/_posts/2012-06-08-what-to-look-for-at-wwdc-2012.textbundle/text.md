@@ -1,7 +1,9 @@
 ---
+microblog: false
+title: "\u21E5 What to look for at WWDC 2012"
 layout: post
-title: "⇥ What to look for at WWDC 2012"
-date: '2012-06-08 23:22:38'
+date: 2012-06-08T16:22:38Z
+staticpage: false
 ---
 
 **[What to look for at WWDC

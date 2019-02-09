@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: zulily
-date: '2016-01-15 04:40:46'
+layout: post
+date: 2016-01-14T20:40:46Z
+staticpage: false
 ---
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Big day</p>&mdash; Jared Sorge (@jsorge) <a href="https://twitter.com/jsorge/status/687678601123106816">January 14, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

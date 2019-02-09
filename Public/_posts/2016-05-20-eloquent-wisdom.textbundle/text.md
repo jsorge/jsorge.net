@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Eloquent Wisdom
-date: '2016-05-20 14:54:26'
+layout: post
+date: 2016-05-20T07:54:26Z
+staticpage: false
 ---
 
 > For Christ did not send me to baptize but to preach the gospel, and not with words of eloquent wisdom, lest the cross of Christ be emptied of its power. (1 Corinthians 1:17, ESV)

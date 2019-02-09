@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Where is tech support based? The answer will shock you!
-date: '2010-05-21 22:40:09'
+layout: post
+date: 2010-05-21T15:40:09Z
+staticpage: false
 ---
 
 Where is tech support based? The answer will shock you!

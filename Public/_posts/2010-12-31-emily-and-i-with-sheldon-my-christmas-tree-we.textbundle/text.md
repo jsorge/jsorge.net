@@ -1,8 +1,10 @@
 ---
-layout: post
+microblog: false
 title: Emily and I with Sheldon, my Christmas tree. We decorated him on our first
   date a couple weeks ago.
-date: '2010-12-31 17:30:22'
+layout: post
+date: 2010-12-31T09:30:22Z
+staticpage: false
 ---
 
 Emily and I with Sheldon, my Christmas tree. We decorated him on our

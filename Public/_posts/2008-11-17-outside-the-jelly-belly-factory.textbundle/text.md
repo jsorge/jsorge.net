@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Outside the Jelly Belly factory
-date: '2008-11-17 22:00:22'
+layout: post
+date: 2008-11-17T14:00:22Z
+staticpage: false
 ---
 
 [Outside the Jelly Belly

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Connecting An Airport Extreme to FiOS
-date: '2017-03-14 04:45:41'
+layout: post
+date: 2017-03-13T21:45:41Z
+staticpage: false
 ---
 
 When we got FiOS installed a couple of weeks ago our network had to go through some changes. Frontier gave us not only a bridge to go from the outside connection to ethernet, but also mandated that their router be installed in the network in order for TV guide and menu functionality to remain. I wanted a way to keep my Airport Extreme router on the network, and have found a way to do just that.

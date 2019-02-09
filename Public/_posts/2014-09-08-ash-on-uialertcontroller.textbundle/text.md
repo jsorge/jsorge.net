@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Ash on UIAlertController
-date: '2014-09-08 14:47:09'
+layout: post
+date: 2014-09-08T07:47:09Z
+staticpage: false
 ---
 
 Ash Furrow wrote a really nice [introduction to the new UIAlertController class](http://ashfurrow.com/blog/uialertviewcontroller-example). His example showed an alert view and presented it with a text field. Cool. It can also do much more. The new class actually cannibalizes UIActionSheet as well, and that is very cool. I've been building an app that uses this new class (albeit in Objective-C since I'm a dinosaur).

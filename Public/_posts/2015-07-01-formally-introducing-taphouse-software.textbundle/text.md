@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Formally Introducing Taphouse Software
-date: '2015-07-01 14:26:18'
+layout: post
+date: 2015-07-01T07:26:18Z
+staticpage: false
 ---
 
 Over the last few months I’ve been considering my future. When I made the decision to move on from Solomon Solution, my thoughts turned to what was next. When I launched [Scorebook](http://taphouse.io/scorebook) last year I did it under my company, Taphouse Software. Up to this point I was going back and forth as to what Taphouse should be. For sure it would be the place where I would release my own apps, but could it be something more?

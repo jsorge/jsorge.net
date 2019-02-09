@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: I have a new project. This is going to be a fun weekend.
-date: '2010-05-25 21:53:02'
+layout: post
+date: 2010-05-25T14:53:02Z
+staticpage: false
 ---
 
 I have a new project. This is going to be a fun weekend.

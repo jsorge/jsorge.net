@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Making Proper Apps From Websites
-date: '2018-02-23 00:00:26'
+layout: post
+date: 2018-02-22T16:00:26Z
+staticpage: false
 ---
 
 While at zulily, I used to have [JIRA](https://www.atlassian.com/software/jira) and [GitLab](http://gitlab.com) inside of wrappers provided by [Fluid](http://fluidapp.com) instances. Now that I’m at Lyft I’ve done the same thing with JIRA, but we use [GitHub](https://github.com) instead. For the longest time I would take links sent to me for those pages and paste them into the apps by hand since clicking on the links would open my browser instead of the app silos that I hand-crafted for these sites.

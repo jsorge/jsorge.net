@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Missing Options in Swift
-date: '2017-12-21 00:18:38'
+layout: post
+date: 2017-12-20T16:18:38Z
+staticpage: false
 ---
 
 The default behavior of iOS is to not show a notification (like the kind that comes in through your phone’s lock screen or Notification Center) if the app is in the foreground. I’m working on a ticket for the Lyft app to show or suppress notifications that come in while the app is in the foreground. iOS 10 introduced a whole new `UserNotification` framework that lets us do just that! 

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Is Mormonism a Cult?
-date: '2011-10-22 17:37:49'
+layout: post
+date: 2011-10-22T10:37:49Z
+staticpage: false
 ---
 
 **[Is Mormonism a

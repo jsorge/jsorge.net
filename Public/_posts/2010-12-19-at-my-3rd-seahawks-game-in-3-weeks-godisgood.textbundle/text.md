@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: 'At my 3rd Seahawks game in 3 weeks. #Godisgood'
-date: '2010-12-19 22:40:12'
+layout: post
+date: 2010-12-19T14:40:12Z
+staticpage: false
 ---
 
 At my 3rd Seahawks game in 3 weeks. \#Godisgood

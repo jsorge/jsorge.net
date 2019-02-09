@@ -1,8 +1,10 @@
 ---
-layout: post
+microblog: false
 title: When I got in to work this morning, my co-workers had decorated my desk with
   old CDs.
-date: '2010-05-11 23:11:42'
+layout: post
+date: 2010-05-11T16:11:42Z
+staticpage: false
 ---
 
 When I got in to work this morning, my co-workers had decorated my desk

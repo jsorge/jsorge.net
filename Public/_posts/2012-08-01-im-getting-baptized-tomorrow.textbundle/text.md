@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: I'm getting baptized tomorrow
-date: '2012-08-01 04:47:50'
+layout: post
+date: 2012-07-31T21:47:50Z
+staticpage: false
 ---
 
 First thing’s first. I’m getting baptized tomorrow. Before I get into

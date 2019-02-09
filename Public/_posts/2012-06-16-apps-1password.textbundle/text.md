@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: 'Apps I Love: 1Password'
-date: '2012-06-16 19:38:12'
+layout: post
+date: 2012-06-16T12:38:12Z
+staticpage: false
 ---
 
 Passwords can be annoying beasts. We all need them to safeguard our info

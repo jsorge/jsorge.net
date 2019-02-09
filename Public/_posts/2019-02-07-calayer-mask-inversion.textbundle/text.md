@@ -1,9 +1,11 @@
 ---
-filename: 2019-02-07-calayer-mask-inversion
-layout: post
+microblog: false
 title: CALayer Mask Inversion
+layout: post
+date: 2019-02-07T00:13:26Z
+staticpage: false
 shortDescription: Wondering how can the same code produce inverted results?
-date: '2019-02-07 08:13:26'
+filename: 2019-02-07-calayer-mask-inversion
 ---
 I've got a view controller with a camera view, overlaid with a partially transparent dimming view. I need to punch a hole out of the dimming view to let the camera shine through in its full glory. My first crack was the code below, and it works:
 

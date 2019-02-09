@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Thoughts on FileMaker
-date: '2013-09-04 15:00:21'
+layout: post
+date: 2013-09-04T08:00:21Z
+staticpage: false
 ---
 
 In my day job I spend a lot of time building apps based in the FileMaker Pro ecosystem. I ‘ve been wanting to share some of my unstructured thoughts about the platforms and give some preview of things that I’ve built that I want to share with the larger developer community.

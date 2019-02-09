@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Say Hi to Finnian
-date: '2016-07-17 05:32:11'
+layout: post
+date: 2016-07-16T22:32:11Z
+staticpage: false
 ---
 
 ![](assets/finnian.jpg)

@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Childlike Faith
-date: '2018-04-28 17:39:46'
+layout: post
+date: 2018-04-28T10:39:46Z
+staticpage: false
 ---
 
 > And calling to him a child, he put him in the midst of them and said, "Truly, I say to you, unless you turn and become like children, you will never enter the kingdom of heaven. Whoever humbles himself like this child is the greatest in the kingdom of heaven. (Matthew 18:2-4, ESV)

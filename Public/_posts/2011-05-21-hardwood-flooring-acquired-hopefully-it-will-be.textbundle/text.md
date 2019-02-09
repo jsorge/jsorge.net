@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Hardwood flooring acquired. Hopefully it will be installed on Wednesday!
-date: '2011-05-21 21:05:51'
+layout: post
+date: 2011-05-21T14:05:51Z
+staticpage: false
 ---
 
 Hardwood flooring acquired. Hopefully it will be installed on Wednesday!

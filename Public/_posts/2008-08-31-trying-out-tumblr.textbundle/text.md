@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Trying out Tumblr
-date: '2008-08-31 00:10:05'
+layout: post
+date: 2008-08-30T17:10:05Z
+staticpage: false
 ---
 
 I’ve made a few attempts at keeping up a blog that all resulted in

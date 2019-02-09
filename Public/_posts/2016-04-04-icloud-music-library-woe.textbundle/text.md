@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: An iCloud Music Library Tale of Woe
-date: '2016-04-04 15:08:22'
+layout: post
+date: 2016-04-04T08:08:22Z
+staticpage: false
 ---
 
 16 years ago, I signed up for iTools and got my Apple ID that I use to this day. 3 years later, I started buying music from the iTunes music Store. 2 weeks ago I noticed that music I had purchased wasn't playable any more. Grrrr.

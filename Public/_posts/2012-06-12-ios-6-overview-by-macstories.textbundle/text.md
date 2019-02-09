@@ -1,7 +1,9 @@
 ---
+microblog: false
+title: "\u21E5 iOS 6 Overview by Macstories"
 layout: post
-title: "⇥ iOS 6 Overview by Macstories"
-date: '2012-06-12 13:43:26'
+date: 2012-06-12T06:43:26Z
+staticpage: false
 ---
 
 **[iOS 6 Overview by

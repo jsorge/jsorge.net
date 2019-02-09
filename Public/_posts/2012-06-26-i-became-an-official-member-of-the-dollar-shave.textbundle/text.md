@@ -1,8 +1,10 @@
 ---
-layout: post
+microblog: false
 title: I became an official member of the Dollar Shave Club today. Will post my thoughts
   on their stuff soon!
-date: '2012-06-26 05:07:06'
+layout: post
+date: 2012-06-25T22:07:06Z
+staticpage: false
 ---
 
 I became an official member of the Dollar Shave Club today. Will post my

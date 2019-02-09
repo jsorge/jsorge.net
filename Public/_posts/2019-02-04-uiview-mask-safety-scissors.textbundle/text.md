@@ -1,9 +1,12 @@
 ---
-filename: 2019-02-04-uiview-mask-safety-scissors
-layout: post
+microblog: false
 title: On the Sharp Edges of UIView.mask
-shortDescription: I lost some hours to figuring out how UIView's mask property works. Hopefully this will save you some time if you come across that property as well.
-date: '2019-02-04 19:27:34'
+layout: post
+date: 2019-02-04T11:27:34Z
+staticpage: false
+shortDescription: I lost some hours to figuring out how UIView's mask property works.
+  Hopefully this will save you some time if you come across that property as well.
+filename: 2019-02-04-uiview-mask-safety-scissors
 ---
 I'm working on implementing a new user-facing feature at work, and the designs I've been given call for having a dark gray semi-transparent view overlaying a view, and this semi-transparent view has a rectangle punched out of it. Not having done this kind of thing before I went searching the docs on `CALayer` to see what options are available. I knew that layers could mask other layers so this seemed like the right place to go.
 

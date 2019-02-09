@@ -1,7 +1,9 @@
 ---
-layout: post
+microblog: false
 title: Updates and new stresses
-date: '2012-06-02 04:11:19'
+layout: post
+date: 2012-06-01T21:11:19Z
+staticpage: false
 ---
 
 Its been an exciting and kind of stressful last couple of weeks for me.

@@ -1,9 +1,9 @@
 ---
+microblog: false
+title: "Scorebook Sync Log 06 \u2013 Fun with Protocols"
 layout: post
-title: Scorebook Sync Log 06 – Fun with Protocols
-date: '2015-05-21 23:20:10'
-tags:
-- scorebook-sync-log
+date: 2015-05-21T16:20:10Z
+staticpage: false
 ---
 
 In my usage of CloudKit I had to determine early on how I was going to upload batches of records and deal with batches coming down. I’m dealing entirely with `CKRecord` instances, so all of my entities will need to know how to handle those; both in how to create one from themselves, and how to turn turn one into itself. 
