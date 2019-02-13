@@ -31,7 +31,7 @@ You must register your app with the system in order to send a push. This is done
 
 This is going to get complicated. The short answer is: it depends. But you didn’t come here for short answers, so let’s dig in. We’ll start by looking at an actual notification payload. I’ll put in the stuff we need, but you can find [the full payload content reference here][1].
 
-```js
+```json
 {
   "aps": {
 	"alert": {

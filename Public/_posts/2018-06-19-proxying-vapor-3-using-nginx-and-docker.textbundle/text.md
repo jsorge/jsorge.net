@@ -22,27 +22,29 @@ Turns out I was a bit mistaken. If you read through the post I linked at the top
 
 What I did was create a repository on the [Docker Hub](https://hub.docker.com) which would hold a named, built image. That image is built with the following Dockerfile:
 
-	# Build image
-	FROM swift:4.1 as builder
-	RUN apt-get -qq update && apt-get -q -y install \
-	  && rm -r /var/lib/apt/lists/*
-	WORKDIR /app
-	COPY . .
-	RUN mkdir -p /build/lib && cp -R /usr/lib/swift/linux/*.so /build/lib
-	RUN swift build -c release && mv `swift build -c release --show-bin-path` /build/bin
-	
-	# Production image
-	FROM ubuntu:16.04
-	RUN apt-get -qq update && apt-get install -y \
-	  libicu55 libxml2 libbsd0 libcurl3 libatomic1 \
-	  tzdata \
-	  && rm -r /var/lib/apt/lists/*
-	WORKDIR /app
-	COPY --from=builder /build/bin/Run .
-	COPY --from=builder /build/lib/* /usr/lib/
-	COPY Resources/ ./Resources/
-	EXPOSE 8080
-	ENTRYPOINT ./Run serve -e prod -b 0.0.0.0
+```docker
+# Build image
+FROM swift:4.1 as builder
+RUN apt-get -qq update && apt-get -q -y install \
+  && rm -r /var/lib/apt/lists/*
+WORKDIR /app
+COPY . .
+RUN mkdir -p /build/lib && cp -R /usr/lib/swift/linux/*.so /build/lib
+RUN swift build -c release && mv `swift build -c release --show-bin-path` /build/bin
+
+# Production image
+FROM ubuntu:16.04
+RUN apt-get -qq update && apt-get install -y \
+  libicu55 libxml2 libbsd0 libcurl3 libatomic1 \
+  tzdata \
+  && rm -r /var/lib/apt/lists/*
+WORKDIR /app
+COPY --from=builder /build/bin/Run .
+COPY --from=builder /build/lib/* /usr/lib/
+COPY Resources/ ./Resources/
+EXPOSE 8080
+ENTRYPOINT ./Run serve -e prod -b 0.0.0.0
+```
 
 If you have discerning eyes you’ll notice that this Dockerfile is almost exactly the same as the one in the post [ I referenced above](https://bygri.github.io/2018/05/14/developing-deploying-vapor-docker.html) (go read it and come back if you didn’t earlier). That’s because I copied it from him 😊. The one addition I had to make was `COPY Resources/ ./Resources`. What this does is copies the Resources directory from my local drive and into the Docker image. 
 
@@ -54,24 +56,26 @@ Now let’s flip our environment to the production server. I don’t need much t
 
 But then comes the fun part. I’ll catch you on the flipside of the compose file:
 
-	version: "3.3"
-	services:
-	  web:
-		image: jsorge/taphouse.io
-		volumes:
-		  - ./Public:/app/Public
-	  nginx:
-		image: nginx:alpine
-		restart: always
-		ports:
-		  - 80:80
-		  - 443:443
-		volumes:
-		  - ./Public:/home/taphouse/Public
-		  - ./nginx/server.conf:/etc/nginx/conf.d/default.conf
-		  - ./nginx/logs:/var/log/nginx
-		depends_on:
-		  - web
+```docker
+version: "3.3"
+services:
+  web:
+	image: jsorge/taphouse.io
+	volumes:
+	  - ./Public:/app/Public
+  nginx:
+	image: nginx:alpine
+	restart: always
+	ports:
+	  - 80:80
+	  - 443:443
+	volumes:
+	  - ./Public:/home/taphouse/Public
+	  - ./nginx/server.conf:/etc/nginx/conf.d/default.conf
+	  - ./nginx/logs:/var/log/nginx
+	depends_on:
+	  - web
+```
 
 Ok, so what’s going on here? We’re grabbing the `nginx` image from alpine (a trusted provider of nginx). I’m honestly not sure what the `restart` command does but it showed up on my DuckDuckGo results of examples. But the rest I understand. 
 
@@ -88,25 +92,27 @@ This one is pretty cool. It establishes the dependency chain between your contai
 
 The nginx configuration file is the last link in the chain to get us going. This is what mine looks like:
 
-	server {
-		server_name taphouse.io;
-		listen 80 default_server;
-	
-		root /home/taphouse/Public/;
-	
-		try_files $uri @proxy;
-	
-		location @proxy {
-			proxy_pass http://web:8080;
-			proxy_pass_header Server;
-			proxy_set_header Host $host;
-			proxy_set_header X-Real-IP $remote_addr;
-			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-			proxy_pass_header Server;
-			proxy_connect_timeout 3s;
-			proxy_read_timeout 10s;
-		}
+```nginx
+server {
+	server_name taphouse.io;
+	listen 80 default_server;
+
+	root /home/taphouse/Public/;
+
+	try_files $uri @proxy;
+
+	location @proxy {
+		proxy_pass http://web:8080;
+		proxy_pass_header Server;
+		proxy_set_header Host $host;
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_pass_header Server;
+		proxy_connect_timeout 3s;
+		proxy_read_timeout 10s;
 	}
+}
+```
 
 I got this by finding the suggested configuration for [Vapor 2](https://docs.vapor.codes/2.0/deploy/nginx/). Curiously this page hasn’t made its way to the Vapor 3 docs but I’m guessing that has something to do with them wanting you to deploy on Vapor Cloud. I’m removing my tinfoil hat now.
 
