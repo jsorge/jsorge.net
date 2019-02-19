@@ -22,7 +22,11 @@ install-autodeploy:
 delete-autodeploy:
 	sudo rm -rf ./.tools/vendor/Git-Auto-Deploy
 
-.PHONY: install-precommit
-install-precommit:
+.PHONY: resize-images
+resize-images:
 # set up Marathon https://github.com/JohnSundell/marathon
-	@ cp ./.tools/pre-commit.sh .git/hooks/pre-commit
+	@ chmod +x ./.tools/ensure-marathon.sh
+	@ ./.tools/ensure-marathon.sh
+	@ chmod +x ./.tools/ensure-imagemagick.sh
+	@ ./.tools/ensure-imagemagick.sh
+	@ marathon run ./.tools/ResizeImages.swift
