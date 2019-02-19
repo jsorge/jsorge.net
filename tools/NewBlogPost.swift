@@ -63,13 +63,6 @@ func createPostDate() -> Date {
     return converted
 }
 
-func localizeDate(_ date: Date) -> Date {
-    let calendar = Calendar.current
-    let gmtOffset = calendar.timeZone.secondsFromGMT(for: date)
-    let localizedDate = calendar.date(byAdding: .second, value: gmtOffset, to: date)!
-    return localizedDate
-}
-
 func extractDayMonthYear(from date: Date) -> (day: Int, month: Int, year: Int) {
     let calendar = Calendar.current
     let day = calendar.component(.day, from: date)
