@@ -1,10 +1,15 @@
 #! /usr/bin/env bash
 
-CURRENT_DIR=$(pwd)
-cd ~/Downloads
+# pre-commit.sh
+STASH_NAME="pre-commit-$(date +%s)"
+git stash save -q --keep-index $STASH_NAME
 
 # TODO: Work through png and jpgs
+magick mogrify -resize 500">" *.jpg
 
-magick mogrify -resize 300">" *.jpg
+git add .
 
-cd $CURRENT_DIR
+STASHES=$(git stash list)
+if [[ $STASHES == "$STASH_NAME" ]]; then
+  git stash pop -q
+fi

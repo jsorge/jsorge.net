@@ -1,11 +1,11 @@
 .PHONY: serve
 serve:
-	@ chmod +x .tools/spin_up.sh
+	@ chmod +x ./.tools/spin_up.sh
 	@ ./.tools/spin_up.sh
 	
 .PHONY: down
 down:
-	docker-compose -f .tools/docker-compose.yml down
+	docker-compose -f ./.tools/docker-compose.yml down
 
 .PHONY: docker-logs
 docker-logs:
@@ -15,9 +15,15 @@ docker-logs:
 # https://github.com/olipo186/Git-Auto-Deploy
 .PHONY: install-autodeploy
 install-autodeploy:
-	@ chmod +x .tools/install_gitautodeploy.sh
+	@ chmod +x ./.tools/install_gitautodeploy.sh
 	@ ./.tools/install_gitautodeploy.sh
 
 .PHONY: delete-autodeploy
 delete-autodeploy:
 	sudo rm -rf ./.tools/vendor/Git-Auto-Deploy
+
+.PHONY: install-precommit
+install-precommit:
+# set up Marathon https://github.com/JohnSundell/marathon
+	@ chmod +x ./.tools/pre-commit.sh
+	@ ln -s ./.tools/pre-commit.sh .git/hooks/pre-commit

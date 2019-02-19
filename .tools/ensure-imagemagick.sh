@@ -10,9 +10,9 @@ function version_gt() { test $(printf '%s\n' "$@" | sort --version-sort | head -
 if [ ! -f "${WHICH_CMD}" ]; then
   echo $MISSING_MSG
 else
-  MAGICK_VERSION=`"${WHICH_CMD}" version`
-  if version_gt ${MAGICK_VERSION} ${BASE_VERSION}; then
-    "${WHICH_CMD}" --quiet
+  MAGICK_VERSION=`"${WHICH_CMD}" --version`
+    if version_gt ${MAGICK_VERSION} ${BASE_VERSION}; then
+    exit
   else
     echo $UPGRADE_MSG
   fi
