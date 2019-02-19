@@ -25,5 +25,4 @@ delete-autodeploy:
 .PHONY: install-precommit
 install-precommit:
 # set up Marathon https://github.com/JohnSundell/marathon
-	@ chmod +x ./.tools/pre-commit.sh
-	@ ln -s ./.tools/pre-commit.sh .git/hooks/pre-commit
+	@ cp ./.tools/pre-commit.sh .git/hooks/pre-commit
