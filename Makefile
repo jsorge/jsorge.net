@@ -2,7 +2,7 @@
 serve:
 	@ chmod +x ./.tools/spin_up.sh
 	@ ./.tools/spin_up.sh
-	
+
 .PHONY: down
 down:
 	docker-compose -f ./.tools/docker-compose.yml down
@@ -30,3 +30,9 @@ resize-images:
 	@ chmod +x ./.tools/ensure-imagemagick.sh
 	@ ./.tools/ensure-imagemagick.sh
 	@ marathon run ./.tools/ResizeImages.swift
+
+.PHONY: install-newpost
+install-newpost:
+	@ chmod +x ./.tools/ensure-marathon.sh
+	@ ./.tools/ensure-marathon.sh
+	@ marathon install ./tools/NewBlogPost.swift

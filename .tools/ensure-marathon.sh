@@ -1,4 +1,5 @@
 #!/bin/sh
+source .tools/ensure-mint.sh
 
 WHICH_CMD=`which marathon`
 
