@@ -1,9 +1,12 @@
 import Foundation
 import ShellOut // marathon:https://github.com/JohnSundell/ShellOut.git
 
-func applyStash(named stashName: String) {
-    guard let stashes = try? shellOut(to: "git stash list") else { return }
-    if stashes.components(separatedBy: "\n").first == stashName {
+func applyStashIfNeeded(named stashName: String) {
+    guard let stashes = try? shellOut(to: "git stash list"),
+        let topStash = stashes.components(separatedBy: "\n").first
+        else { return }
+
+    if topStash.contains(stashName) {
         _ = try? shellOut(to: "git stash pop -q")
     }
 }
@@ -39,7 +42,7 @@ let imagePaths = stashedFiles
     .filter({ $0.containsImageExtension })
 
 guard imagePaths.count > 0 else {
-//    applyStash(named: stashName)
+    applyStashIfNeeded(named: stashName)
     exit(0)
 }
 
@@ -52,4 +55,4 @@ for path in imagePaths {
     try shellOut(to: command)
 }
 
-applyStash(named: stashName)
+applyStashIfNeeded(named: stashName)

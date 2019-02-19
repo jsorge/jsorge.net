@@ -1,3 +1,3 @@
 #! /usr/bin/env bash
 
-marathon run ./.tools/ResizeImages.swift
+/usr/local/bin/marathon run ./.tools/ResizeImages.swift
