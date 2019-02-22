@@ -7,6 +7,11 @@ serve:
 down:
 	docker-compose -f ./.tools/docker-compose.yml down
 
+.PHONY: dev
+dev:
+	@ chmod +x ./.tools/spin_up_dev.sh
+	@ ./.tools/spin_up_dev.sh
+
 .PHONY: docker-logs
 docker-logs:
 	docker-compose logs maverick
