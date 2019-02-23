@@ -50,7 +50,7 @@ let workingDir = try shellOut(to: "pwd")
 
 for path in imagePaths {
     let fullImagePath = "\(workingDir)/\(path)"
-    let command = "/usr/local/bin/magick mogrify -resize 500 \(fullImagePath)"
+    let command = "/usr/local/bin/magick mogrify -resize 1000 \(fullImagePath)"
 
     try shellOut(to: command)
 }
