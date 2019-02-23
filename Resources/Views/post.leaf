@@ -53,8 +53,14 @@
 		            <h2 class="blog-description">#(site.description)</h2>
 		        </a>
         	</div>
-	        <div class="headerLinks" style="text-decoration: underline; margin-top: 15px;">
-				<a href="/about">About</a><span class="blog-description"> | </span> | <a href="http://taphouse.io/?utm_source=jsorge.net">Taphouse Software</a><span class="blog-description"> | </span> | <a href="#(site.url)/rss/">RSS</a><span class="blog-description"> | </span> | <a href="https://twitter.com/jsorgenet">Twitter</a>
+	        <div class="headerLinks">
+				<a href="/about">About</a>
+				<span class="blog-description">|</span>
+				<a href="http://taphouse.io/?utm_source=jsorge.net">Taphouse Software</a>
+				<span class="blog-description">|</span>
+				<a href="#(site.url)/rss/">RSS</a>
+				<span class="blog-description">|</span>
+				<a href="https://twitter.com/jsorgenet">Twitter</a>
         	</div>
     	</div>
 	</header>

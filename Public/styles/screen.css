@@ -430,7 +430,10 @@ margin on the iframe, cause it breaks stuff. */
     font-family: var(--elsewhere-font), sans-serif;
     letter-spacing: 0;
     text-shadow: 0 1px 3px rgba(0,0,0,0.15);
-	color: var(--orange-text-color);
+    text-decoration: none;
+		color: var(--orange-text-color);
+		padding-left: 1rem;
+		padding-right: 1rem;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -551,12 +554,13 @@ margin on the iframe, cause it breaks stuff. */
 	margin: 0 auto;
 }
 
-.headerLinks ul {
-	list-style: none;
+.headerLinks {
+	text-decoration: none;
+	margin-top: 15px;
 }
 
-.headerLinks li {
-	display: inline;
+.headerLinks a {
+	text-decoration: underline;
 }
 
 /* ==========================================================================
