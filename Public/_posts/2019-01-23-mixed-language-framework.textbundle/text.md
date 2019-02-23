@@ -30,7 +30,7 @@ If you're like me, you're a stickler for having clean API boundaries. This means
 
 First, in your framework's root, create a file called `module.map`. I don't know why it has to be this exact title, but it does. Here's its contents:
 
-```
+```objc
 module LanguageKit_Private {
     // import your private headers here
     export *

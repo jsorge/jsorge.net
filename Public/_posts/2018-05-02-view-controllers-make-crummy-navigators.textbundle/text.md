@@ -16,7 +16,7 @@ There is!
 
 If we treat view controllers like functional pieces, we can expose a small interface to interact with them and use delegation to get stuff out. Here’s a trivial example:
 
-```
+```swift
 protocol PeopleViewControllerDelegate: AnyObject {
     func personSelected(_ person: Person, from viewController: PeopleViewController)
 }

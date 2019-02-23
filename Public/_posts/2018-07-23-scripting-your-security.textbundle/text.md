@@ -15,7 +15,7 @@ My sample project uses a Vapor web server, but you can sub out anything you wish
 
 We start with a Dockerfile that will build up our nginx container:
 
-```
+```docker
 # build from the official Nginx image
 FROM nginx
 
