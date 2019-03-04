@@ -4,6 +4,8 @@ title: Scorebook Sync Log 03 - Schema Design
 layout: post
 date: 2015-03-31T20:59:18Z
 staticpage: false
+tags:
+  - scorebook-sync-log
 ---
 
 Building a schema on CloudKit is pretty straightforward. You get a `CKRecord` object and treat it like a dictionary. There are a few data types they can take (`NSString`, `NSNumber`, `NSData` to name a few) and it’s a key/value pair to get the data on the record. Once you have a record created, you save it to the database and your RecordType (i.e. a database table) is created. Simple. But there is a trick associated with related data.
@@ -20,16 +22,16 @@ Inside each category I have a method called `-cloudKitRecord` that returns a `CK
     CKRecordID *recordID = [[CKRecordID alloc] initWithRecordName:self.ckRecordId];
     CKRecord *personRecord = [[CKRecord alloc] initWithRecordType:[SBPerson entityName]
                                                          recordID:recordID];
-    
+
     personRecord[SBPersonFirstNameKEY] = self.firstName;
     personRecord[SBPersonLastNameKEY] = self.lastName;
     personRecord[SBPersonEmailAddressKEY] = self.emailAddress;
-    
+
     if (self.imageURL) {
         CKAsset *imageAsset = [[CKAsset alloc] initWithFileURL:[self urlForImage]];
         personRecord[SBPersonAvatarKEY] = imageAsset;
     }
-    
+
     return personRecord;
 }
 ```

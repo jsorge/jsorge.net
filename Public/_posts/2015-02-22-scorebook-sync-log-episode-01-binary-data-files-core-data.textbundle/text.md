@@ -4,6 +4,8 @@ title: 'Scorebook Sync Log Episode 01: Binary data files & Core Data'
 layout: post
 date: 2015-02-21T17:50:27Z
 staticpage: false
+tags:
+  - scorebook-sync-log
 ---
 
 I'm working on the CloudKit schema for Scorebook and am coming upon a question right away. Scorebook allows users to add pictures as avatars, or game thumbnails, and to attach to game plays. I'm storing these in Core Data as binary data. All cool on the device. I'm also using the option to allow external storage in the managed object model.

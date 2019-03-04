@@ -4,6 +4,8 @@ title: "Scorebook Sync Log 07 \u2013 Responding to Deletions"
 layout: post
 date: 2015-05-28T21:21:54Z
 staticpage: false
+tags:
+  - scorebook-sync-log
 ---
 
 (Thanks to David Hoang for the [encouragement to post this](https://twitter.com/davidhoang/status/604136066673565696))
@@ -39,11 +41,11 @@ On the downloader I explode the string into an array using he same delimiter and
 ```objectivec
 NSString *recordName = recordID.recordName;
 NSString *recordType = [[recordName componentsSeparatedByString:@"|~|"] firstObject];
-        
+
 NSPredicate *predicate = [NSPredicate predicateWithFormat:@"ckRecordName = %@", recordName];
 NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:recordType];
 fetchRequest.predicate = predicate;
-        
+
 NSArray *foundObjects = [backgroundContext executeFetchRequest:fetchRequest error:nil];
 id foundObject = [foundObjects firstObject];
 if (foundObject != nil) {

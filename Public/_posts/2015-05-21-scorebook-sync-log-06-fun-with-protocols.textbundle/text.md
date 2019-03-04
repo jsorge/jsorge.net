@@ -4,9 +4,11 @@ title: "Scorebook Sync Log 06 \u2013 Fun with Protocols"
 layout: post
 date: 2015-05-21T16:20:10Z
 staticpage: false
+tags:
+  - scorebook-sync-log
 ---
 
-In my usage of CloudKit I had to determine early on how I was going to upload batches of records and deal with batches coming down. I’m dealing entirely with `CKRecord` instances, so all of my entities will need to know how to handle those; both in how to create one from themselves, and how to turn turn one into itself. 
+In my usage of CloudKit I had to determine early on how I was going to upload batches of records and deal with batches coming down. I’m dealing entirely with `CKRecord` instances, so all of my entities will need to know how to handle those; both in how to create one from themselves, and how to turn turn one into itself.
 
 I didn’t have any clever idea at first, so I punted. For saving records to CloudKit, I’m monitoring the `NSManagedObjectContextDidSaveNotification` (which isn’t verbose enough) and I get `NSSet`s of managed objects. Here’s what my initial implementation looked like:
 
@@ -15,7 +17,7 @@ I didn’t have any clever idea at first, so I punted. For saving records to Clo
 {
     CKRecordZoneID *userZone = [[SBSyncController sharedSyncController] userRecordZone];
     CKRecord *recordToReturn;
-    
+
     if ([managedObject isKindOfClass:[SBPerson class]]) {
         recordToReturn = [(SBPerson *)managedObject cloudKitRecordInRecordZone:userZone];
     } else if ([managedObject isKindOfClass:[SBGame class]]) {
@@ -31,7 +33,7 @@ I didn’t have any clever idea at first, so I punted. For saving records to Clo
     } else if ([managedObject isKindOfClass:[SBMatchLocation class]]) {
         recordToReturn = [(SBMatchLocation *)managedObject cloudKitRecordInRecordZone:userZone];
     }
-    
+
     return recordToReturn;
 }
 ```
@@ -60,12 +62,12 @@ By conforming to this protocol, I’ve been able to cut out a bunch of code. Her
 - (CKRecord *)ckRecordForManagedObject:(NSManagedObject *)managedObject
 {
     CKRecord *recordToReturn = nil;
-    
+
     if ([managedObject conformsToProtocol:@protocol(SBCloudKitCompatible)]) {
         id<SBCloudKitCompatible> object = (id<SBCloudKitCompatible>)managedObject;
         recordToReturn = [object cloudKitRecordInRecordZone:self.zoneID];
     }
-    
+
     return recordToReturn;
 }
 ```
