@@ -1,5 +1,6 @@
 import Files // marathon:https://github.com/JohnSundell/Files.git
 import Foundation
+import MaverickModels // marathon:https://github.com/jsorge/maverick-models.git
 import ShellOut // marathon:https://github.com/JohnSundell/ShellOut.git
 import Yams // marathon:https://github.com/jpsim/Yams.git
 
@@ -16,27 +17,8 @@ struct Info: Codable {
     }
 }
 
-struct FrontMatter: Codable {
-    let isMicroblog: Bool
-    let title: String?
-    let layout: String?
-    let guid: String?
-    let date: Date
-    let isStaticPage: Bool
-    let shortDescription: String
-    let filename: String?
-
-    private enum CodingKeys: String, CodingKey {
-        case isMicroblog = "microblog"
-        case title = "title"
-        case layout = "layout"
-        case guid = "guid"
-        case date = "date"
-        case isStaticPage = "staticpage"
-        case shortDescription = "shortDescription"
-        case filename = "filename"
-    }
-
+@available(OSX 10.12, *)
+extension FrontMatter {
     static func emptyTemplate(date: Date, filename: String, title: String) -> FrontMatter {
         return FrontMatter(isMicroblog: false, title: title,
                            layout: "post", guid: nil, date: date, isStaticPage: false,
@@ -49,10 +31,9 @@ struct FrontMatter: Codable {
     }
 }
 
+@available(OSX 10.12, *)
 func createPostDate() -> Date {
     let date = Date()
-
-    guard #available(macOS 10.12, *) else { return date }
 
     let formatter = ISO8601DateFormatter()
     formatter.timeZone = TimeZone(secondsFromGMT: 0)
@@ -93,6 +74,7 @@ func makeFilenameFromTitle(_ title: String) -> String {
     return formattedFilename
 }
 
+@available(OSX 10.12, *)
 func makePostBaseText(date: Date, filename: String, title: String) -> String {
     return  """
     ---
@@ -102,31 +84,38 @@ func makePostBaseText(date: Date, filename: String, title: String) -> String {
 }
 
 /* ========== SCRIPT ========== */
-let postsFolder = try Folder(path: "~/Develop/jsorge.net/Public/_posts")
+if #available(OSX 10.12, *) {
+    let postsFolder = try Folder(path: "~/Develop/jsorge.net/Public/_posts")
 
-let postDate = createPostDate()
-let title = parseTitleFromArgs(CommandLine.arguments)
-let filename = makeFilenameFromTitle(title)
-let dateComponents = extractDayMonthYear(from: postDate)
-let formattedDay = String(format: "%02d", dateComponents.day)
-let formattedMonth = String(format: "%02d", dateComponents.month)
-let bundleName = "\(dateComponents.year)-\(formattedMonth)-\(formattedDay)-\(filename).textbundle"
+    let postDate = createPostDate()
+    let title = parseTitleFromArgs(CommandLine.arguments)
+    let filename = makeFilenameFromTitle(title)
+    let dateComponents = extractDayMonthYear(from: postDate)
+    let formattedDay = String(format: "%02d", dateComponents.day)
+    let formattedMonth = String(format: "%02d", dateComponents.month)
+    let bundleName = "\(dateComponents.year)-\(formattedMonth)-\(formattedDay)-\(filename).textbundle"
 
-// Create the text bundle
-let bundlePath = try postsFolder.createSubfolderIfNeeded(withName: bundleName)
+    // Create the text bundle
+    let bundlePath = try postsFolder.createSubfolderIfNeeded(withName: bundleName)
 
-// Add info.json
-try bundlePath.createFile(named: "info.json", contents: Info.encoded)
+    // Add info.json
+    try bundlePath.createFile(named: "info.json", contents: Info.encoded)
 
-// Create the base text.md
-let baseContent = makePostBaseText(date: postDate, filename: bundleName, title: title)
-try bundlePath.createFile(named: "text.md", contents: baseContent)
+    // Create the base text.md
+    let baseContent = makePostBaseText(date: postDate, filename: bundleName, title: title)
+    try bundlePath.createFile(named: "text.md", contents: baseContent)
 
-// Create the assets folder and add .gitkeep
-let assetsDir = try bundlePath.createSubfolder(named: "assets")
-try assetsDir.createFile(named: ".gitkeep")
+    // Create the assets folder and add .gitkeep
+    let assetsDir = try bundlePath.createSubfolder(named: "assets")
+    try assetsDir.createFile(named: ".gitkeep")
 
-print("Created new text bundle at \(bundlePath.path). Opening in BBEdit.")
+    print("Created new text bundle at \(bundlePath.path). Opening in BBEdit.")
 
-// Open in my editor
-try shellOut(to: "bbedit", arguments: [bundlePath.path])
+    // Open in my editor
+    try shellOut(to: "bbedit", arguments: [bundlePath.path])
+
+}
+else {
+    print("This script requires macOS 10.12 or higher")
+    exit(1)
+}
