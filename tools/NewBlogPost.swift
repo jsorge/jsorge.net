@@ -4,6 +4,30 @@ import MaverickModels // marathon:https://github.com/jsorge/maverick-models.git
 import ShellOut // marathon:https://github.com/JohnSundell/ShellOut.git
 import Yams // marathon:https://github.com/jpsim/Yams.git
 
+struct Options {
+    let postTitle: String
+    let isDraft: Bool
+
+    init(args: [String]) {
+        var allArgs = args.dropFirst()
+
+        if let draftIndex = allArgs.firstIndex(of: "--draft") {
+            self.isDraft = true
+            allArgs.remove(at: draftIndex)
+        }
+        else {
+            self.isDraft = false
+        }
+
+        if let firstArg = allArgs.first, firstArg.starts(with: "--") == false {
+            self.postTitle = firstArg
+        }
+        else {
+            self.postTitle = "New Post"
+        }
+    }
+}
+
 struct Info: Codable {
     let version = 2
     let `type` = "net.daringfireball.markdown"
@@ -53,18 +77,6 @@ func extractDayMonthYear(from date: Date) -> (day: Int, month: Int, year: Int) {
     return (day, month, year)
 }
 
-func parseTitleFromArgs(_ args: [String]) -> String {
-    let title: String
-    if args.count > 1 {
-        title = CommandLine.arguments[1]
-    }
-    else {
-        title = "New Post"
-    }
-
-    return title
-}
-
 func makeFilenameFromTitle(_ title: String) -> String {
     let formattedFilename = title
         .split(separator: " ")
@@ -85,24 +97,32 @@ func makePostBaseText(date: Date, filename: String, title: String) -> String {
 
 /* ========== SCRIPT ========== */
 if #available(OSX 10.12, *) {
-    let postsFolder = try Folder(path: "~/Develop/jsorge.net/Public/_posts")
+    let publicFolder = try Folder(path: "~/Develop/jsorge.net/Public/")
+    let postsFolder = try publicFolder.subfolder(named: "_posts")
+    let draftsFolder = try publicFolder.subfolder(named: "_drafts")
 
     let postDate = createPostDate()
-    let title = parseTitleFromArgs(CommandLine.arguments)
-    let filename = makeFilenameFromTitle(title)
+    let options = Options(args: CommandLine.arguments)
+    let filename = makeFilenameFromTitle(options.postTitle)
     let dateComponents = extractDayMonthYear(from: postDate)
     let formattedDay = String(format: "%02d", dateComponents.day)
     let formattedMonth = String(format: "%02d", dateComponents.month)
     let bundleName = "\(dateComponents.year)-\(formattedMonth)-\(formattedDay)-\(filename).textbundle"
 
     // Create the text bundle
-    let bundlePath = try postsFolder.createSubfolderIfNeeded(withName: bundleName)
+    let bundlePath: Folder
+    if options.isDraft {
+        bundlePath = try draftsFolder.createSubfolderIfNeeded(withName: filename)
+    }
+    else {
+        bundlePath = try postsFolder.createSubfolderIfNeeded(withName: bundleName)
+    }
 
     // Add info.json
     try bundlePath.createFile(named: "info.json", contents: Info.encoded)
 
     // Create the base text.md
-    let baseContent = makePostBaseText(date: postDate, filename: bundleName, title: title)
+    let baseContent = makePostBaseText(date: postDate, filename: bundleName, title: options.postTitle)
     try bundlePath.createFile(named: "text.md", contents: baseContent)
 
     // Create the assets folder and add .gitkeep
