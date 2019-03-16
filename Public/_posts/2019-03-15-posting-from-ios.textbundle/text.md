@@ -1,0 +1,10 @@
+---
+microblog: true
+layout: post
+date: 2019-03-15T23:01:10-07:00
+staticpage: false
+tags: []
+---
+I finally got a shortcut set up the way I want so that I can post to my site from iOS easily. A new update to iA Writer added the ability to browse a textbundle as a folder which is exactly what I need to get going.
+
+This summer I hope to make lightweight editors for iOS and Mac (the Mac using Marzipan if it’s good enough).
