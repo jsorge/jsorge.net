@@ -3,7 +3,6 @@ microblog: true
 layout: post
 date: 2019-03-21T22:10:11-07:00
 staticpage: false
-shortdescription: <brief description>
 tags:
   - ios
 ---
