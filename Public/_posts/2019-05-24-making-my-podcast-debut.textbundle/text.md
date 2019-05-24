@@ -4,7 +4,7 @@ title: 🎙 Making My Podcast Debut
 layout: post
 date: 2019-05-24T20:17:13Z
 staticpage: false
-shortdescription: <Short Description Goes Here>
+shortdescription: I got interviewed by Caleb Wells for his podcast "A Switly Tilting Planet" in my podcast debut!
 filename: 2019-05-24-making-my-podcast-debut.textbundle
 tags: []
 ---
