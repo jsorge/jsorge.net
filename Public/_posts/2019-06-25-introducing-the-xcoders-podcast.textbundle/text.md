@@ -4,7 +4,7 @@ title: Introducing the Xcoders Podcast
 layout: post
 date: 2019-06-26T01:48:43Z
 staticpage: false
-shortdescription: <Short Description Goes Here>
+shortdescription: I'm teaming up with Liz Marley to make a podcast for our Xcoders community!
 filename: 2019-06-25-introducing-the-xcoders-podcast.textbundle
 tags: []
 ---
