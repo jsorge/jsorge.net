@@ -4,7 +4,7 @@ title: Reverting SwiftPM for Tools
 layout: post
 date: 2019-07-25T00:41:57Z
 staticpage: false
-shortdescription: <Short Description Goes Here>
+shortdescription: I gave SwiftPM a good try to serve my tooling needs, but it ended up falling down.
 filename: 2019-07-23-reverting-swiftpm-for-tools.textbundle
 tags: []
 ---
