@@ -16,4 +16,4 @@ Many of the questions that arose came in the area of using flags for individual 
 
 Were I to give this talk again at a conference or something I'd probably expand it to include a demo where I take an Xcode project that's already existing and adapt it to use XcodeGen, but for this talk I wanted to avoid live coding. The main reason that I delayed giving the talk at all was because I wanted to build a conversion tool. But in the end when I tried it out it was both harder than I was expecting to be, and I didn't think that building a complicated tool for someone to run once and move on from was a great use of my limited time.
 
-We recorded video for the talk and I'll post a link when it's ready. For now, the [slides can be found here](assets/dont-fear-the-project-slides.pdf).
+We recorded video for the talk and I'll post a link when it's ready. For now, the [slides can be found here](/assets/dont-fear-the-project-slides.pdf).
