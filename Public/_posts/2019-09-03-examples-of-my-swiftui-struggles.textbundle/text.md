@@ -8,6 +8,8 @@ shortdescription: In my last post I started getting in to the struggles I've had
 filename: 2019-09-03-examples-of-my-swiftui-struggles.textbundle
 tags: []
 ---
+In my [last post](https://jsorge.net/2019/08/22/struggling-with-swiftui) I talked about some of the struggles I'm having getting up to speed with SwiftUI. Let's dive in to a couple of examples.
+
 **Magic Environments**
 
 To make my Settings form view, I found a [suer helpful blog post by Majid Jabrayilov](https://mecid.github.io/2019/06/19/building-forms-with-swiftui/) where he goes over the basics of building a `Form` with SwiftUI and binding some controls to `UserDefaults`. He outlines a type called `SettingsStore`, which I also implemented. I diverged from the tutorial to try my hand at making a [property wrapper](https://www.avanderlee.com/swift/property-wrappers/) type to handle fetching from and saving to `UserDefaults`. When it came time to wire a switch up with its associated value is where I slowed quite a bit. The post has this line of code in the `SettingsView` type:
