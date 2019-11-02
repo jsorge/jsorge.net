@@ -1,3 +1,6 @@
+TOOLS     := ./tools
+VENDOOR   := ./vendor
+
 .PHONY: serve
 serve:
 	@ chmod +x ./.tools/spin_up.sh
@@ -41,3 +44,7 @@ install-newpost:
 	@ chmod +x ./.tools/ensure-marathon.sh
 	@ ./.tools/ensure-marathon.sh
 	@ marathon install ./tools/NewBlogPost.swift
+
+.PHONY: ensure-swift-sh
+ensure-swift-sh:
+	@./tools/ensure-swift-sh.sh

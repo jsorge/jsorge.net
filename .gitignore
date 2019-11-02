@@ -7,3 +7,4 @@
 logs
 /.tools/vendor/*
 /.tools/docker-compose.yml
+vendor/
