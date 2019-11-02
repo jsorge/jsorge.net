@@ -45,6 +45,10 @@ install-newpost:
 	@ ./.tools/ensure-marathon.sh
 	@ marathon install ./tools/NewBlogPost.swift
 
+.PHONY: publish
+publish: ensure-swift-sh
+	$(VENDOOR)/swift-sh $(TOOLS)/PublishWorkingCopy.swift
+
 .PHONY: ensure-swift-sh
 ensure-swift-sh:
 	@./tools/ensure-swift-sh.sh
