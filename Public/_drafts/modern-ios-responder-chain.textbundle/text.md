@@ -2,7 +2,7 @@
 filename: 2018-10-09-the-wonderful-responder-chain
 layout: post
 title: The Wonderful Cocoa (Touch) Responder Chain
-shortDescription: 
+shortDescription: The Responder Chain on iOS is under-appreciated. Let's look at what it is and how you can use it for your own gains.
 date: '2018-10-09 20:43:30'
 ---
 

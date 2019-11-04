@@ -3,6 +3,7 @@ layout: post
 title: Portfolio
 date: '2015-04-24 03:13:01'
 staticpage: true
+shortDescription: Some examples of my skills and work.
 ---
 
 ## Hello

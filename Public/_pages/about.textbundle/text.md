@@ -3,6 +3,7 @@ layout: post
 title: About
 date: '2014-03-22 17:07:00'
 staticpage: true
+shortDescription: About me
 ---
 
 ![Me](assets/avatar.jpg)
