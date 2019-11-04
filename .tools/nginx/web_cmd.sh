@@ -28,7 +28,7 @@ create_pems() {
   openssl req \
       -x509 \
       -nodes \
-      -newkey rsa:1024 \
+      -newkey rsa:2048 \
       -keyout privkey.pem \
       -out $SSL_CERT_HOME/fullchain.pem \
       -days 3650 \
@@ -38,19 +38,19 @@ create_pems() {
 prompt = no
 distinguished_name = subject
 x509_extensions    = x509_ext
- 
+
 [ subject ]
 commonName = $DOMAIN
- 
+
 [ x509_ext ]
 subjectAltName = @alternate_names
- 
+
 [ alternate_names ]
 DNS.1 = localhost
 IP.1 = 127.0.0.1
 EOF
 )
- 
+
   openssl dhparam -out dhparam.pem 2048
   chmod 600 *.pem
 }
