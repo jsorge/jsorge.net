@@ -39,15 +39,13 @@ resize-images:
 	@ ./.tools/ensure-imagemagick.sh
 	@ marathon run ./.tools/ResizeImages.swift
 
-.PHONY: install-newpost
-install-newpost:
-	@ chmod +x ./.tools/ensure-marathon.sh
-	@ ./.tools/ensure-marathon.sh
-	@ marathon install ./tools/NewBlogPost.swift
+.PHONY: newpost
+newpost: ensure-swift-sh
+	@ $(VENDOOR)/swift-sh $(TOOLS)/NewBlogPost.swift
 
 .PHONY: publish
 publish: ensure-swift-sh
-	$(VENDOOR)/swift-sh $(TOOLS)/PublishWorkingCopy.swift
+	@ $(VENDOOR)/swift-sh $(TOOLS)/PublishWorkingCopy.swift
 
 .PHONY: ensure-swift-sh
 ensure-swift-sh:

@@ -1,8 +1,10 @@
-import Files // marathon:https://github.com/JohnSundell/Files.git
+#!/usr/bin/swift sh
+
+import Files // @JohnSundell
 import Foundation
-import MaverickModels // marathon:https://github.com/jsorge/maverick-models.git
-import ShellOut // marathon:https://github.com/JohnSundell/ShellOut.git
-import Yams // marathon:https://github.com/jpsim/Yams.git
+import MaverickModels // jsorge/maverick-models
+import ShellOut // @JohnSundell
+import Yams // @jpsim
 
 struct Options {
     let postTitle: String
@@ -31,7 +33,7 @@ struct Options {
 struct Info: Codable {
     let version = 2
     let `type` = "net.daringfireball.markdown"
-    let transient = true
+    let transient = false
 
     static var encoded: String {
         let encoder = JSONEncoder()
