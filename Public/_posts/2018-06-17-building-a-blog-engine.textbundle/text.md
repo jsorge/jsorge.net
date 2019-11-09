@@ -1,11 +1,3 @@
----
-microblog: false
-title: Building a Blog Engine
-layout: post
-date: 2018-06-17T07:40:21Z
-staticpage: false
----
-
 For the last few months I’ve been [thinking about what to do with my blog setup.](https://jsorge.net/2018/04/15/reconsidering-my-blogging-setup/) I experimented a bit with Jekyll but that ended up not really appealing to me. In the consideration of switching platforms I realized I wanted something that would be easy to move (and not be beholden to should the need to move again arise). Markdown text files check that box; but what about images?
 
 How would I move the images I’ve hosted on my own server? Where do they land in the new location? I had no good idea until I stumbled up on [textbundles](http://textbundle.org). Textbundles basically wrap up a markdown file and assets folder inside of a directory. Bundles are a very [familiar concept for anyone on a Mac](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html); we’ve had them since OS X became a thing.

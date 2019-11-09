@@ -1,5 +1,16 @@
 {
-    "version":              2,
-    "type":                 "net.daringfireball.markdown",
-    "transient":            true,
+  "io.taphouse.maverick" : {
+    "date" : "2015-07-19T21:47:39Z",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "I’m Hired At General UI"
+  },
+  "transient" : true,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
 }

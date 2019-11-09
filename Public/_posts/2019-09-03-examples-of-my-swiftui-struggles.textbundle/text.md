@@ -1,13 +1,3 @@
----
-microblog: false
-title: Examples of My SwiftUI Struggles
-layout: post
-date: 2019-09-04T03:57:05Z
-staticpage: false
-shortdescription: In my last post I started getting in to the struggles I've had with SwiftUI. This post has a couple of examples and the solutions that I have arrived at (assuming I've arrived at them).
-filename: 2019-09-03-examples-of-my-swiftui-struggles.textbundle
-tags: []
----
 In my [last post](https://jsorge.net/2019/08/22/struggling-with-swiftui) I talked about some of the struggles I'm having getting up to speed with SwiftUI. Let's dive in to a couple of examples.
 
 **Magic Environments**

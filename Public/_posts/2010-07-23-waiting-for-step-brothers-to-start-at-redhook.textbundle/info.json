@@ -1,5 +1,16 @@
 {
-    "version":              2,
-    "type":                 "net.daringfireball.markdown",
-    "transient":            true,
+  "io.taphouse.maverick" : {
+    "date" : "2010-07-22T19:08:58Z",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Waiting for Step Brothers to start at Redhook."
+  },
+  "transient" : true,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
 }

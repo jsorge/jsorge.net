@@ -1,13 +1,3 @@
----
-microblog: false
-title: Radio Silence
-layout: post
-date: 2019-11-02T04:06:16Z
-staticpage: false
-shortdescription: It's been a while since my last post; here's why.
-filename: 2019-11-01-radio-silence.textbundle
-tags: []
----
 I never intend for droughts in making new posts. Often times I'll make a post then not even realize how much time goes by before the next one. Lately finding things that I consider worthwhile to post has been difficult. Work has been crazy, I took on a side project for a client, and we got our kids in the swing of school for the first time (Atticus is in full-day kindergarten and Finnian 2 mornings of preschool per week).
 
 I usually like writing about things that I hope will help people in some way, or at the very least will help me get to a destination that I'm seeking for (hence the SwiftUI posts most recently). But the problems I've had to solve at work and for the side project are both specific to those codebases and probably not interesting to others or things I shouldn't be sharing about. So I go silent.

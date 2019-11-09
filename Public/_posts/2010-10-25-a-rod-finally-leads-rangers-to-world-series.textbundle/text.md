@@ -1,11 +1,3 @@
----
-microblog: false
-title: A-Rod Finally Leads Rangers To World Series
-layout: post
-date: 2010-10-25T07:36:43Z
-staticpage: false
----
-
 **[A-Rod Finally Leads Rangers To World
 Series](http://www.theonion.com/articles/arod-finally-leads-rangers-to-world-series,18320/)**
 

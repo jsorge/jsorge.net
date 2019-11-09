@@ -1,11 +1,3 @@
----
-microblog: false
-title: 'Apps I Love: Day One'
-layout: post
-date: 2012-06-06T06:48:10Z
-staticpage: false
----
-
 ![](http://media.tumblr.com/tumblr_m5761dQ9LX1qzqppu.png)
 
 Journaling is one of those things that I hear people rave about; at the

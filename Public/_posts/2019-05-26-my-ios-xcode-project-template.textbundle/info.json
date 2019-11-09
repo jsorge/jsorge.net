@@ -1,5 +1,17 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-05-27T05:14:45Z",
+    "filename" : "2019-05-26-my-ios-xcode-project-template.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "Talking about my iOS project setup",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "My iOS Project Template"
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

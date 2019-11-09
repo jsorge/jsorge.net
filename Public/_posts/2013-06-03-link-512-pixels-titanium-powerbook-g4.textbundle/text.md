@@ -1,11 +1,3 @@
----
-microblog: false
-title: "Link: 512 Pixels \u2014 Titanium PowerBook G4"
-layout: post
-date: 2013-06-03T07:57:00Z
-staticpage: false
----
-
 **[Link: 512 Pixels Titanium PowerBook
 G4](http://512pixels.net/2013/06/omm-titanium-powerbook/)**
 

@@ -1,13 +1,3 @@
----
-microblog: false
-title: "Scorebook Sync Log 09 \u2013 CloudKit Xcoders Talk"
-layout: post
-date: 2015-06-12T08:04:48Z
-staticpage: false
-tags:
-  - scorebook-sync-log
----
-
 Last night I gave my first Xcoders talk (and first tech talk in general), going over how I’ve brought CloudKit into Scorebook. The response was overwhelmingly positive from the group and I’m really happy about that. The talk had most all of the content that I’ve written so far in this series, but also went pretty in depth on CloudKit in general and has my upload and download processes as well as lots of code samples.
 
 [The slides can be found here.](http://bit.ly/1Gj0O87)

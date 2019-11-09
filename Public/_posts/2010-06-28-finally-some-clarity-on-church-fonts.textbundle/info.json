@@ -1,5 +1,16 @@
 {
-    "version":              2,
-    "type":                 "net.daringfireball.markdown",
-    "transient":            true,
+  "io.taphouse.maverick" : {
+    "date" : "2010-06-28T10:55:23Z",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Finally, some clarity on church fonts"
+  },
+  "transient" : true,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
 }

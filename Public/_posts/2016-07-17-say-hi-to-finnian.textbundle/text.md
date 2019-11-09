@@ -1,11 +1,3 @@
----
-microblog: false
-title: Say Hi to Finnian
-layout: post
-date: 2016-07-16T22:32:11Z
-staticpage: false
----
-
 ![](assets/finnian.jpg)
 
 Last night, at 6:31 PM PDT, our family grew by one. Finnian Michael Sorge was born, healthy and measuring 8 pounds, 4 ounces and 20.5” long. He was due on the 14th, and overshot his target by a day. Not bad at all (especially considering his big brother [Atticus](http://jsorge.net/2013/12/31/atticus-jack-sorge/) was 11 days late, and Emily had to endure a long induction process). He came of his own volition even as we had scheduled his induction for next week. Thanks kiddo!

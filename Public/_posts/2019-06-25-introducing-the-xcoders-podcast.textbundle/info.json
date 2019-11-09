@@ -1,5 +1,17 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-06-26T01:48:43Z",
+    "filename" : "2019-06-25-introducing-the-xcoders-podcast.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "I'm teaming up with Liz Marley to make a podcast for our Xcoders community!",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Introducing the Xcoders Podcast"
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

@@ -1,11 +1,3 @@
----
-microblog: false
-title: Boxes of rejected beans called Belly Flops. $9 a bag.
-layout: post
-date: 2008-11-17T15:00:24Z
-staticpage: false
----
-
 [Boxes of rejected beans called Belly Flops. \$9 a
 bag.](http://gallery.me.com/darkhawk64/100026/photo1226960909023)
 

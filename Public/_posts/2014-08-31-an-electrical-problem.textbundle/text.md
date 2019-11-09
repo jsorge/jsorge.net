@@ -1,11 +1,3 @@
----
-microblog: false
-title: An Electrical Problem
-layout: post
-date: 2014-08-31T16:55:03Z
-staticpage: false
----
-
 I got a new power outlet to replace the one on Emily's nightstand. This is one of those fancy [outlets with the USB plugs on it.](http://eshop.macsales.com/shop/accessories/power_adapters/USB/in_wall_outlets) I finally got around to installing it today and ran into some troubles.
 
 The old outlet had 2 blacks, 2 whites, a red, and an exposed wire. I've never done outlet replacements before so I looked it over and moved along.

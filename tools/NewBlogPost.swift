@@ -1,10 +1,9 @@
 #!/usr/bin/swift sh
 
-import Files // @JohnSundell
 import Foundation
-import MaverickModels // jsorge/maverick-models
+import MaverickModels // jsorge/maverick-models ~> 2.2.0
+import Pathos // @dduan
 import ShellOut // @JohnSundell
-import Yams // @jpsim
 
 struct Options {
     let postTitle: String
@@ -27,33 +26,6 @@ struct Options {
         else {
             self.postTitle = "New Post"
         }
-    }
-}
-
-struct Info: Codable {
-    let version = 2
-    let `type` = "net.daringfireball.markdown"
-    let transient = false
-
-    static var encoded: String {
-        let encoder = JSONEncoder()
-        encoder.outputFormatting = .prettyPrinted
-        let data = try! encoder.encode(Info())
-        return String(data: data, encoding: .utf8)!
-    }
-}
-
-@available(OSX 10.12, *)
-extension FrontMatter {
-    static func emptyTemplate(date: Date, filename: String, title: String) -> FrontMatter {
-        return FrontMatter(isMicroblog: false, title: title,
-                           layout: "post", guid: nil, date: date, isStaticPage: false,
-                           shortDescription: "<Short Description Goes Here>", filename: filename)
-    }
-
-    var yamlEncoded: String {
-        let encoder = YAMLEncoder()
-        return try! encoder.encode(self)
     }
 }
 
@@ -88,20 +60,11 @@ func makeFilenameFromTitle(_ title: String) -> String {
     return formattedFilename
 }
 
-@available(OSX 10.12, *)
-func makePostBaseText(date: Date, filename: String, title: String) -> String {
-    return  """
-    ---
-    \(FrontMatter.emptyTemplate(date: date, filename: filename, title: title).yamlEncoded)---
-
-    """
-}
-
 /* ========== SCRIPT ========== */
 if #available(OSX 10.12, *) {
-    let publicFolder = try Folder(path: "~/Develop/jsorge.net/Public/")
-    let postsFolder = try publicFolder.subfolder(named: "_posts")
-    let draftsFolder = try publicFolder.subfolder(named: "_drafts")
+    let publicFolder = Path("/Users/jsorge/Develop/jsorge.net/Public/")
+    let postsFolder = publicFolder + Path("_posts")
+    let draftsFolder = publicFolder + Path("_drafts")
 
     let postDate = createPostDate()
     let options = Options(args: CommandLine.arguments)
@@ -112,30 +75,38 @@ if #available(OSX 10.12, *) {
     let bundleName = "\(dateComponents.year)-\(formattedMonth)-\(formattedDay)-\(filename).textbundle"
 
     // Create the text bundle
-    let bundlePath: Folder
+    let bundlePath: Path
     if options.isDraft {
-        bundlePath = try draftsFolder.createSubfolderIfNeeded(withName: filename)
+        bundlePath = draftsFolder + Path(filename)
     }
     else {
-        bundlePath = try postsFolder.createSubfolderIfNeeded(withName: bundleName)
+        bundlePath = postsFolder + Path(bundleName)
     }
 
-    // Add info.json
-    try bundlePath.createFile(named: "info.json", contents: Info.encoded)
+    bundlePath.createDirectory()
 
-    // Create the base text.md
-    let baseContent = makePostBaseText(date: postDate, filename: bundleName, title: options.postTitle)
-    try bundlePath.createFile(named: "text.md", contents: baseContent)
+    // Add info.json
+    let frontMatter = FrontMatter.emptyTemplate(date: postDate,
+                                                filename: bundlePath.split().1.pathString,
+                                                title: options.postTitle)
+    let bundleInfo = BundleInfo.defaultWithFrontMatter(frontMatter)
+    let bundleInfoPath = bundlePath + Path("info.json")
+    bundleInfoPath.write(bundleInfo.toData(), createIfNecessary: true)
+
+    // Create the empty text.md
+    let textPath = bundlePath + Path("text.md")
+    textPath.write("", createIfNecessary: true)
 
     // Create the assets folder and add .gitkeep
-    let assetsDir = try bundlePath.createSubfolder(named: "assets")
-    try assetsDir.createFile(named: ".gitkeep")
+    let assetsPath = bundlePath + Path("assets")
+    assetsPath.createDirectory()
+    let assetsKeepPath = assetsPath + Path(".gitkeep")
+    assetsKeepPath.write("", createIfNecessary: true)
 
-    print("Created new text bundle at \(bundlePath.path). Opening in BBEdit.")
+    print("Created new text bundle at \(bundlePath.pathString). Opening in BBEdit.")
 
     // Open in my editor
-    try shellOut(to: "bbedit", arguments: [bundlePath.path])
-
+    try shellOut(to: "bbedit", arguments: [bundlePath.pathString])
 }
 else {
     print("This script requires macOS 10.12 or higher")

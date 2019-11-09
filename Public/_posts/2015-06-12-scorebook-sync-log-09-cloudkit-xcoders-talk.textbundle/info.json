@@ -1,5 +1,16 @@
 {
-    "version":              2,
-    "type":                 "net.daringfireball.markdown",
-    "transient":            true,
+  "io.taphouse.maverick" : {
+    "date" : "2015-06-12T08:04:48Z",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+      "scorebook-sync-log"
+    ],
+    "title" : "Scorebook Sync Log 09 – CloudKit Xcoders Talk"
+  },
+  "transient" : true,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
 }

@@ -1,5 +1,16 @@
 {
-    "version":              2,
-    "type":                 "net.daringfireball.markdown",
-    "transient":            true,
+  "io.taphouse.maverick" : {
+    "date" : "2011-07-01T08:24:00Z",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Arch Enemies (via 22 Words)"
+  },
+  "transient" : true,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
 }

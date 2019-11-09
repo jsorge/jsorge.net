@@ -1,4 +1,14 @@
 {
+  "io.taphouse.maverick" : {
+    "date" : "2019-03-22T05:10:11Z",
+    "layout" : "post",
+    "microblog" : true,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ]
+  },
   "transient" : false,
   "type" : "net.daringfireball.markdown",
   "version" : 2

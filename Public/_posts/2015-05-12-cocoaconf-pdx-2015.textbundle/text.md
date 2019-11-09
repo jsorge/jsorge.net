@@ -1,11 +1,3 @@
----
-microblog: false
-title: CocoaConf PDX 2015
-layout: post
-date: 2015-05-12T11:04:49Z
-staticpage: false
----
-
 I was blessed to go to Portland over the weekend for [CocoaConf](http://cocoaconf.com/portland-2015/home) with my family in tow. We packed up the Hyundai Elantra and made the trek down last Thursday, completing our journey to the Embassy Suites PDX by mid-afternoon. The following 2 days were chock full of great talks, great conversation, and lots of motivation to go make great apps. 
 
 I went to great talks from Daniel Steinberg, Danny Greg, Laura Savino, and more. A few high points:

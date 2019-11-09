@@ -1,12 +1,3 @@
----
-microblog: false
-title: 'Photo Project: Daily Batmobile'
-layout: post
-date: 2019-02-21T05:53:15Z
-staticpage: false
-shortDescription: I'm embarking on a photo project this year. Come along for the journey, won't you?
-filename: 2019-02-20-photo-project:-daily-batmobile.textbundle
----
 ![](assets/fire.jpeg)
 
 A big part of the creative process is [showing up every day](https://shawnblanc.net/2015/04/how-to-show-up-every-day/), and that's one place I've fallen short many times over the years. It's super easy to start something, but seeing it through is another. This year I wanted to do a creative project that would challenge me to show up every day, and I found one.

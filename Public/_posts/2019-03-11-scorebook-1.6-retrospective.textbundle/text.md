@@ -1,14 +1,3 @@
----
-microblog: false
-title: 'Scorebook Sync Log 10: Shipped!'
-layout: post
-date: 2019-03-12T04:13:50Z
-staticpage: false
-shortdescription: I _finally_ shipped my sync engine for Scorebook.
-filename: 2019-03-11-scorebook-1.6-retrospective.textbundle
-tags:
-  - scorebook-sync-log
----
 Scorebook v1.6 shipped a little over a week ago, and it _finally_ includes all my sync code. When I cracked the project back open late last year I decided to turn off the engine that I'd put together just to get the app back in shippable condition. But I also knew that I wanted to ship the sync shortly thereafter. Well, it took about 6 weeks for me to be comfortable enough to get it out the door.
 
 Honestly it's a little embarrassing how long it took to get this feature out. I started writing about it over 4 years ago (if you're interested in reading through the journey, [they are curated here](https://jsorge.net/tag/scorebook-sync-log)). I thought I was going to get the feature shipped by WWDC 2015. Welp. It's out there now, and that's the important thing.

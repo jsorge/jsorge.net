@@ -1,11 +1,3 @@
----
-microblog: false
-title: 'Apps I love: Fantastical'
-layout: post
-date: 2012-07-09T22:13:10Z
-staticpage: false
----
-
 My love for [Fantastical](http://flexibits.com) was born out of my
 disdain for what Apple did to iCal. I dont think Im alone in this, but I
 used to be an avid iCal user. It was great and the first calendar app

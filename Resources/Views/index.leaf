@@ -1,37 +1,3 @@
-#set("content") {
-	<main class="content" role="main">
-		<div id="outer">
-			<div id="postList">
-				#for(post in style.list.posts) {
-					<main class="content" role="main">
-						<article class="post">
-							#if(post.title) {
-								<a href=#(post.url)>
-									<h2 class="post-title">#(post.title)</h1>
-								</a>
-							}
-							<section class="post-content">
-								#get(post.content)
-							</section>
-							<span class="post-meta"><time datetime="#(post.date)">#(post.formattedDate)</time></span>
-						</article>
-					</main>
-				}		
-			</div>
-		</div>
-	</main>
-
-	<nav class="pagination" role="navigation">
-		#if(style.list.pagination.newerLink) {
-			<a class="newer-posts" href="#(style.list.pagination.newerLink)"><span aria-hidden="true">&larr;</span> Newer Posts</a>
-		}
-		<span class="page-number">#(style.list.pagination.pageNumber)</span>
-		#if(style.list.pagination.olderLink) {
-			<a class="older-posts" href="#(style.list.pagination.olderLink)">Older Posts <span aria-hidden="true">&rarr;</span></a>
-		}
-	</nav>
-}
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -78,8 +44,38 @@
     	</div>
 	</header>
 
-	#get(content)
-	
+	<main class="content" role="main">
+		<div id="outer">
+			<div id="postList">
+				#for(post in style.list.posts) {
+					<main class="content" role="main">
+						<article class="post">
+							#if(post.title) {
+								<a href=#(post.url)>
+									<h2 class="post-title">#(post.title)</h1>
+								</a>
+							}
+							<section class="post-content">
+								#get(post.content)
+							</section>
+							<span class="post-meta"><time datetime="#(post.date)">#(post.formattedDate)</time></span>
+						</article>
+					</main>
+				}
+			</div>
+		</div>
+	</main>
+
+	<nav class="pagination" role="navigation">
+		#if(style.list.pagination.newerLink) {
+			<a class="newer-posts" href="#(style.list.pagination.newerLink)"><span aria-hidden="true">&larr;</span> Newer Posts</a>
+		}
+		<span class="page-number">#(style.list.pagination.pageNumber)</span>
+		#if(style.list.pagination.olderLink) {
+			<a class="older-posts" href="#(style.list.pagination.olderLink)">Older Posts <span aria-hidden="true">&rarr;</span></a>
+		}
+	</nav>
+
 	<footer class="site-footer">
         <div class="inner">
 	        <form method="get" id="search" action="https://duckduckgo.com/">
@@ -92,7 +88,7 @@
 			   <input type="text" name="q" maxlength="255"/>
 			   <input type="submit" value="Search" />
 			</form>
-			
+
             <section class="copyright">All content copyright <a href="#(site.url)/">#(site.title)</a> &copy; #(site.year) &bull; All rights reserved.</section>
         </div>
     </footer>

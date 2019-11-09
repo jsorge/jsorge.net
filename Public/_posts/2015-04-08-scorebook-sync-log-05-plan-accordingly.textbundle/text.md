@@ -1,13 +1,3 @@
----
-microblog: false
-title: Scorebook Sync Log 05 - Plan Accordingly
-layout: post
-date: 2015-04-08T06:59:11Z
-staticpage: false
-tags:
-  - scorebook-sync-log
----
-
 When I decided to begin sync implementation with CloudKit, I just started going. I watched the WWDC videos (mostly) and read through the getting started, then started coding.
 
 That wasn't the best tactic. Turns out.

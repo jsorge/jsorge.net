@@ -1,11 +1,3 @@
----
-microblog: false
-title: Goodbye Twins
-layout: post
-date: 2014-12-11T16:17:10Z
-staticpage: false
----
-
 ![Our sweet babies](assets/Twin-Footprints-1.jpg)
 
 I've been writing this post in my head for the last few days. It's the hardest, saddest thing I've ever done. I'm putting this out there because telling everyone individually is going to be too hard. Too devastating.

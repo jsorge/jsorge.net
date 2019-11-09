@@ -1,11 +1,3 @@
----
-microblog: false
-title: Kitchen Update
-layout: post
-date: 2011-03-26T10:26:02Z
-staticpage: false
----
-
 This week we got the cabinet frames painted and put new paper on the
 shelves. It’s really nice having everything put back in its rightful
 place (with some organizational changes made by Emily).

@@ -1,11 +1,3 @@
----
-microblog: false
-title: "Scorebook \u2013\_A look back and forward"
-layout: post
-date: 2015-01-05T07:40:40Z
-staticpage: false
----
-
 I’ve been quite slow in developing Scorebook for the past month. Mostly due to [personal reasons](http://jsorge.net/2014/12/11/goodbye-twins/), but I’ve also been trying to think of what to do next on it. I’ve gotten some good feedback from users and now have a list of feature enhancements that should make Scorebook more interesting to more people.
 
 Before I talk about some future plans, let’s look back a bit.

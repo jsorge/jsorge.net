@@ -1,5 +1,17 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-07-29T20:56:59Z",
+    "filename" : "2019-07-29-where-is-windmill-on-iphone?.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "Apple is getting in the way of a potential market full of tools built to help developers work on their platforms, and Windmill is just the latest example.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "🔗 Where is Windmill on the iPhone?"
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

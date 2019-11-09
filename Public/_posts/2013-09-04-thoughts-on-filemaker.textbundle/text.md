@@ -1,11 +1,3 @@
----
-microblog: false
-title: Thoughts on FileMaker
-layout: post
-date: 2013-09-04T08:00:21Z
-staticpage: false
----
-
 In my day job I spend a lot of time building apps based in the FileMaker Pro ecosystem. I ‘ve been wanting to share some of my unstructured thoughts about the platforms and give some preview of things that I’ve built that I want to share with the larger developer community.
 
 For the uninitiated, FileMaker Pro is an application that allows for easy creation of database driven applications. They include a good amount of templates (like contact managers, invoice tracking, etc). But the real power comes when you start customizing the interface to make it function like your own application. Over the past 7 months I’ve been doing just that at work and am about to release internally a new sales

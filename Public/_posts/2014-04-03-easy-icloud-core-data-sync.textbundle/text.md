@@ -1,11 +1,3 @@
----
-microblog: false
-title: '"Easy" iCloud Core Data Sync'
-layout: post
-date: 2014-04-02T20:49:33Z
-staticpage: false
----
-
 I'm writing a small app that will allow me to save drafts of posts to the site, and I'm trying some things that I've learned lately. 
 
 The first is some of the best practices explained by [Paul Goracke at the Seattle Xcoders meeting in February](http://corporationunknown.com/blog/2014/02/16/core-data-potpourri/). He  gave a cool example of sublassing `NSManagedObjectContext` and having that object setup the Core Data stack.

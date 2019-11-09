@@ -1,5 +1,17 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-05-24T20:17:13Z",
+    "filename" : "2019-05-24-making-my-podcast-debut.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "I got interviewed by Caleb Wells for his podcast \"A Switly Tilting Planet\" in my podcast debut!",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "🎙 Making My Podcast Debut"
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

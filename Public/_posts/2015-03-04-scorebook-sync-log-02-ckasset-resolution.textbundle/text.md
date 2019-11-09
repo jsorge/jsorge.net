@@ -1,13 +1,3 @@
----
-microblog: false
-title: 'Scorebook Sync Log 02: CKAsset Resolution'
-layout: post
-date: 2015-03-03T21:02:32Z
-staticpage: false
-tags:
-  - scorebook-sync-log
----
-
 After thinking through my options [last time](http://jsorge.net/2015/02/21/scorebook-sync-log-episode-01-binary-data-files-core-data/) I landed on option 2. Instead of storing the binary data within Core Data, I'm putting it in the file system instead. Here's how it's working:
 
 * The user picks an image that they want to save

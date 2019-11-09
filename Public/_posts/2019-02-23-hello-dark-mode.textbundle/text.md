@@ -1,12 +1,3 @@
----
-microblog: false
-title: Hello Dark Mode
-layout: post
-date: 2019-02-23T15:32:54Z
-staticpage: false
-shortDescription: I added automatic dark mode support to my site, and all it took was some CSS.
-filename: 2019-02-23-hello-dark-mode.textbundle
----
 One of the projects that's been on my mind since WWDC last year when the Mac got dark mode was adding support for it to my website. I know that Safari doesn't support it directly yet (though it does in the Technology Previews) but it will soon, and the rumors are hot and heavy that iOS 13 will have it as well. I wanted to be ready, and break outside of my normal comfort zone for a bit.
 
 ![Things are getting dark around here](assets/the-site-in-dark-mode.png)

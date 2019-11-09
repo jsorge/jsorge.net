@@ -1,11 +1,3 @@
----
-microblog: false
-title: Storyboards and UIViewController Containment
-layout: post
-date: 2014-12-03T21:04:50Z
-staticpage: false
----
-
 When I built [Scorebook](http://taphouse.io/scorebook) I used Storyboards for all the UI. I'm a big fan of them overall, especially for navigation. One thing that I'd used a little but not much are the container views, and embedding another view controller into my view via that container.
 
 Before I continue, I need to give huge props to [Tim Ekl](https://twitter.com/lithium3141) for helping me get this figured out. He did a [talk on UIViewController containment for Seattle Xcoders](https://vimeo.com/110953241) that goes over this in code rather than Storyboards. Thanks Tim!

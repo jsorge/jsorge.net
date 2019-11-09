@@ -1,12 +1,3 @@
----
-microblog: false
-title: Finny Turns 2
-layout: post
-date: 2018-07-15T08:37:47Z
-staticpage: false
-filename: 2018-07-15-finny-turns-two
----
-
 ![](assets/DraggedImage.png)
 
 2 years ago yesterday, I was unable to attend Xcoders. I got a frantic call from Emily that her water broke, and I got a ride to the hospital from a good buddy. 24 hours later Finnian was born.

@@ -1,11 +1,3 @@
----
-microblog: false
-title: God Wants You to Complain (Link)
-layout: post
-date: 2012-06-27T14:39:21Z
-staticpage: false
----
-
 **[God Wants You to Complain
 (Link)](http://www.desiringgod.org/blog/posts/god-wants-you-to-complain)**
 

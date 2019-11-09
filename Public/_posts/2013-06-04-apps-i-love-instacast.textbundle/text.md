@@ -1,11 +1,3 @@
----
-microblog: false
-title: 'Apps I Love: Instacast'
-layout: post
-date: 2013-06-04T08:00:07Z
-staticpage: false
----
-
 I listen to a lot of podcasts. My collection seems to expand and
 contract based on new and increasing interests at any given point, what
 shows are new and interesting and which are losing my attention and need

@@ -1,7 +1,19 @@
 {
+  "creatorIdentifier" : "com.ulyssesapp.ios",
   "creatorURL" : "file:\/\/\/var\/containers\/Bundle\/Application\/096785E1-CC12-4E08-B78F-E63B71981313\/Ulysses.app\/",
+  "io.taphouse.maverick" : {
+    "date" : "2018-10-09T20:43:30Z",
+    "filename" : "2018-10-09-the-wonderful-responder-chain",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "The Wonderful Cocoa (Touch) Responder Chain"
+  },
   "transient" : false,
   "type" : "net.daringfireball.markdown",
-  "creatorIdentifier" : "com.ulyssesapp.ios",
   "version" : 2
 }

@@ -1,13 +1,3 @@
----
-microblog: false
-title: WWDC 2019 Recap
-layout: post
-date: 2019-06-12T04:13:38Z
-staticpage: false
-shortdescription: Wherein I talk about my WWDC 2019 experience.
-filename: 2019-06-11-wwdc-2019-recap.textbundle
-tags: []
----
 I'm super thankful that I got to travel to San Jose last week for Apple's WWDC conference. Granted, I didn't get a ticket, but I did go to AltConf (which was right next door to the big show). This was my first time being in town for WWDC and it was a blast. I traveled with my buddy [Seth](https://twitter.com/sfaxon) and we took in the keynote together, as well as all the podcast recordings we could fit in.
 
 Monday, of course, was [Mac Pro Day](https://atp.fm/episodes/329), Tuesday we got to sit in the balcony for [Gruber's interview of Craig and Joz](https://daringfireball.net/thetalkshow/2019/06/04/ep-254), and Wednesday was [RelayFM's Connected](https://www.relay.fm/connected/246). Following the Connected show on Wednesday we hit up the Ritz for [James Dempsey and the Breakpoints](https://livenearwwdc.com), which was a great show at a small club.

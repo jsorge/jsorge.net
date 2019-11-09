@@ -1,5 +1,16 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-05-26T04:21:18Z",
+    "filename" : "2019-05-25-call-for-blog-topics.textbundle",
+    "layout" : "post",
+    "microblog" : true,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ]
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

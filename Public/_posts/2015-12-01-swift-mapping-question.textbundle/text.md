@@ -1,11 +1,3 @@
----
-microblog: false
-title: Swift Array Mapping Question
-layout: post
-date: 2015-12-01T11:01:51Z
-staticpage: false
----
-
 I have an array that contains objects, and those objects have arrays that I want to collapse into a single array.
 
 Basically, I want to be able to remove 2 for-in loops and replace them with a line of code (if I can while maintaining readability).

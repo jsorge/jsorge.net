@@ -1,11 +1,3 @@
----
-microblog: false
-title: 3 Days with Apple Watch
-layout: post
-date: 2015-04-28T07:27:41Z
-staticpage: false
----
-
 I placed my order for a Space Gray 42mm Apple Watch Sport at 12:03 PST, and was one of the fortunate ones to have it delivered  on launch day last Friday. It came in the later afternoon and I’ve spent the last few days getting to know it. I’ve got a few thoughts that I hope will be helpful to those waiting for theirs to arrive or wondering what the experience is like.
 
 Before I dive in, I want to couch my thoughts as very much initial impressions. This is a device that needs to be lived with. It’s definitely Apple’s most personal device yet (as they’ve been calling it) and I have only a few days with it. It’s also a 1.0. There are some things that work really well and some things that don’t; this is to be expected, and will only get better over time.

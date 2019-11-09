@@ -1,11 +1,3 @@
----
-microblog: false
-title: 229 Days
-layout: post
-date: 2013-06-10T08:02:40Z
-staticpage: false
----
-
 It’s been 229 days since Apple’s last public presentation. Today is WWDC
 2013’s keynote, and we’ll be seeing iOS 7, OS X 10.9 and hopefully new
 Macs (maybe even an Apple TV SDK). The best place to follow along will

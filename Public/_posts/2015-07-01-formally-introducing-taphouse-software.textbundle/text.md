@@ -1,11 +1,3 @@
----
-microblog: false
-title: Formally Introducing Taphouse Software
-layout: post
-date: 2015-07-01T07:26:18Z
-staticpage: false
----
-
 Over the last few months I’ve been considering my future. When I made the decision to move on from Solomon Solution, my thoughts turned to what was next. When I launched [Scorebook](http://taphouse.io/scorebook) last year I did it under my company, Taphouse Software. Up to this point I was going back and forth as to what Taphouse should be. For sure it would be the place where I would release my own apps, but could it be something more?
 
 The answer to that is a resounding yes. Today I’m really excited to begin offering two new services through Taphouse: [iOS App Prototyping](http://taphouse.io/services/prototype) and [iOS App Insurance](http://taphouse.io/services/insurance).

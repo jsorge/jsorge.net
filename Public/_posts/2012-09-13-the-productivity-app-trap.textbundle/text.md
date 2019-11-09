@@ -1,11 +1,3 @@
----
-microblog: false
-title: The Productivity App Trap
-layout: post
-date: 2012-09-12T22:27:55Z
-staticpage: false
----
-
 I’ve definitely felt more than a bit overwhelmed lately. I’m in a season
 where there are lots of areas that I’m trying to learn things that seem
 brand new to me in development from Objective-C to CSS to MultiMarkdown

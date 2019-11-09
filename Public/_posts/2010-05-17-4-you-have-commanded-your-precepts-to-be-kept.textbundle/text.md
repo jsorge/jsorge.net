@@ -1,11 +1,3 @@
----
-microblog: false
-title: 4 Psalm 119
-layout: post
-date: 2010-05-17T08:36:11Z
-staticpage: false
----
-
 > 4 You have commanded your precepts to be kept diligently. 5 Oh that my
 > ways may be steadfast in keeping your statutes! 6 Then I shall not be
 > put to shame, having my eyes fixed on all your commandments. 7 I will

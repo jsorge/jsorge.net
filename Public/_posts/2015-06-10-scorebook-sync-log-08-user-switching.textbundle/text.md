@@ -1,13 +1,3 @@
----
-microblog: false
-title: "Scorebook Sync Log 08 \u2013 User Switching"
-layout: post
-date: 2015-06-09T20:46:05Z
-staticpage: false
-tags:
-  - scorebook-sync-log
----
-
 I’m feeling really confident in the things that I’ve put into sync in Scorebook. But now I’m starting to handle edge cases. Things like what happens when a user uses Scorebook without a current iCloud account, or how do I handle it when they log out and/or login again as a different user?
 
 So I came up with a handy flowchart that I threw at Twitter and the Core Intuition Slack channel. Check it out:

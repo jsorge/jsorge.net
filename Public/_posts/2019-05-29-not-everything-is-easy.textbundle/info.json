@@ -1,5 +1,16 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-05-30T04:28:54Z",
+    "filename" : "2019-05-29-not-everything-is-easy.textbundle",
+    "layout" : "post",
+    "microblog" : true,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ]
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

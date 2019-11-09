@@ -1,11 +1,3 @@
----
-microblog: false
-title: Leveling Up as an iOS Developer
-layout: post
-date: 2017-06-06T22:08:09Z
-staticpage: false
----
-
 I posted to [my microblog](http://jsorge.micro.blog/2017/05/10/i-feel-like.html) recently that I feel like I’ve been leveling up as an iOS developer. The main way has been diving into programatic layout as opposed to using Interface Builder. This has been really insightful to me and I have come to love writing my views this way. But mostly I’m learning that I can do it.
 
 You can too.

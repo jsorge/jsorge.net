@@ -1,13 +1,3 @@
----
-microblog: false
-title: Scorebook 1.5 Retrospective
-layout: post
-date: 2019-01-27T14:12:26Z
-staticpage: false
-shortDescription: A retrospective of what it took to bring Scorebook back, culminating
-  in the release a couple weeks ago of v1.5.
-filename: 2019-01-27-scorebook-resurrection-retro.textbundle
----
 A couple of weeks ago I brought my app back from the dead. Scorebook was first released in November 2014, got a minor bugfix update a month later and then was unceremoniously removed from the App Store by Apple in January 2018. Apple doesn't want apps that appear dead on their store anymore and with good reason. By all external accounts my app wasn't under active development.
 
 And it wasn't. Over the last couple of years my desire to play games had gone down because I didn't want to use my app with the state it was in. Mid-last year I even joined a beta for an app under development that was very close in functionality to Scorebook and I got sad. I didn't want to use their app; I wanted to use mine. So I got to work.

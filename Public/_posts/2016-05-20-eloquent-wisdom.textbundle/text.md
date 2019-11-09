@@ -1,11 +1,3 @@
----
-microblog: false
-title: Eloquent Wisdom
-layout: post
-date: 2016-05-20T07:54:26Z
-staticpage: false
----
-
 > For Christ did not send me to baptize but to preach the gospel, and not with words of eloquent wisdom, lest the cross of Christ be emptied of its power. (1 Corinthians 1:17, ESV)
 
 I was struck by this verse when I started reading 1 Corinthians again not too long ago. The author here is Paul, who wrote a good amount of the New Testament. That is, the dude knows how to communicate with "eloquent wisdom" if he wants to.

@@ -1,12 +1,3 @@
----
-microblog: false
-title: Automation Revelation
-layout: post
-date: 2019-02-09T19:35:58Z
-staticpage: false
-shortDescription: The tale of a snowy Saturday when I decided to automate post creation for my website.
-filename: 2019-02-09-automation-revelation.textbundle
----
 When I relaunched my website last summer using my homegrown blog engine ([Maverick](https://github.com/jsorge/maverick)) I adopted the [textbundle](https://textbundle.org) format for writing posts and I was using [Ulysses](https://ulysses.app) for my writing. But after launching the site and using Ulysses for long enough I was running into some friction with their Markdown syntax. That led me to the decision to not renew my subscription when the time came.
 
 I'd since gotten a [BBEdit](https://www.barebones.com/products/bbedit/index.html) license after hearing _tons_ of people I highly respect speak glowingly about it and decided to use it for writing my posts. It doesn't support textbundle natively like Ulysses does, but it does well enough for my needs. textbundles are in fact just a folder with a Markdown file inside with an optional assets directory. So I've been using BBEdit for writing on my Mac ever since.

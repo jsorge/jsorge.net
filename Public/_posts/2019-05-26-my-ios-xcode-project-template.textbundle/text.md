@@ -1,13 +1,3 @@
----
-microblog: false
-title: My iOS Project Template
-layout: post
-date: 2019-05-27T05:14:45Z
-staticpage: false
-shortdescription: Talking about my iOS project setup
-filename: 2019-05-26-my-ios-xcode-project-template.textbundle
-tags: []
----
 Like many of my fellow iOS developers, I often find myself starting little projects here and there. Also like my fellow iOS developers, I have developed a preferred project structure. This structure has changed quite a bit recently as I've been exposed to a different way of doing things at Lyft. We have a highly modularized codebase and I quite like that methodology. I dipped my toes in the many framework waters in my time at zulily but what we have at Lyft goes well beyond that.
 
 As such in my personal projects I have incorporated additional modularization and automation. My goal with this post is to peel back the curtain a little bit and give you some ideas on how you might be able to use modularization to create clean boundaries between code in your project.

@@ -1,11 +1,3 @@
----
-microblog: false
-title: Apple and Google in a LOST size battle
-layout: post
-date: 2010-05-22T00:56:23Z
-staticpage: false
----
-
 **[Apple and Google in a LOST size
 battle](http://feedproxy.google.com/~r/Techcrunch/~3/hPfk8AzFRVI/)**
 

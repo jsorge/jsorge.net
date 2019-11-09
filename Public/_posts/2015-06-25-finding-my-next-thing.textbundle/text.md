@@ -1,11 +1,3 @@
----
-microblog: false
-title: Finding My Next Thing
-layout: post
-date: 2015-06-24T21:19:14Z
-staticpage: false
----
-
 My last day working at [Solomon Solution](http://gosolomon.com) was Friday. It's weird to think about, that it's been almost a week. My family and I went over to eastern Washington on a 4 day trip to a remote lake house over the weekend so I have been offline for the last while, and that's why I haven't written about my current job search.
 
 What it boils down to is that I want to do iOS development full-time, and my previous job wasn't going to afford that any time soon. They needed my 100% commitment there, as well, and seeing as how I was doing marketing campaigns and HTML templates they just weren't going to get that from me. So I've moved on.

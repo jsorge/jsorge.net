@@ -1,11 +1,3 @@
----
-microblog: false
-title: Rebuilding taphouse.io
-layout: post
-date: 2018-05-21T22:11:30Z
-staticpage: false
----
-
 A few months ago, when I decided I needed to update JavaScript on my server that ran both my blog and company website, I broke the company site. I wrote it a few years ago using a very early iteration of the [Sails.js](https://sailsjs.com) framework. Fast forward to today and I want to bring it back. I also have been wanting to dabble in server-side Swift. [Enter Vapor](https://vapor.codes).
 
 I got the site up and running in Vapor 3 in a few days (last year I had started doing this in Vapor 2, but 3 was just released so the timing was good). I’m a big fan of what the Vapor team is doing and may yet take on a separate project based on Vapor. But that’s for another day.

@@ -1,11 +1,3 @@
----
-microblog: false
-title: Separating CoreBluetooth and View Controllers
-layout: post
-date: 2014-04-29T07:10:42Z
-staticpage: false
----
-
 One of the things we did early this quarter was go over Core Bluetooth. In the class demos and in all the materials I've seen online dealing with these classes the logic for handling the Bluetooth events is put inside the view controllers responsible for displaying the  UI. This felt like a bad practice to me.
 
 For my homework I implemented separate classes for central and peripherals. I built 1 app that could fulfill both roles (on different devices) using these classes and it worked!

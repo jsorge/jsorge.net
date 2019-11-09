@@ -1,5 +1,17 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-02-09T19:35:58Z",
+    "filename" : "2019-02-09-automation-revelation.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Automation Revelation"
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

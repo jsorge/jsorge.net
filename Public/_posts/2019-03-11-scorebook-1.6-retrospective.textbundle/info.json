@@ -1,5 +1,17 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-03-12T04:13:50Z",
+    "filename" : "2019-03-11-scorebook-1.6-retrospective.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "I _finally_ shipped my sync engine for Scorebook.",
+    "staticpage" : false,
+    "tags" : [
+      "scorebook-sync-log"
+    ],
+    "title" : "Scorebook Sync Log 10: Shipped!"
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

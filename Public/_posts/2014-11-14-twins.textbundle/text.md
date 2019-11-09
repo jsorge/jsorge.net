@@ -1,11 +1,3 @@
----
-microblog: false
-title: Twins!
-layout: post
-date: 2014-11-14T10:21:48Z
-staticpage: false
----
-
 ![Twins!](assets/2014-11-11-08-18-2.jpg)
 
 A little over a month ago, we found out Emily is pregnant. This week we had our first ultrasound, and the tech discovered something we weren't expecting: 2 babies. Twins!

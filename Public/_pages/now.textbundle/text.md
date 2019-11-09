@@ -1,10 +1,3 @@
----
-layout: post
-title: What I'm Doing Now
-date: '2015-11-03 05:34:34'
-staticpage: true
----
-
 *updated 3/11/2019*
 
 ### Lyft

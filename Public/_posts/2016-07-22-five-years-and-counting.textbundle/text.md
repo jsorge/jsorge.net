@@ -1,11 +1,3 @@
----
-microblog: false
-title: Five Years and Counting
-layout: post
-date: 2016-07-22T12:35:00Z
-staticpage: false
----
-
 ![](assets/Image-3.jpg)
 
 It was 5 years ago today that I married my best friend. It was a wonderful day with family and friends, but made all the sweeter now seeing what our life has become. I'm beyond blessed by getting to live life with Emily.

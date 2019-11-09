@@ -1,12 +1,3 @@
----
-microblog: false
-title: Hanging out watching the biggest tv this side of Dallas with 20,000 of my closest
-  friends (and my best friend @emilysorge)
-layout: post
-date: 2013-04-01T19:49:24Z
-staticpage: false
----
-
 Hanging out watching the biggest tv this side of Dallas with 20,000 of
 my closest friends (and my best friend @emilysorge)
 

@@ -1,11 +1,3 @@
----
-microblog: false
-title: The iPhone 4 Ordeal
-layout: post
-date: 2010-06-24T00:16:00Z
-staticpage: false
----
-
 Today, my iPhone 4 arrived via FedEx. I found it on my desk waiting for
 me when I got out of a product demo to take a phone call. To tell the
 truth, it was hard to concentrate on the call a little bit. After all,

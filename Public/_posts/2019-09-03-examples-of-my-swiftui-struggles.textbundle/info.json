@@ -1,5 +1,17 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-09-04T03:57:05Z",
+    "filename" : "2019-09-03-examples-of-my-swiftui-struggles.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "In my last post I started getting in to the struggles I've had with SwiftUI. This post has a couple of examples and the solutions that I have arrived at (assuming I've arrived at them).",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Examples of My SwiftUI Struggles"
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

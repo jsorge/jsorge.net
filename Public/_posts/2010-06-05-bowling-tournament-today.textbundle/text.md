@@ -1,11 +1,3 @@
----
-microblog: false
-title: Bowling Tournament Today
-layout: post
-date: 2010-06-05T16:24:30Z
-staticpage: false
----
-
 I participated in my second 9 pin no-tap tournament at Robin Hood Lanes
 today. The format basically means that if you get 9 pins on your first
 shot, it counts as a strike. I did this last time in April, and missed

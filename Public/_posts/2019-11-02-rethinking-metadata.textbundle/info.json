@@ -1,5 +1,17 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-11-03T05:08:05Z",
+    "filename" : "2019-11-02-rethinking-metadata.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "I think I'm on the verge of making a big change to the format of each of my blog posts, but I need to rubber duck it first.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Rethinking Metadata"
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

@@ -1,11 +1,3 @@
----
-microblog: false
-title: My First Swift Package
-layout: post
-date: 2018-05-06T21:41:39Z
-staticpage: false
----
-
 I’m embarking on phase 1 of my [blog rethink](https://jsorge.net/2018/04/15/reconsidering-my-blogging-setup/) and have decided that whatever I do next will use [the textbundle spec](http://textbundle.org/spec/) for file transport and storage. It will likely be some git repo or perhaps a Dropbox synced folder but all of the options that I’ve seen don’t strongly link a post together with assets. Textbundle solves that.
 
 I think initially I might wrap Jekyll in something, so that the thing making the static site is really an implementation detail. The idea being that my server has an endpoint that would accept XML-RPC as well as micropub inputs, transform those to a textbundle and then build the static site from there.

@@ -1,12 +1,3 @@
----
-microblog: false
-title: Nerd Snipe - 2 Apps, 1 Extension
-layout: post
-date: 2018-07-20T15:28:25Z
-staticpage: false
-filename: 2018-07-20-nerd-snipe-shared-extension
----
-
 I’m working on a project for Lyft that will bring in a new app extension to both our passenger and driver apps. The functionality between both apps is going to be identical so sharing code should be maximized. I am trying to figure out how to get it working to make just a single extension that can be used on both apps. This is more difficult than you might imagine, because [extensions can be fiddly](https://developer.apple.com/library/archive/technotes/tn2420/_index.html). They need to share the same version and build strings, and building in Xcode revealed this hidden gem:
 
 > Embedded binary's bundle identifier is not prefixed with the parent app's bundle identifier.

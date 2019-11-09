@@ -1,5 +1,16 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-11-04T05:28:36Z",
+    "filename" : "2019-11-03-maverick-docker-upgrades.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ]
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

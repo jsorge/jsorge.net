@@ -1,11 +1,3 @@
----
-microblog: false
-title: Bring on the chastising (also known as movies I've yet to see)
-layout: post
-date: 2012-06-07T07:54:25Z
-staticpage: false
----
-
 People who know me know that I love movies.
 
 Those who **really** know me know that I haven’t seen lots of the

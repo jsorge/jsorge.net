@@ -1,11 +1,3 @@
----
-microblog: false
-title: There's always something
-layout: post
-date: 2011-05-25T23:39:00Z
-staticpage: false
----
-
 ![](http://media.tumblr.com/tumblr_llsih7GsgD1qzqppu.jpg)I went to work
 today hoping and praying that I could come home to new floors. I did, in
 a manner of speaking.

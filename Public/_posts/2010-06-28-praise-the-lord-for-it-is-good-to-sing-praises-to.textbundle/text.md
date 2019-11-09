@@ -1,11 +1,3 @@
----
-microblog: false
-title: Psalm 147
-layout: post
-date: 2010-06-28T06:46:53Z
-staticpage: false
----
-
 > Praise the LORD! For it is good to sing praises to our God; for it is
 > pleasant, and a song of praise is fitting. The LORD builds up
 > Jerusalem; he gathers the outcasts of Israel. He heals the

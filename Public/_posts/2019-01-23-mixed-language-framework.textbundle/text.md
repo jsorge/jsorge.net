@@ -1,11 +1,3 @@
----
-microblog: false
-title: Mixing Swift and Objective-C in a Framework
-layout: post
-date: 2019-01-23T11:05:21Z
-staticpage: false
-filename: 2019-01-23-mixed-language-framework.textbundle
----
 If you've worked on an iOS app that has both Swift and Objective-C code you're likely well familiar with the rules for getting the two languages to talk to each other. A bridging header here, some `@objc` declarations there, and you're probably good to go.
 
 But the rules change a little bit when you want to start breaking your code up into frameworks and suddenly there's no bridging header. So how are you supposed to get your mixed-language framework target working anyhow? Fear not, you've come to the right place.

@@ -1,11 +1,3 @@
----
-microblog: false
-title: 'Xcoders Talk: Practical Coordinators'
-layout: post
-date: 2018-03-05T08:00:00Z
-staticpage: false
----
-
 Last November I gave a talk at the [Seattle Xcoders](http://seattlexcoders.org) meetup about the coordinator pattern. There’s been a lot of virtual ink spilled on the topic of design patterns and the coordinator pattern specifically. I’ve been using it in a refactor of a side project app as well as using it pretty heavily at [zulily](https://www.zulily.com) in some of the new projects I had been doing.
 
 I got inspired to give the talk after last year’s [Swift by Northwest](https://swiftbynorthwest.com) conference, where [Dave DeLong](https://davedelong.com/blog/2017/11/06/a-better-mvc-part-1-the-problems/) gave a really great talk about improving MVC. He has a different take on coordinators than I do and his solution is really interesting. But I like where I’ve landed with coordinators for the time being personally.
