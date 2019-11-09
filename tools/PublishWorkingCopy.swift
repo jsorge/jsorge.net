@@ -1,12 +1,5 @@
 #!/usr/bin/swift sh
 
-//
-//  PublishWorkingCopy.swift
-//  
-//
-//  Created by Jared Sorge on 11/1/19.
-//
-
 import Foundation
 import ShellOut // @JohnSundell ~> 2.2
 
