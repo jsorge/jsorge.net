@@ -1,7 +1,19 @@
 {
+  "creatorIdentifier" : "com.ulyssesapp.mac",
   "creatorURL" : "file:\/\/\/Applications\/UlyssesMac.app\/",
+  "io.taphouse.maverick" : {
+    "date" : "2018-07-20T15:28:25Z",
+    "filename" : "2018-07-20-nerd-snipe-shared-extension",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Nerd Snipe - 2 Apps, 1 Extension"
+  },
   "transient" : false,
   "type" : "net.daringfireball.markdown",
-  "creatorIdentifier" : "com.ulyssesapp.mac",
   "version" : 2
 }

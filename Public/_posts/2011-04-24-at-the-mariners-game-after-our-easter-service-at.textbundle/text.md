@@ -1,12 +1,3 @@
----
-microblog: false
-title: At the Mariners game after our Easter service at Qwest field. There&#8217;s
-  nobody here, it&#8217;s crazy!
-layout: post
-date: 2011-04-24T13:08:13Z
-staticpage: false
----
-
 At the Mariners game after our Easter service at Qwest field. There’s
 nobody here, it’s crazy!
 

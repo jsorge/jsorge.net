@@ -1,11 +1,3 @@
----
-microblog: false
-title: View sizing problems
-layout: post
-date: 2016-05-27T07:37:35Z
-staticpage: false
----
-
 I have a custom view that I’m putting together for our app at [zulily](https://www.zulily.com). The view has a `UIImageView`, and a label that’s centered in its X and Y. I’m building this whole view in code.
 
 So far, everything is great. I’ve got my class returning the proper intrinsic content size, the image view being populated correctly, and everything lays out as it should on the first pass in one of my collection view cells.  As you can see below, the label is sized properly vertically on the first pass inside of my `UICollectionViewCell`.

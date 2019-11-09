@@ -1,11 +1,3 @@
----
-microblog: false
-title: View Controllers Make Crummy Navigators
-layout: post
-date: 2018-05-01T21:49:36Z
-staticpage: false
----
-
 My fellow iOS developers, we have a problem. We’ve been led astray by Apple. Don’t get me wrong, iOS is great. I love writing code in Swift (and Objective-C!). I’m a fan of Xcode too. And UIKit really makes a lot of really powerful things quite easy. But allow me this hot take: View controllers should never have to deal with navigation.
 
 There’s a long running joke about MVC actually standing for [massive view controllers](https://duckduckgo.com/?q=massive+view+controller&t=osx&ia=qa) and navigation is a key reason. Even a relatively simple view controller with a couple of possible destinations, using storyboards and segues, needs to implement methods that could grow to be dozens of lines long and end up knowing about the implementation details of view controllers that come after them.

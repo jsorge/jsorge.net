@@ -1,13 +1,3 @@
----
-microblog: false
-title: Struggling With SwiftUI
-layout: post
-date: 2019-08-23T04:51:58Z
-staticpage: false
-shortdescription: Getting going with SwiftUI feels a lot like what getting going with Swift felt like 5 years ago. Or bending my mind to work with reactive programming. I hope you'll bear with me in some rubber ducking.
-filename: 2019-08-19-struggling-with-swiftui.textbundle
-tags: []
----
 SwiftUI was the big thing coming out of WWDC in June. It was the toast of the town and I saw lots of comments about how developers "wanted to rewrite their entire app" using it. Heck, I was one of those voices too. I think it's clear that SwiftUI is the future of writing interfaces for Apple's platforms.
 
 When it came time to start working on Scorebook's iOS 13 update I decided to take a pragmatic approach. After all, my app's users won't care if the UI is SwiftUI or UIKit. They won't care if it's written in Swift or Objective-C, built in code or Interface Builder. They want the app to work, and to work well. How it gets there is my concern as the developer. So instead of doing the fun SwiftUI update I started in on things that they will care about. So I started with Dark Mode.

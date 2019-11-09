@@ -1,5 +1,16 @@
 {
-    "version":              2,
-    "type":                 "net.daringfireball.markdown",
-    "transient":            true,
+  "io.taphouse.maverick" : {
+    "date" : "2019-07-15T14:11:04Z",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "A preview of the things I'm working on for Scorebook 2.0, which is coming soon.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Scorebook 2.0 Preview"
+  },
+  "transient" : true,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
 }

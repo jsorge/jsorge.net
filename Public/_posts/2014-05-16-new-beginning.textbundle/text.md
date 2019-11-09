@@ -1,11 +1,3 @@
----
-microblog: false
-title: New Beginning
-layout: post
-date: 2014-05-16T07:18:01Z
-staticpage: false
----
-
 Today is my last day working at MicroK12. All told I've worked there for nearly 12.5 years in two stints, and done all the jobs there from retail sales to service to developer. It's been a crazy ride that started when I was 16. 
 
 I graduated from high school, bought a home, got married and had a kid all while working there. I've learned some about how to handle success, a lot about how to handle failure and even more about handling the difficulty that comes in between. 

@@ -1,12 +1,3 @@
----
-microblog: false
-title: 'Scorebook 2.0 Preview'
-layout: post
-date: 2019-07-15T07:11:04-07:00
-staticpage: false
-shortdescription: A preview of the things I'm working on for Scorebook 2.0, which is coming soon.
-tags: []
----
 ![](assets/scorebook-2-preview.jpeg)
 
 I've been hard at work over the last few months on a big update to [Scorebook](https://taphouse.io/scorebook). It's going to have a whole new interface, work on the iPad, and support the Dynamic Type accessibility feature.

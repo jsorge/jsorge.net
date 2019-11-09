@@ -1,11 +1,3 @@
----
-microblog: false
-title: Amazing Joke
-layout: post
-date: 2011-02-24T11:31:20Z
-staticpage: false
----
-
 [mrgan](http://mrgan.tumblr.com/post/3477839361):
 
 > Its not easy coming up with the best anything ever, but a joke I first

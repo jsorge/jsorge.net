@@ -1,11 +1,3 @@
----
-microblog: false
-title: Tragedy
-layout: post
-date: 2014-03-23T22:34:06Z
-staticpage: false
----
-
 You might have noticed a large change in how this site looks. For a little while I've been wanting to move from tumblr to a different platform. That platform is Ghost, and I'm going to write an introductory post shortly; however there have been a couple of things that overshadow a site change.
 
 This week has been overflowing with tragedy.  Two people that I am blessed to have counted as friends passed away. On Tuesday, Bill Strothman was onboard a KOMO helicopter when it crashed and he died along with the pilot. Yesterday  Will Loper, one of my friends who was part of our Mars Hill community group passed away. I don't know the cause of his death yet.

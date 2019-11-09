@@ -1,11 +1,3 @@
----
-microblog: false
-title: Scorebook is Back!
-layout: post
-date: 2019-01-16T23:31:22Z
-staticpage: false
-filename: 2019-01-17-scorebook-lives
----
 TL;DR: [Scorebook has returned to the App Store!](https://itunes.apple.com/us/app/scorebook-game-journal/id897584352?ls=1&mt=8)
 
 Scorebook got removed from sale by Apple in January of last year. I spent most of the year sad about that, and late in the year I asked myself a big question: Had the time come to let it go? 

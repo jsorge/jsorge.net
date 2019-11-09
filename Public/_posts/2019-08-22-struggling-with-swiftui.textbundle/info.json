@@ -1,5 +1,17 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-08-23T04:51:58Z",
+    "filename" : "2019-08-19-struggling-with-swiftui.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "Getting going with SwiftUI feels a lot like what getting going with Swift felt like 5 years ago. Or bending my mind to work with reactive programming. I hope you'll bear with me in some rubber ducking.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Struggling With SwiftUI"
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

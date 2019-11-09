@@ -1,13 +1,3 @@
----
-microblog: false
-title: "🔗 Where is Windmill on the iPhone?"
-layout: post
-date: 2019-07-29T20:56:59Z
-staticpage: false
-shortdescription: Apple is getting in the way of a potential market full of tools built to help developers work on their platforms, and Windmill is just the latest example.
-filename: "2019-07-29-where-is-windmill-on-iphone?.textbundle"
-tags: []
----
 [Markos Charatzas, writing about the state of his Windmill apps](https://qnoid.com/2019/07/29/Windmill-on-the-iPhone.html):
 
 > More importantly. Apple took the stance that the Command Line Tools Package is only meant to be used by developers in-house and not by 3rd parties to provide support for continuous integration systems - continuous delivery in the case of Windmill.

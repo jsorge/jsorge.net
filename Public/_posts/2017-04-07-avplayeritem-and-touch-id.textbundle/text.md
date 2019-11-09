@@ -1,11 +1,3 @@
----
-microblog: false
-title: AVAsset and ... Touch ID?
-layout: post
-date: 2017-04-06T22:33:05Z
-staticpage: false
----
-
 Last week I ran into a crazy bug where trying to create an `AVAsset` instance triggered Touch ID to come up on my screen. Not only was I baffled, I was slightly concerned I wouldn’t be able to figure out what caused this to happen or how to work around it.
 
 I was tasked with adding support for auto-playing video on [zulily’s](http://www.zulily.com) app, a feature that we are adding to our app. I got it working in our dev environment flawlessly, got it merged into our TestFlight branch and deployed to users for testing. The first day, I got reports of Touch ID displaying before playing a video. Authenticating or cancelling made no difference – the video played either way.

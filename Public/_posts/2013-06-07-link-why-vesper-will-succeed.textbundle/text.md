@@ -1,11 +1,3 @@
----
-microblog: false
-title: 'Link: Why Vesper will Succeed'
-layout: post
-date: 2013-06-06T17:25:58Z
-staticpage: false
----
-
 **[Link: Why Vesper will
 Succeed](http://www.trevormckendrick.com/on-why-vesper-will-succeed/?utm_source=rss&utm_medium=rss&utm_campaign=on-why-vesper-will-succeed)**
 

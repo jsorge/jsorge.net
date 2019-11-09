@@ -1,11 +1,3 @@
----
-microblog: false
-title: Introducing Scorebook
-layout: post
-date: 2014-10-27T16:25:05Z
-staticpage: false
----
-
 This is a big day for me. Huge, even. Today I am announcing my first app. I call it Scorebook.
 
 My grandparents  were married for 60 years and loved playing games with each other. Cribbage, dominoes, and others. Over the years they kept record of winner and loser in a little book. After my wife and I got married we started playing games too. I remembered my grandparents and suggested that we start keeping score like they did.

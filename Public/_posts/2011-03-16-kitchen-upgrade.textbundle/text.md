@@ -1,11 +1,3 @@
----
-microblog: false
-title: Kitchen Upgrade
-layout: post
-date: 2011-03-15T22:28:13Z
-staticpage: false
----
-
 This last week has been filled with much work in the kitchen by Emily
 and me. Thankfully when we’re done it will transform from this:
 

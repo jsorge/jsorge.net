@@ -1,13 +1,3 @@
----
-microblog: false
-title: "Scorebook Sync Log 07 \u2013 Responding to Deletions"
-layout: post
-date: 2015-05-28T21:21:54Z
-staticpage: false
-tags:
-  - scorebook-sync-log
----
-
 (Thanks to David Hoang for the [encouragement to post this](https://twitter.com/davidhoang/status/604136066673565696))
 
 I thought I was close to being done, and then I remembered that I haven’t implemented responding to deletions from CloudKit locally. Here’s how the process works:

@@ -1,5 +1,15 @@
 {
-    "version":              2,
-    "type":                 "net.daringfireball.markdown",
-    "transient":            true,
+  "io.taphouse.maverick" : {
+    "date" : "2019-03-16T06:01:10Z",
+    "layout" : "post",
+    "microblog" : true,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ]
+  },
+  "transient" : true,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
 }

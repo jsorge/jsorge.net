@@ -1,5 +1,16 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-02-21T04:32:26Z",
+    "filename" : "2019-02-20-sharp-endges-guy.textbundle",
+    "layout" : "post",
+    "microblog" : true,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ]
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

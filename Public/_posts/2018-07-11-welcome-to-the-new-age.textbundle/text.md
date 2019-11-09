@@ -1,12 +1,3 @@
----
-microblog: false
-title: This is My New Site; It Looks Like The Old Site
-layout: post
-date: 2018-07-12T17:11:05Z
-staticpage: false
-filename: 2018-07-11-welcome-to-the-new-age
----
-
 I have launched my new website. If you’ve been around here before you might not notice anything different (if you’re a new reader – welcome! 👋). But I assure you, it’s different.
 
 I was running my site on [Ghost](https://ghost.org). And while it was great for me for the last few years I found it lacking lately (mostly I want to combine microblogging and full-length blogging). So I [decided to build my own engine](https://jsorge.net/2018/06/17/building-a-blog-engine).
@@ -21,4 +12,3 @@ If you’re curious about Maverick, it’s fully open source. Things are a littl
 
 * [Maverick App Repo](https://github.com/jsorge/maverick)
 * [jsorge.net Repo](https://github.com/jsorge/jsorge.net)
-

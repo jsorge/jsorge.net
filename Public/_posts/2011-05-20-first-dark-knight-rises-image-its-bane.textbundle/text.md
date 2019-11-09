@@ -1,11 +1,3 @@
----
-microblog: false
-title: First Dark Knight Rises Image (It's Bane!)
-layout: post
-date: 2011-05-20T09:27:00Z
-staticpage: false
----
-
 **[First Dark Knight Rises Image (It's
 Bane!)](http://feedproxy.google.com/~r/slashfilm/~3/qkZYZn3UG2s/)**
 

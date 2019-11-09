@@ -1,11 +1,3 @@
----
-microblog: false
-title: Reconsidering My Blogging Setup
-layout: post
-date: 2018-04-15T10:01:34Z
-staticpage: false
----
-
 I have a very on-again, off-again habit of writing. Sometimes I’ll have a lot to write about, and often I’ll go long stretches without writing much. I backed Micro.blog on its Kicskatarter the day it came out (happy birthday to me!), and it’s gotten me thinking about what blogging _even is_. Whoa.
 
 I’ve usually considered blogging to be posts like this one. Longer things that I host on my website. But now I’ve got [my microblog](https://mb.jsorge..net). I usually think of these posts as “Tweets that I own”. We all know that when you post content to a place you don’t control –  like Twitter, Facebook, or Medium – that you don’t own the post. Not the URL, the appearance, none of it. You gave them the things. But when you own the domain, you can control it all. 

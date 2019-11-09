@@ -1,11 +1,3 @@
----
-microblog: false
-title: Stop Fighting UIKit
-layout: post
-date: 2017-01-05T19:39:33Z
-staticpage: false
----
-
 I’m working on an update to our search screen for work, and getting my hands dirty with `UISearchBar`. I’m placing the search bar in the `titleView` property of our view controller’s `UINavigationItem`, and I’ve run into two different cases that had me fighting with this class and doing things that UIKit probably didn’t intend.  Incidentally, both of these deal with the cancel button that can be presented from a search bar.
 
 First, iPads won’t display the cancel button at all. No idea why but there must be a good reason. A quick web search yielded [a Stack Overflow](http://stackoverflow.com/a/30474662/1861941) answer (of course). I wrapped the search bar in a view and it worked just like I needed. But it felt weird to do so.

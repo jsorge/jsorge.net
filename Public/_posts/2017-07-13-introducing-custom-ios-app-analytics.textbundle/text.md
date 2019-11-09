@@ -1,11 +1,3 @@
----
-microblog: false
-title: Introducing Custom iOS App Analytics
-layout: post
-date: 2017-07-13T14:52:42Z
-staticpage: false
----
-
 TL;DR: Check out my new iOS framework for using CloudKit to track app analytics: [TPHCloudAnalytics](https://github.com/taphouseio/TPHCloudAnalytics).
 
 In my current reworking of Scorebook I wanted to get rid of Cocoapods if I could. I don’t have anything specific against it, but I wanted some more rapid development of my own framework code. So I moved the private pods I had to git submodules. This left me with only the Fabric and Crashlytics pods leftover.

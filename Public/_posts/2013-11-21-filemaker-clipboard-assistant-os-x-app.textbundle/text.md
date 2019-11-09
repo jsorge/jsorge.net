@@ -1,11 +1,3 @@
----
-microblog: false
-title: FileMaker Clipboard Assistant - OS X App
-layout: post
-date: 2013-11-21T10:17:00Z
-staticpage: false
----
-
 #### The Problem
 I’m refactoring an old database tool that I built 3 years ago to normalize the weird price lists we get for importing into our products catalog. I built it as one of my first reintroductions into FileMaker and didn’t have any standards or close examination into what I was doing. This tool is still necessary for our business but I wanted to bring it up to date with my new standard practices and naming conventions. The issue is that I updated table occurrences and this broke all of my “Import Records” script steps.
 

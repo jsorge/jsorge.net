@@ -1,11 +1,3 @@
----
-microblog: false
-title: I ain't afraid o' no Ghost
-layout: post
-date: 2014-03-24T18:03:23Z
-staticpage: false
----
-
 After 6 years on Tumblr, I've decided to make the move to another blogging platform. This new site is being powered by Ghost, the new node.js backed blogging software. I'm hosting it using [Digital Ocean](https://www.digitalocean.com/?refcode=b54194754f24) on an Ubuntu Linux server.
 
 The reasons that I made the move are many but the biggest one is that I want to own the process: On Tumblr I was just responsible for submitting the content that I wanted to post. I could change my theme (which I did) but I couldn't make the CSS responsive. So instead there was a mobile site. I didn't have any database access if I wanted to do something funky, either. It was also more tricky to get my posts out than I would have hoped. Now that I'm on Ghost all my content is stored in an SQLite file, which I can play with all I want.

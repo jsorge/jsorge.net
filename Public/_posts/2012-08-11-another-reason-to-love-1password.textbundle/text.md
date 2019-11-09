@@ -1,11 +1,3 @@
----
-microblog: false
-title: Another reason to love 1Password
-layout: post
-date: 2012-08-11T10:19:20Z
-staticpage: false
----
-
 A couple weeks ago I changed my 1Password master password to something
 longer and more secure. What I didn’t do was make sure that sync to my
 iPhone and iPad didn’t break. Today I created a new account on the iPad

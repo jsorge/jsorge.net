@@ -1,11 +1,3 @@
----
-microblog: false
-title: An iCloud Music Library Tale of Woe
-layout: post
-date: 2016-04-04T08:08:22Z
-staticpage: false
----
-
 16 years ago, I signed up for iTools and got my Apple ID that I use to this day. 3 years later, I started buying music from the iTunes music Store. 2 weeks ago I noticed that music I had purchased wasn't playable any more. Grrrr.
 
 I started getting errors telling me songs that I purchased with DRM on them (i.e. Not [iTunes Plus](https://support.apple.com/en-us/HT201616) songs) were not playable because they had not "been purchased with your Apple ID".  I haven't done a thorough analysis of my library, but there are likely hundreds of affected songs.

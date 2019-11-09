@@ -1,13 +1,3 @@
----
-microblog: false
-title: Reverting SwiftPM for Tools
-layout: post
-date: 2019-07-25T00:41:57Z
-staticpage: false
-shortdescription: I gave SwiftPM a good try to serve my tooling needs, but it ended up falling down.
-filename: 2019-07-23-reverting-swiftpm-for-tools.textbundle
-tags: []
----
 For the last few months I've been using [Swift Package Manager](https://github.com/apple/swift-package-manager) to manage my tooling dependencies for iOS projects. It's a technique that I [learned about from Orta Therox](https://artsy.github.io/blog/2019/01/05/its-time-to-use-spm/) and I adopted it in [Scorebook](https://taphouse.io/scorebook) and even [made an app template that used it too](https://jsorge.net/2019/05/26/my-ios-xcode-project-template). The advantages were great, namely that I didn't have to manage any version scripts or vendor tools directories. It just worked.
 
 But over the last couple of weeks things started to fall apart a little bit. I downloaded Xcode 11 after releasing my new Scorebook update so that I could start digging in to all the cool stuff iOS 13 had to offer. I also checked my tools to see if they had new versions available (I'm using 2 different tools at the moment – [Xcodegen](https://github.com/yonaskolb/XcodeGen) and [swift-sh](https://github.com/mxcl/swift-sh)). I went to update them and that's when I got my first error: `dependency graph is unresolvable`.

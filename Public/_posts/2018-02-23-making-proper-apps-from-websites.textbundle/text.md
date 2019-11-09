@@ -1,11 +1,3 @@
----
-microblog: false
-title: Making Proper Apps From Websites
-layout: post
-date: 2018-02-22T16:00:26Z
-staticpage: false
----
-
 While at zulily, I used to have [JIRA](https://www.atlassian.com/software/jira) and [GitLab](http://gitlab.com) inside of wrappers provided by [Fluid](http://fluidapp.com) instances. Now that I’m at Lyft I’ve done the same thing with JIRA, but we use [GitHub](https://github.com) instead. For the longest time I would take links sent to me for those pages and paste them into the apps by hand since clicking on the links would open my browser instead of the app silos that I hand-crafted for these sites.
 
 Well today [@jackbrewster](https://twitter.com/jackbrewster) taught me about something great that takes this to another level. The app [Choosy](https://www.choosyosx.com) will let me route URL clicks to whatever app I want. I set up rules in Choosy to look at the web address that I clicked and now have it routing my JIRA and GitHub links to their proper Fluid apps. It’s wonderful!

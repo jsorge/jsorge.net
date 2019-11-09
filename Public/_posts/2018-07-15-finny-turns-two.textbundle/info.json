@@ -1,7 +1,19 @@
 {
+  "creatorIdentifier" : "com.ulyssesapp.ios",
   "creatorURL" : "file:\/\/\/var\/containers\/Bundle\/Application\/5DAF61B1-F128-4B6F-B847-0006AAF8E40D\/Ulysses.app\/",
+  "io.taphouse.maverick" : {
+    "date" : "2018-07-15T08:37:47Z",
+    "filename" : "2018-07-15-finny-turns-two",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Finny Turns 2"
+  },
   "transient" : false,
   "type" : "net.daringfireball.markdown",
-  "creatorIdentifier" : "com.ulyssesapp.ios",
   "version" : 2
 }

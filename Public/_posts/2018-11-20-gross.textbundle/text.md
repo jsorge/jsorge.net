@@ -1,13 +1,3 @@
----
-microblog: false
-title: Gross
-layout: post
-date: 2018-11-20T12:48:38Z
-staticpage: false
-shortDescription: <Abbreviated description>
-filename: 2018-11-20-gross
----
-
 In the second grade my dad took me to my first Mariners game. It was in the Kingdome against the Blue Jays and I really had no interest in going. We got there after the game started and got to our seats to the right of the press box. At some point during the game a foul ball came up to us (hit by backup catcher Matt Sinatro). A guy near us caught it and handed me the ball. I was hooked.
 
 That was my entry into sports. I loved the Mariners and couldn't get enough of them. Fast forward to today. Last season was a huge disappointment; blowing another lead to some historic A's team is old hat. Thankfully we are going on a plan to tear things down and rebuild in a way that might actually get us competitive in a few years (I'm all aboard this plan FWIW – it's the only way we're going to ever compete for a World Series).

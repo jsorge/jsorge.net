@@ -1,11 +1,3 @@
----
-microblog: false
-title: New TV
-layout: post
-date: 2010-09-02T18:14:41Z
-staticpage: false
----
-
 ![](http://media.tumblr.com/tumblr_l85clmLerS1qzqppu.jpg)
 
 I got a new TV this week. Out goes my trusty, very color accurate 30”

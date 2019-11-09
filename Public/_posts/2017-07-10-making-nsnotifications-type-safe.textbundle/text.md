@@ -1,11 +1,3 @@
----
-microblog: false
-title: Making NSNotifications Type Safe
-layout: post
-date: 2017-07-09T22:01:49Z
-staticpage: false
----
-
 A while back, the good folks at [Swift Talk](https://talk.objc.io) posted an episode about using [typed notifications](https://talk.objc.io/episodes/S01E27-typed-notifications-part-1). As one who deals with lots of notifications in the app I [build for my day job](https://www.zulily.com/mobilelanding) I was intrigued. However it didn’t feel like their crack at the problem of using types in notifications went quite far enough. I wanted a way to make any notification easily accessible wherever I needed to use it.
 
 So I took a swing. Here’s what I came up with.

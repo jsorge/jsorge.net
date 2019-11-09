@@ -1,13 +1,3 @@
----
-microblog: false
-title: Scorebook Sync Log 04 - Relationships
-layout: post
-date: 2015-04-07T07:22:01Z
-staticpage: false
-tags:
-  - scorebook-sync-log
----
-
 I want to finish out my schema bit with a little bit on relationships. CloudKit fully supports relationships so you can associate your data with one record type to another. However it’s not exactly like you would expect in a relational database. CloudKit supports 1:1 and 1:many relationships, but not many:many. That’s not a problem for me but it may be for some.
 
 In designing these relationships, the big thing to know going in is that you create the reference from the foreign-key side, not the primary side. So if you have a product that is becoming a line item, where the left side might be the product with many line items, you create the relationship on the right side with the line item. See the hand-crafted image below for clarity.

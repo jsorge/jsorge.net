@@ -1,11 +1,3 @@
----
-microblog: false
-title: Hawaii Trip
-layout: post
-date: 2018-04-08T22:04:03Z
-staticpage: false
----
-
 We spent the last week on the Oahu island of Hawaii, getting home late last night. It was an amazing trip and couldn’t have gone any better. We rented an AirBnB house in Kaneohe (which is the windward side of the island). The weather was quite good most of the time; even when it was raining, the rain was warm. Quite the change from Seattle.
 
 ![View from Diamond Head](assets/Hawaii2018---3.jpg)

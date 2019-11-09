@@ -1,11 +1,3 @@
----
-microblog: false
-title: 'Apps I Love: 1Password'
-layout: post
-date: 2012-06-16T12:38:12Z
-staticpage: false
----
-
 Passwords can be annoying beasts. We all need them to safeguard our info
 but our tendencies are to use a couple for all the places we go because
 managing them can be a huge pain. I was firmly planted in that camp

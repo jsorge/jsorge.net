@@ -1,11 +1,3 @@
----
-microblog: false
-title: Proxying Vapor 3 Using nginx and Docker
-layout: post
-date: 2018-06-19T09:00:00Z
-staticpage: false
----
-
 Vapor is a framework for running server side code, all built in Swift. There’s a great post by [bygri about how to build a Vapor app using Docker.](https://bygri.github.io/2018/05/14/developing-deploying-vapor-docker.html) If any of what I’ve just said is confusing, I highly recommend reading that post before getting started here.
 
 During my building of a couple of Vapor apps, I’ve found getting the sites running while hitting `localhost:8080` to be really easy. The hard part is putting that site behind a domain locally and even more, getting it deployed to a server. So I’m going to put a huge disclaimer here: I’m no expert in nginx or Docker. I’ve been able to piece things together using web searches and a lot of conversation in the Vapor Discord room. There’s a great channel for Docker specifically, where I’ve been hugely helped by @bygri. He’s good people.

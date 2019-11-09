@@ -1,13 +1,3 @@
----
-microblog: false
-title: Rethinking Metadata
-layout: post
-date: 2019-11-03T05:08:05Z
-staticpage: false
-shortdescription: I think I'm on the verge of making a big change to the format of each of my blog posts, but I need to rubber duck it first.
-filename: 2019-11-02-rethinking-metadata.textbundle
-tags: []
----
 Last year when I started thinking about moving away from Ghost as my blogging platform, the first place I turned was Jekyll. It's really popular and can create great websites. Plus it's nerdy, which is usually right up my alley. I found an exporter from Ghost to Jekyll which worked quite nicely. But one thing that did rub me wrong was that posts were separated from their associated media assets. This is why I started looking at [textbundle](http://textbundle.org) packages.
 
 I really like encapsulating each post in a single file, with assets and text contained inside. And, because I went from Ghost to the Jekyll format directly, I left the metadata at the top of a post's `text.md` file inside. The metadata (or FrontMatter) contains things like the post title, date, tags, etc. As it is currently, there's a chunk of yml at the top of each of my markdown files containing this metadata. I'm starting to rethink this approach now, for a couple of reasons:

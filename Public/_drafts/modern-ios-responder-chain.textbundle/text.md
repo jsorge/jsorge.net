@@ -1,11 +1,3 @@
----
-filename: 2018-10-09-the-wonderful-responder-chain
-layout: post
-title: The Wonderful Cocoa (Touch) Responder Chain
-shortDescription: The Responder Chain on iOS is under-appreciated. Let's look at what it is and how you can use it for your own gains.
-date: '2018-10-09 20:43:30'
----
-
 Ask an experienced Cocoa developer about the responder chain and I bet they’ll sing its praises. However, if you ask an iOS developer about it you might be greeted with a confused shrug. I myself have had sparing opportunities to use it. So let’s ask a first question: what’s it for?
 
 My take of things is that the responder chain is a good way for disparate objects to talk to one another. Think of a view deep in the hierarchy wanting to send some message to a superview. My particular use case has a table view cell needing to talk with the view controller containing the table view itself. There are a few ways we can do this without the responder chain. A non-exhaustive list includes: callback closures passed down (very in-style for modern iOS development), using a delegate, or an old-fashioned `Notification` (née `NSNotification`).

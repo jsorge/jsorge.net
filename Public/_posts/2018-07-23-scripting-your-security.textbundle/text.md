@@ -1,12 +1,3 @@
----
-microblog: false
-title: Securing an nginx Container with letsencrypt
-layout: post
-date: 2018-07-23T10:55:19Z
-staticpage: false
-filename: 2018-07-23-scripting-your-security
----
-
 One of the things I wanted to automate with my new website was deployment, including fetching SSL certificates and installing them in nginx. I came into this project knowing nothing about shell scripts and Docker. Now I know a _little_about each. With the web going increasingly https I knew I had to jump this hurdle to be production ready.
 
 Thankfully I found a [blog post](http://chrisstump.online/2016/05/05/lets-encrypt-docker-rails) that helped me get started. All I had to do was make some adaptations to my setup. While that post is very much talking about his environment I wanted this post to generalize for others (be it a static site or one on a separate container like mine).

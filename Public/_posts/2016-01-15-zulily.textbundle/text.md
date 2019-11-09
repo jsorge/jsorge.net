@@ -1,11 +1,3 @@
----
-microblog: false
-title: zulily
-layout: post
-date: 2016-01-14T20:40:46Z
-staticpage: false
----
-
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Big day</p>&mdash; Jared Sorge (@jsorge) <a href="https://twitter.com/jsorge/status/687678601123106816">January 14, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 For the past few months I’ve been contracted out to work at [zulily](https://www.zulily.com) in their mobile team. We are a group of 5 iOS, 4 Android, and 2 mobile API developers building out the mobile app experience for our customers. It’s a tall order, but a great team to work with and a fun environment to work in.

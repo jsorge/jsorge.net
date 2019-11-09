@@ -1,11 +1,3 @@
----
-microblog: false
-title: 'Apps I love: An Introduction'
-layout: post
-date: 2012-06-03T17:32:38Z
-staticpage: false
----
-
 I’m something of an app junkie. I remember looking forward to the old
 Mac Addict magazine every month and being engrossed by the shareware on
 the included cd. I worked selling Macs in high school and got access to

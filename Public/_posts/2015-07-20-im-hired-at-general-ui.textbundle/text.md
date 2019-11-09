@@ -1,11 +1,3 @@
----
-microblog: false
-title: "I\u2019m Hired At General UI"
-layout: post
-date: 2015-07-19T21:47:39Z
-staticpage: false
----
-
 On Friday I accepted an offer from [General UI](http://generalui.com), a local dev shop based in the Seattle’s Fremont neighborhood. Starting Monday I’m going to be their newest iOS developer, and starting on a streaming video project. To say I’m excited is an understatement.
 
 But I want to step back for a moment. I started this software developer journey a few years ago, in early 2012. I started by taking a few online tutorials through [CodeAcademy](https://www.codecademy.com) to learn some Javascript. I had the idea for [Scorebook](http://taphouse.io/scorebook) about a month later and dove into native iPhone apps. What I dove into was more than a few brick walls, but I dove in nonetheless. It was difficult; the most difficult thing I’ve ever done.

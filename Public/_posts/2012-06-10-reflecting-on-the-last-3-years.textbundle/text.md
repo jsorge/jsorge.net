@@ -1,11 +1,3 @@
----
-microblog: false
-title: Reflecting on the last 3 years
-layout: post
-date: 2012-06-10T10:34:41Z
-staticpage: false
----
-
 Three years ago I got laid off from my job at Mars Hill Church. The new
 budget year was about to kick in and they didn’t have the money to pay
 me anymore. That would be the start of the most difficult - yet by far

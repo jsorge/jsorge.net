@@ -1,11 +1,3 @@
----
-microblog: false
-title: What will Apple call a smaller iPad?
-layout: post
-date: 2012-07-15T21:39:34Z
-staticpage: false
----
-
 There has been lots of speculation around the possibility of a smaller
 iPad that’s on the horizon. In all likelihood it will be between 7-8”
 (with many predicting 7.85” exactly). If you haven’t read [John Gruber’s
@@ -57,5 +49,3 @@ will sell like hotcakes no matter what it’s called.
     rounds down their screen sizes. The 11” Air has an 11.6” screen yet
     they call it an 11”. That’s why I’m guessing that the smaller iPad
     will be called 7” instead of 8”.[](#fnref:p27311398789-fn2)
-
-

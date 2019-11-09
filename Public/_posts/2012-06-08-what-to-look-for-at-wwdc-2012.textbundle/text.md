@@ -1,11 +1,3 @@
----
-microblog: false
-title: "\u21E5 What to look for at WWDC 2012"
-layout: post
-date: 2012-06-08T16:22:38Z
-staticpage: false
----
-
 **[What to look for at WWDC
 2012](http://gigaom.com/apple/what-to-look-for-at-wwdc-2012-macs-mountain-lion-ios-6-maps-and-icloud/)**
 

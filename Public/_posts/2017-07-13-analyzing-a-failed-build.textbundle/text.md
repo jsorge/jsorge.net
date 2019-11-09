@@ -1,11 +1,3 @@
----
-microblog: false
-title: Analyzing a Failed Build
-layout: post
-date: 2017-07-12T23:32:27Z
-staticpage: false
----
-
 I’m getting to work on Scorebook again this week, thanks to zulily’s allowance for a hack week for tech employees. It’s really nice to be in that codebase, even if I’m now horrified by much of what I see past me doing in there. That’s a good sign of growth, right?
 
 Anyways, I wanted to setup a CI service and we had a demo of [BuddyBuild](https://www.buddybuild.com) at Xcoders a few months back. So I want to give them a shot. And my build fails. And fails. And fails. I had to fix bad file locations for my prefix.pch file, as well as my bridging header. But it was still failing.

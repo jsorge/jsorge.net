@@ -1,11 +1,3 @@
----
-microblog: false
-title: Swift Function Passing & Memory Management
-layout: post
-date: 2017-05-03T08:33:41Z
-staticpage: false
----
-
 I’ve started using a pattern where I use a struct that has a series of optional closures on it to serve as a way to hook into default implementations of things like data source and delegate calls. We have a fairly complex way of presenting data in our collection views that requires a lot of boilerplate, but specific areas of our app needs to add behavior to fit its requirements.
 
 The problem that I’m running into now is that I want to assign these closures to functions on my object instead of having a ton of inline closures. I really like this approach because it allows me to keep things well organized. But there’s a problem in my memory graph.

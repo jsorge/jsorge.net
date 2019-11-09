@@ -1,11 +1,3 @@
----
-microblog: false
-title: Bay Area Trip Pt. 1
-layout: post
-date: 2008-11-17T00:19:02Z
-staticpage: false
----
-
 I’ve been in the San Francisco/Oakland Bay area since Thursday evening.
 This is the first trip I’ve taken of this length in about 8 years when
 our family went on an Alaskan cruise. I was the summer before my senior

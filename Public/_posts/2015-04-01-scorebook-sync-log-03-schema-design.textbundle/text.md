@@ -1,13 +1,3 @@
----
-microblog: false
-title: Scorebook Sync Log 03 - Schema Design
-layout: post
-date: 2015-03-31T20:59:18Z
-staticpage: false
-tags:
-  - scorebook-sync-log
----
-
 Building a schema on CloudKit is pretty straightforward. You get a `CKRecord` object and treat it like a dictionary. There are a few data types they can take (`NSString`, `NSNumber`, `NSData` to name a few) and it’s a key/value pair to get the data on the record. Once you have a record created, you save it to the database and your RecordType (i.e. a database table) is created. Simple. But there is a trick associated with related data.
 
 One of the data types you can attach is a `CKReference`. This is how you glue 2 records together. CloudKit supports 1:Many relationships (not many:many though). The way you do the relating is through the child record, not the parent. This tripped me up a little bit because with my background in FileMaker I would typically go parent to child (like with a portal object on a layout).

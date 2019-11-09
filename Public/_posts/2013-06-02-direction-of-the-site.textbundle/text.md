@@ -1,11 +1,3 @@
----
-microblog: false
-title: Direction of the site
-layout: post
-date: 2013-06-02T13:11:00Z
-staticpage: false
----
-
 If you look down the page just a post or two, the dates on them might
 stand out. I haven’t been writing much lately. That has been an
 increasing trend here and in the journal I keep on Day One. Part of it

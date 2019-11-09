@@ -1,5 +1,17 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-07-25T00:41:57Z",
+    "filename" : "2019-07-23-reverting-swiftpm-for-tools.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "I gave SwiftPM a good try to serve my tooling needs, but it ended up falling down.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Reverting SwiftPM for Tools"
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

@@ -1,11 +1,3 @@
----
-microblog: false
-title: Table View in a Table View
-layout: post
-date: 2016-02-16T20:50:01Z
-staticpage: false
----
-
 I’m working on a redesigned implementation of the order status screen for my [day job](https://www.zulily.com), and one of the design challenges has been to list the products ordered on a given order (which itself is in a list of orders). Enter `UITableView`! It’s a trusted class that every iOS programmer should know intimate details about.
 
 So I wondered if there was a sane way to put a table view within a table view cell. Such discussions have [stemmed](http://inessential.com/2012/12/31/uitableviewcell_is_not_a_controller) huge [debates](http://corporationunknown.com/blog/2013/01/01/uitableviewcell-is-not-a-controller-but/) about what defines the “controller” portion of MVC. Those discussions aren’t the exact topic I want to tackle – but my position is that I have no problem passing a model to a view, and letting the view configure itself.

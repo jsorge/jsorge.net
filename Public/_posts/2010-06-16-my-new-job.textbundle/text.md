@@ -1,11 +1,3 @@
----
-microblog: false
-title: My new job
-layout: post
-date: 2010-06-16T09:22:44Z
-staticpage: false
----
-
 I’ve accepted a new position within my company
 ([MicroK12](http://www.microk12.com "MicroK12")), where I’ll move from
 the service department fixing computers to our sales department, doing

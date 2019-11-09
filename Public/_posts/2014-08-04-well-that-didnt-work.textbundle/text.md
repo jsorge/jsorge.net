@@ -1,11 +1,3 @@
----
-microblog: false
-title: Well That Didn't Work
-layout: post
-date: 2014-08-03T21:19:52Z
-staticpage: false
----
-
 When I left yesterday I had the crazy idea of writing my Bing Image fetcher in Swift. The main reason was that decoding the JSON sent back from a server requires lots of trial-and-error, and the playground seemed like the best place for that.
 
 In reality I think I need to do some more investing into Swift to learn its idiocyncracies that I want to right now. I'm motivated to work on a product and not as much figure out a new language. I've run into 2 issues:

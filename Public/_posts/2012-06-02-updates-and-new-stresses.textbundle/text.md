@@ -1,11 +1,3 @@
----
-microblog: false
-title: Updates and new stresses
-layout: post
-date: 2012-06-01T21:11:19Z
-staticpage: false
----
-
 Its been an exciting and kind of stressful last couple of weeks for me.
 
 I got promoted at work, which has been amazing. I work at MicroK12 and we sell technology to schools. For the last couple of years I have been in our sales department doing inside sales. Now Im our new systems developer working on our internal FileMaker Pro databases and our website.

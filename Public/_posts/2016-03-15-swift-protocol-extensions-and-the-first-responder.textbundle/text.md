@@ -1,11 +1,3 @@
----
-microblog: false
-title: Swift Protocol Extensions and the First Responder
-layout: post
-date: 2016-03-15T08:40:36Z
-staticpage: false
----
-
 I tried to do something clever yesterday, and it didn't work. I don't think it's too clever (hopefully, but if I am please let me know).
 
 In Swift, I've declared a protocol and it contains a method. I then extend the protocol and give that method an default implementation. Because of how Swift works, I can call it on any object that conforms to the protocol and it will work. This is really awesome stuff.

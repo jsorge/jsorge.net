@@ -1,11 +1,3 @@
----
-microblog: false
-title: I'm getting baptized tomorrow
-layout: post
-date: 2012-07-31T21:47:50Z
-staticpage: false
----
-
 First thing’s first. I’m getting baptized tomorrow. Before I get into
 the why, I’ll talk about the where and when. It’s going to be at Edmonds
 Marina Park, and put on by Mars Hill Church Shoreline. [Here’s the event

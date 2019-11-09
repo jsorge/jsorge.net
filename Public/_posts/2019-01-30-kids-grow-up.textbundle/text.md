@@ -1,13 +1,3 @@
----
-microblog: false
-title: "\U0001F517 No More Oppatoo"
-layout: post
-date: 2019-01-30T13:44:16Z
-staticpage: false
-shortDescription: "This post from Allen Pike has been sitting with me for a while.
-  My boys grow up and we gain and lose parts of them. \U0001F62D"
-filename: 2019-01-30-kids-grow-up.textbundle
----
 [No More Oppatoo](https://allenpike.com/2018/no-more-oppatoo)
 
 > But kids inspire love, such deep unconditional love. You love and treasure how they are, down to the smallest quirk. Then, suddenly, right in front of you, they change. While one might grow used to the slow, sad change of growing apart from an adult you love, this feels very different.

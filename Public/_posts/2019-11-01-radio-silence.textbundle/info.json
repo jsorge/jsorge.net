@@ -1,5 +1,17 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-11-02T04:06:16Z",
+    "filename" : "2019-11-01-radio-silence.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "It's been a while since my last post; here's why.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Radio Silence"
+  },
+  "transient" : true,
   "type" : "net.daringfireball.markdown",
-  "transient" : true
+  "version" : 2
 }

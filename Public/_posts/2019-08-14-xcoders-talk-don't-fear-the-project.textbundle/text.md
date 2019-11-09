@@ -1,13 +1,3 @@
----
-microblog: false
-title: 'Xcoders talk: Don''t Fear the Project'
-layout: post
-date: 2019-08-14T15:49:14Z
-staticpage: false
-shortdescription: Some notes on my talk about Xcode Projects from the August Seattle Xcoders meetup.
-filename: 2019-08-14-xcoders-talk:-don't-fear-the-project.textbundle
-tags: []
----
 Last week I gave a talk at our [Seattle Xcoders](https://xcoders.org) meetup group. The topic was Xcode projects and I discussed the things that make up a project (targets, schemes, etc) and dissected project files themselves a little bit. The meat of the talk was then going through using [XcodeGen](https://github.com/yonaskolb/XcodeGen) to generate Xcode projects programmatically so you can stop checking them in to source control. This is a talk I've wanted to give for over a year and I'm glad I finally got around to it.
 
 The really cool thing that happened (which I was not expecting) is the level of questions & discussion after I wrapped up the talk. I've not seen as many questions come out of a talk as this one had. That can generally mean 1 of 2 things. Either 1) I could have done better at explaining things or 2) The topic generated that much genuine interest in people. From what I heard it's more the latter than the former though there are definitely areas that I could have expanded on.

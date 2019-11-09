@@ -1,11 +1,3 @@
----
-microblog: false
-title: Scorebook Now Available!
-layout: post
-date: 2014-11-30T20:27:15Z
-staticpage: false
----
-
 ![](assets/Scorebook-Icon.png)
 It's been a crazy last week for me, and in all the hubbub I neglected to post that Scorebook got approved and is available for sale!
 
