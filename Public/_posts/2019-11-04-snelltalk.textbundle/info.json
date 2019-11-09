@@ -1,5 +1,16 @@
 {
-  "version" : 2,
+  "io.taphouse.maverick" : {
+    "date" : "2019-11-05T05:53:12Z",
+    "filename" : "2019-11-04-new-post.textbundle",
+    "layout" : "post",
+    "microblog" : true,
+    "shortdescription" : "",
+    "staticpage" : false,
+    "tags" : [
+
+    ]
+  },
+  "transient" : false,
   "type" : "net.daringfireball.markdown",
-  "transient" : false
+  "version" : 2
 }
