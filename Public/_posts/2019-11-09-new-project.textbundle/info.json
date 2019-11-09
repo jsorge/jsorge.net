@@ -1,0 +1,17 @@
+{
+  "io.taphouse.maverick" : {
+    "date" : "2019-11-09T18:57:49Z",
+    "filename" : "2019-11-09-new-project.textbundle",
+    "layout" : "post",
+    "microblog" : true,
+    "shortdescription" : "<Short Description Goes Here>",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "New Project"
+  },
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
