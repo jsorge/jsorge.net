@@ -1,0 +1,17 @@
+{
+  "io.taphouse.maverick" : {
+    "date" : "2019-11-11T05:47:23Z",
+    "filename" : "maverick-apps",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "<Short Description Goes Here>",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Maverick Apps"
+  },
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
