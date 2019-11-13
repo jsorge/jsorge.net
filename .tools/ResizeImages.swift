@@ -1,5 +1,7 @@
+#!/usr/bin/swift sh
+
 import Foundation
-import ShellOut // marathon:https://github.com/JohnSundell/ShellOut.git
+import ShellOut // @JohnSundell
 
 func applyStashIfNeeded(named stashName: String) {
     guard let stashes = try? shellOut(to: "git stash list"),

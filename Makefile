@@ -31,13 +31,10 @@ delete-autodeploy:
 	sudo rm -rf ./.tools/vendor/Git-Auto-Deploy
 
 .PHONY: resize-images
-resize-images:
-# set up Marathon https://github.com/JohnSundell/marathon
-	@ chmod +x ./.tools/ensure-marathon.sh
-	@ ./.tools/ensure-marathon.sh
+resize-images: ensure-swift-sh
 	@ chmod +x ./.tools/ensure-imagemagick.sh
 	@ ./.tools/ensure-imagemagick.sh
-	@ marathon run ./.tools/ResizeImages.swift
+	@ ./vendor/swift-sh ./.tools/ResizeImages.swift
 
 .PHONY: newpost
 newpost: ensure-swift-sh
