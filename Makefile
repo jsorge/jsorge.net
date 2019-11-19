@@ -36,3 +36,8 @@ publish: ensure-swift-sh
 .PHONY: ensure-swift-sh
 ensure-swift-sh:
 	@./tools/ensure-swift-sh.sh
+
+.PHONY: renew-ssl
+renew-ssl: down
+	@ sudo rm -rf ./.tools/nginx/ssl
+	@ make serve
