@@ -18,7 +18,7 @@ echo "Making Well Known"
  echo "CONTACT_EMAIL=\"$CONTACT_EMAIL\"" >> config
 
   # fetch stable version of dehydrated
-  curl "https://raw.githubusercontent.com/lukas2511/dehydrated/v0.6.2/dehydrated" > dehydrated
+  curl "https://raw.githubusercontent.com/lukas2511/dehydrated/v0.6.5/dehydrated" > dehydrated
   chmod 755 dehydrated
 }
 
