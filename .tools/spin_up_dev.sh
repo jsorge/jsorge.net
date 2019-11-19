@@ -1,7 +1,6 @@
 #! /usr/bin/env bash
-source .tools/parse_yaml.sh
 
-docker pull jsorge/maverick:latest
+source .tools/parse_yaml.sh
 
 # setup variables
 wd=$(pwd)
@@ -14,6 +13,7 @@ config=$(cat $template)
 trimmedurl=$(echo "$url" | awk -F/ '{print $3}')
 config="${config/'{CONFIG_DOMAIN}'/$trimmedurl}"
 config="${config/'{CONFIG_EMAIL}'/$ssl_contactEmail}"
+config="${config/'{MAVERICK_VERSION}'/$maverickVersion}"
 config="${config/'CA_SSL: "true"'/CA_SSL: "false"}"
 echo "$config" > $wd/.tools/docker-compose.yml
 
