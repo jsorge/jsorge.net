@@ -19,17 +19,6 @@ dev:
 docker-logs:
 	docker-compose logs maverick
 
-# Setup git auto deploy
-# https://github.com/olipo186/Git-Auto-Deploy
-.PHONY: install-autodeploy
-install-autodeploy:
-	@ chmod +x ./.tools/install_gitautodeploy.sh
-	@ ./.tools/install_gitautodeploy.sh
-
-.PHONY: delete-autodeploy
-delete-autodeploy:
-	sudo rm -rf ./.tools/vendor/Git-Auto-Deploy
-
 .PHONY: resize-images
 resize-images: ensure-swift-sh
 	@ chmod +x ./.tools/ensure-imagemagick.sh
