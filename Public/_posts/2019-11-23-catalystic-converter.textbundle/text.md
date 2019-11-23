@@ -10,7 +10,7 @@ Step 3: Commit the current state. We want to capture the repo's place in time.
 
 Step 4: Click the Mac checkbox. In your app's Deployment Info section, check the Mac device target to get going. You'll see the following sheet drop down.
 
-![Going Catalyst - hold on to your butts](catalyst-checkbox.png)
+![Going Catalyst - hold on to your butts](assets/catalyst-checkbox.png)
 
 Moving ahead will surprisingly just make a few changes to your project. There is a new entitlements file added with a couple of entries:
 
