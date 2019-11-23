@@ -1,0 +1,17 @@
+{
+  "io.taphouse.maverick" : {
+    "date" : "2019-11-23T23:40:19Z",
+    "filename" : "2019-11-23-catalystic-converter.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "What happens to your project when you Catalyze your app?",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Catalystic Converter"
+  },
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
