@@ -1,0 +1,17 @@
+{
+  "io.taphouse.maverick" : {
+    "date" : "2020-02-14T17:11:23Z",
+    "filename" : "2020-02-14-the-time-i-stumped-the-apple-geniuses.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "The time I asked about the iMac G3 and no one knew the answer.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "The Time I Stumped the Apple Geniuses"
+  },
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
