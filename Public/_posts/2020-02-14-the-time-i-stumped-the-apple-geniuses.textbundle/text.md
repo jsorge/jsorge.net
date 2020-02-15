@@ -4,7 +4,7 @@ Prior to the Seattle area getting its first Apple store my family and I went on 
 
 ![iMacs in their wonderful colors – those were the days](assets/imacs-galore.jpg)
 
-I worked at an Apple Authorized Service Center and had been doing service on the iMacs with slot loading optical drives (like the one pictured above). Whenever I would need to erase a hard drive and restore the operating system I noticed that the desktop wallpaper color matched the color of the case. So a Ruby iMac would get a Ruby colored desktop, and same with Sage green, Indigo blue, and so on. How did they pull this off?
+I worked at an Apple Authorized Service Center and had been doing service on the iMacs with slot loading optical drives (like the ones pictured above). Whenever I would need to erase a hard drive and restore the operating system I noticed that the desktop wallpaper color matched the color of the case. So a Ruby iMac would get a Ruby colored desktop, and same with Sage green, Indigo blue, and so on. How did they pull this off?
 
 I do also have some inside information to help rule out some possibilities:
 
@@ -18,3 +18,11 @@ And that last part is what I think happens. The speakers on these iMacs were col
 If you or someone you know may happen to know how this worked I would love to know the answer!
 
 PS: Special thanks to the Xcoders group last night for encouraging me to post this after I told the story. It was a ton of fun to speculate together. Community is awesome 🙂
+
+**Update 2/15**
+
+After a lot of fun discussion and speculation I think [Daniel Kennett](https://twitter.com/iKenndac) has the most plausible answer: the color was encoded into the serial number!
+
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">VQK? That’s a pink 2nd Gen iPod nano! I spent many years reverse-engineering all things iPod for an app of mine back in the day. <a href="https://t.co/Xxg3Yjxnes">pic.twitter.com/Xxg3Yjxnes</a></p>&mdash; Daniel Kennett (@iKenndac) <a href="https://twitter.com/iKenndac/status/1228422312229294086?ref_src=twsrc%5Etfw">February 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+If my memory serves correctly, when we would replace a logic board we would have precisely one opportunity to reset the serial number via a firmware reset tool. I don't recall what would happen if we failed to update the serial number (and that sure would be a fascinating experiment to run!).
