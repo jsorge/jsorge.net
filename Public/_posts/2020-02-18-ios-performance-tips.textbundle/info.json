@@ -1,0 +1,17 @@
+{
+  "io.taphouse.maverick" : {
+    "date" : "2020-02-18T15:55:09Z",
+    "filename" : "2020-02-18-ios-performance-tips.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "This is a good collection of tips to increase performance of your iOS app.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "🔗 iOS Performance Tips"
+  },
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
