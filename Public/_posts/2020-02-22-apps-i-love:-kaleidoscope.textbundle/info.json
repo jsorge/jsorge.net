@@ -1,0 +1,17 @@
+{
+  "io.taphouse.maverick" : {
+    "date" : "2020-02-23T04:21:38Z",
+    "filename" : "2020-02-22-apps-i-love:-kaleidoscope.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "Kaleidoscope is my diff tool of choice on macOS.",
+    "staticpage" : false,
+    "tags" : [
+		"apps-i-love"
+    ],
+    "title" : "Apps I Love: Kaleidoscope"
+  },
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
