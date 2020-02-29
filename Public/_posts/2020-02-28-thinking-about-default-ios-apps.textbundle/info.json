@@ -1,0 +1,17 @@
+{
+  "io.taphouse.maverick" : {
+    "date" : "2020-02-29T04:32:06Z",
+    "filename" : "2020-02-28-thinking-about-default-ios-apps.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "Apple's rumored to be allowing default iOS apps in a future version of iOS. I've got some questions about that.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Thinking About Default iOS Apps"
+  },
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
