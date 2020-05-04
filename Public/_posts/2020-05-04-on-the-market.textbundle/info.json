@@ -1,0 +1,17 @@
+{
+  "io.taphouse.maverick" : {
+    "date" : "2020-05-04T18:16:19Z",
+    "filename" : "2020-05-03-on-the-market.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "I got laid off last week, which puts me square in the middle of the job market.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "On the Market"
+  },
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}

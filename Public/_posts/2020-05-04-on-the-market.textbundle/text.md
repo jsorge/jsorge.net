@@ -1,0 +1,7 @@
+TL;DR: I got laid off last Wednesday and am on the job market for an iOS developer job. [Here is my résumé](https://github.com/jsorge/my-resume) 🙂
+
+Last week started like any other work-from-pandemic kind of week, but then came Wednesday. Lyft laid off 17% of its workforce including me. It was pretty shocking – especially at first – but there was actually a calm that came over me pretty quickly about what was happening. Don't get me wrong: the situation itself was incredibly chaotic between sorting out logistics of what comes next, talking things over with my now-former team (who was entirely blindsided by this), and _still_ having the regular day-to-day things happening around the house like Atticus's therapies. Life goes on.
+
+In the days since the layoff I've come to realize how amazingly blessed I am by the community that Jesus has put around me. Many friends have said incredibly nice things about me in re-tweeting my original post about being laid off. My email inbox blew up from 3 messages on Wednesday morning to over 55 at its peak late Thursday. I've already had a few recruiter calls and have more lined up this week. I hope and pray that a new job will come along soon.
+
+In the meantime I've got a short contract project to work on with a couple of good friends that I'm super excited about, a calendar that suddenly has become a lot more complicated, and a few things that I need to get listed for sale. Onward to my next adventure!
