@@ -1,0 +1,17 @@
+{
+  "io.taphouse.maverick" : {
+    "date" : "2020-05-08T04:53:15Z",
+    "filename" : "2020-05-07-garage-sale.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "<Short Description Goes Here>",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Garage Sale"
+  },
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
