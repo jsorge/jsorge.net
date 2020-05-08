@@ -1,4 +1,4 @@
-All items priced to include shipping in the Continental U.S. If interested get in touch at garagesale@jsorge.net
+All items priced to include shipping in the Continental U.S. If interested get in touch at [garagesale@jsorge.net](mailto:garagesale@jsorge.net)
 
 ## Kinesis Advantage2 LF Keyboard
 
