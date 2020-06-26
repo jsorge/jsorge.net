@@ -1,0 +1,17 @@
+{
+  "io.taphouse.maverick" : {
+    "date" : "2020-06-26T22:46:46Z",
+    "filename" : "2020-06-26-back-to-the-zu.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "I got a job!",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Back to the Zu"
+  },
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
