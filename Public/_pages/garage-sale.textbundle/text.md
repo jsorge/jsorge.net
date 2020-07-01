@@ -24,12 +24,3 @@ Ports:
 * Audio in/out
 
 **$129**
-
-
-## Logitech C920 Webcam
-
-![](assets/logitech.jpg)
-
-I'm probably burying the most sought after product on the list here, but who am I kidding? Someone's gonna want this really good webcam in our current day and age 🙂 ([Logitech site](https://www.logitech.com/en-us/product/hd-pro-webcam-c920))
-
-**$75**
