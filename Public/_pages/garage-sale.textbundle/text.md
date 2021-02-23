@@ -8,19 +8,3 @@ This is a [Kinesis Advantage2 LF](https://kinesis-ergo.com/shop/advantage2-lfq/)
 
 **$299**
 
-
-## CalDigit TS3 Thunderbolt Dock
-
-![](assets/caldigit.jpg)
-
-This CalDigit Thunderbolt 3 dock ([link to English manual](http://downloads.caldigit.com/CalDigit_TS3_Manual_EN.pdf)) is fantastic. It's got a lot of ports on it, and will power your MacBook up to 85W worth of power. The single-cable lifestyle really is fantastic. Included is a 1-meter Thunderbolt 3 cable as weell as a USB-C -> DisplayPort cable.
-
-Ports:
-
-* 3 USB-A
-* Thunderbolt 3
-* Gigabit Ethernet
-* 2 eSATA
-* Audio in/out
-
-**$129**
