@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>#(title)</title>
+	<title>#(title)</title>
 
-    <meta name="description" content="#(site.metaDescription)" />
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="#(site.metaDescription)" />
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="favicon.ico"">
+	<link rel="shortcut icon" href="favicon.ico"">
 
-    <link rel="stylesheet" type="text/css" href="/styles/screen.css"" />
+	<link rel="stylesheet" type="text/css" href="/styles/screen.css"" />
 
-    <link rel="authorization_endpoint" href="#(site.url)/auth">
+	<link rel="authorization_endpoint" href="#(site.url)/auth">
 	<link rel="token_endpoint" href="#(site.url)/token">
 	<link rel="micropub" href="#(site.url)/micropub">
 
-    <script>
+	<script>
 	</script>
 </head>
 <body class="home-template">
 	<header class="site-head">
 		<link rel="icon" type="image/png" href="/favicon.ico" />
-    	<div class="vertical">
-        	<div class="site-head-content inner">
-	        	<a href="#(site.url)">
-	            	<h1 class="blog-title">#(site.title)</h1>
-		            <h2 class="blog-description">#(site.description)</h2>
-		        </a>
-        	</div>
-	        <div class="headerLinks">
+		<div class="vertical">
+			<div class="site-head-content inner">
+				<a href="#(site.url)">
+					<h1 class="blog-title">#(site.title)</h1>
+					<h2 class="blog-description">#(site.description)</h2>
+				</a>
+			</div>
+			<div class="headerLinks">
 				<a href="/about">About</a>
 				<span class="blog-description">|</span>
 				<a href="http://taphouse.io/?utm_source=jsorge.net">Taphouse Software</a>
@@ -40,45 +40,45 @@
 				<a href="#(site.url)/rss/">RSS</a>
 				<span class="blog-description">|</span>
 				<a href="https://twitter.com/jsorge">Twitter</a>
-        	</div>
-    	</div>
+			</div>
+		</div>
 	</header>
 
 	<main class="content" role="main">
 		<div id="outer">
 			<div id="postList">
-				#for(post in style.list.posts) {
+				#for(post in style.list.posts):
 					<main class="content" role="main">
 						<article class="post">
-							#if(post.title) {
+							#if(post.title):
 								<a href=#(post.url)>
 									<h2 class="post-title">#(post.title)</h1>
 								</a>
-							}
+							#endif
 							<section class="post-content">
-								#get(post.content)
+								#(post.content)
 							</section>
 							<span class="post-meta"><time datetime="#(post.date)">#(post.formattedDate)</time></span>
 						</article>
 					</main>
-				}
+				#endfor
 			</div>
 		</div>
 	</main>
 
 	<nav class="pagination" role="navigation">
-		#if(style.list.pagination.newerLink) {
+		#if(style.list.pagination.newerLink):
 			<a class="newer-posts" href="#(style.list.pagination.newerLink)"><span aria-hidden="true">&larr;</span> Newer Posts</a>
-		}
+		#endif
 		<span class="page-number">#(style.list.pagination.pageNumber)</span>
-		#if(style.list.pagination.olderLink) {
+		#if(style.list.pagination.olderLink):
 			<a class="older-posts" href="#(style.list.pagination.olderLink)">Older Posts <span aria-hidden="true">&rarr;</span></a>
-		}
+		#endif
 	</nav>
 
 	<footer class="site-footer">
-        <div class="inner">
-	        <form method="get" id="search" action="https://duckduckgo.com/">
+		<div class="inner">
+			<form method="get" id="search" action="https://duckduckgo.com/">
 			   <input type="hidden" name="sites"value="jsorge.net"/>
 			   <input type="hidden" name="ka" value="h"/>
 			   <input type="hidden" name="k7" value="#fafafa"/>
@@ -89,13 +89,13 @@
 			   <input type="submit" value="Search" />
 			</form>
 
-            <section class="copyright">All content copyright <a href="#(site.url)/">#(site.title)</a> &copy; #(site.year) &bull; All rights reserved.</section>
-        </div>
-    </footer>
+			<section class="copyright">All content copyright <a href="#(site.url)/">#(site.title)</a> &copy; #(site.year) &bull; All rights reserved.</section>
+		</div>
+	</footer>
 
 	<script type="text/javascript" src="/scripts/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="/scripts/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="/scripts/index.js"></script>
-    <script type="text/javascript" src="/scripts/prism.js"></script>
+	<script type="text/javascript" src="/scripts/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="/scripts/index.js"></script>
+	<script type="text/javascript" src="/scripts/prism.js"></script>
 </body>
 </html>
