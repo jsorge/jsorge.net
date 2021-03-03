@@ -16,4 +16,6 @@ config="${config/'{MAVERICK_VERSION}'/$maverickVersion}"
 config="${config/'CA_SSL: "true"'/CA_SSL: "false"}"
 echo "$config" > $wd/.tools/docker-compose.yml
 
+docker pull "jsorge/maverick:$maverickVersion"
+
 docker-compose -f .tools/docker-compose.yml up --build
