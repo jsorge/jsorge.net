@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>#(title)</title>
+	<title>#(title)</title>
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="favicon.ico"">
+	<link rel="shortcut icon" href="favicon.ico"">
 
-    <link rel="stylesheet" type="text/css" href="/styles/screen.css"" />
+	<link rel="stylesheet" type="text/css" href="/styles/screen.css"" />
 
 	<!-- Twitter Cards -->
 	<meta property="twitter:card" content="summary" />
@@ -30,14 +30,14 @@
 <body class="home-template">
 	<header class="site-head">
 		<link rel="icon" type="image/png" href="/favicon.ico" />
-    	<div class="vertical">
-        	<div class="site-head-content inner">
-	        	<a href="#(site.url)">
-	            	<h1 class="blog-title">#(site.title)</h1>
-		            <h2 class="blog-description">#(site.description)</h2>
-		        </a>
-        	</div>
-	        <div class="headerLinks">
+		<div class="vertical">
+			<div class="site-head-content inner">
+				<a href="#(site.url)">
+					<h1 class="blog-title">#(site.title)</h1>
+					<h2 class="blog-description">#(site.description)</h2>
+				</a>
+			</div>
+			<div class="headerLinks">
 				<a href="/about">About</a>
 				<span class="blog-description">|</span>
 				<a href="http://taphouse.io/?utm_source=jsorge.net">Taphouse Software</a>
@@ -45,27 +45,27 @@
 				<a href="#(site.url)/rss/">RSS</a>
 				<span class="blog-description">|</span>
 				<a href="https://twitter.com/jsorge">Twitter</a>
-        	</div>
-    	</div>
+			</div>
+		</div>
 	</header>
 
 	<main class="content" role="main">
 		<article class="post">
-			#if(style.post.isBlogPost) {
+			#if(style.post.isBlogPost):
 				<span class="post-meta"><time datetime="#(style.post.date)">#(style.post.formattedDate)</time></span>
-			}
-			#if(style.post.title) {
+			#endif
+			#if(style.post.title):
 				<h2 class="post-title">#(style.post.title)</h1>
-			}
+			#endif
 			<section class="post-content">
-				#get(style.post.content)
+				#(style.post.content)
 			</section>
 		</article>
 	</main>
 
 	<footer class="site-footer">
-        <div class="inner">
-	        <form method="get" id="search" action="https://duckduckgo.com/">
+		<div class="inner">
+			<form method="get" id="search" action="https://duckduckgo.com/">
 			   <input type="hidden" name="sites"value="jsorge.net"/>
 			   <input type="hidden" name="ka" value="h"/>
 			   <input type="hidden" name="k7" value="#fafafa"/>
@@ -76,13 +76,13 @@
 			   <input type="submit" value="Search" />
 			</form>
 
-            <section class="copyright">All content copyright <a href="#(site.url)/">#(site.title)</a> &copy; #(site.year) &bull; All rights reserved.</section>
-        </div>
-    </footer>
+			<section class="copyright">All content copyright <a href="#(site.url)/">#(site.title)</a> &copy; #(site.year) &bull; All rights reserved.</section>
+		</div>
+	</footer>
 
 	<script type="text/javascript" src="/scripts/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="/scripts/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="/scripts/index.js"></script>
-    <script type="text/javascript" src="/scripts/prism.js"></script>
+	<script type="text/javascript" src="/scripts/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="/scripts/index.js"></script>
+	<script type="text/javascript" src="/scripts/prism.js"></script>
 </body>
 </html>
