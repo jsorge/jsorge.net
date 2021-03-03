@@ -1,5 +1,4 @@
 #! /usr/bin/env bash
-
 source .tools/parse_yaml.sh
 
 # setup variables

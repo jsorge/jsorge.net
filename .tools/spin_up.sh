@@ -15,4 +15,6 @@ config="${config/'{CONFIG_EMAIL}'/$ssl_contactEmail}"
 config="${config/'{MAVERICK_VERSION}'/$maverickVersion}"
 echo "$config" > $wd/.tools/docker-compose.yml
 
+docker pull "jsorge/maverick:$maverickVersion"
+
 docker-compose -f .tools/docker-compose.yml up --build
