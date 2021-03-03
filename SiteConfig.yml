@@ -8,4 +8,4 @@ ssl:
 feedSize: 50
 sitesToPing:
   - https://micro.blog/ping?url=https%3A%2F%2Fjsorge.net%2Ffeed.json
-maverickVersion: 2.0.1
+maverickVersion: 3.0.0
