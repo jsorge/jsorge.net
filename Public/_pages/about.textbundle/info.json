@@ -1,7 +1,7 @@
 {
   "creatorIdentifier" : "com.ulyssesapp.mac",
   "creatorURL" : "file:\/\/\/Applications\/UlyssesMac.app\/",
-  "io.taphouse.maverick" : {
+  "io_taphouse_maverick" : {
     "date" : "2014-03-22T17:07:00Z",
     "layout" : "post",
     "microblog" : false,
