@@ -1,0 +1,7 @@
+# Better Fastlane with Environments
+
+Last summer I was able to join a newly formed team at work, focused not on any given feature of the Zulily app but rather on supporting the teams that build up those features. It’s been such an amazing experience for me since over the last few years I’ve developed a big interest in the infrastructure and tooling efforts that can support building an iOS app. I first learned about these kinds of things during my time at Lyft, expanded to my personal apps (which I don’t ship much of anymore – but plan on changing that _real soon_), and now get to do it as a full time gig at Zulily.
+
+One of the tasks at hand that I tackled recently was to streamline our Fastlane automations. We had a Fastfile with some redundant lanes, an Appfile with extra – and somewhat outdated – values, and just a lot of opportunity for improvement. This coincides with me wanting to improve the situation for Taphouse’s apps too. I’m working on a new app which is cross platform iOS & Mac and want to have Fastlane automate the code signing, build process, and upload to the App Store. What a cool moment for my professional and personal interests to align (no I won’t say _synergy_).
+
+One of the great talks of last year was [Josh Holtz’s “Implementing Fastlane from nothing to App Store](https://www.youtube.com/watch?v=6Jz-Ywxki0U) which he gave online because of <waves hands> all this. I’ve watched it a few times and marveled at 

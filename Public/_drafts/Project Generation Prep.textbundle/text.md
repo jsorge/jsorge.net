@@ -1,0 +1,9 @@
+Much of the previous few months of my work on the Zulily iOS app has been to start us down the road of modernizing our codebase. We would like to get to the place where we can ship new features like App Clips, but getting a usable 10MB executable out of a few monolithic build targets is daunting.
+
+The Zulily iOS project started around 2012, and there is still much legacy code around – mostly old Objective-C. We have a few framework targets (a couple in particular are monoliths in their own right). Getting us to the place where we had a modular codebase that we could compose in flexible ways is going to take a lot of groundwork. I decided to begin by organizing the repository.
+
+Now, shuffling files on disk may not sound super exciting, but it sure can reveal a lot. And it helps prepare the way for generating our projects programatically with a tool like XcodeGen (which I've used for a number of years now) or Tuist (which I'd heard good things about but not used until a month or so ago – more on that later). 
+
+When you're generating your projects, you use manifest files to declare what targets you have in your project and where those targets get their sources and resources. This makes it vitally important that you have a good structure for your repository, where each source file and resource is in a folder that belongs to its corresponding Xcode target. If you use files in multiple targets this will take some creativity to achieve but hopefully that isn't too big of a deal in your project.
+
+What this looked like for me was taking our existing Xcode project file and updating it to a newer version, one that actually will track files on disk and move them around when I move them in the project. Believe it or not that wasn’t something Xcode would do until [just a few years ago](TODO: Find the docs). With that in place I could do our re-organization in Xcode itself. One thing that I found was that after I moved files around
