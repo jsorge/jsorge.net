@@ -5,7 +5,7 @@ metaDescription: By Jared Sorge.
 batchSize: 10
 ssl:
   contactEmail: jared@jsorge.net
-feedSize: 50
+feedSize: 20
 sitesToPing:
   - https://micro.blog/ping?url=https%3A%2F%2Fjsorge.net%2Ffeed.json
 maverickVersion: 3.0.2

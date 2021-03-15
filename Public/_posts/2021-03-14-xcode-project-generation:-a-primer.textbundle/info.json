@@ -1,0 +1,16 @@
+{
+  "io_taphouse_maverick" : {
+    "date" : "2021-03-15T03:29:56Z",
+    "filename" : "",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "<Short Description Goes Here>",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Xcode Project Generation: A Primer"
+  },
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
