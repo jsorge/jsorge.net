@@ -1,0 +1,16 @@
+{
+  "io_taphouse_maverick" : {
+    "date" : "2021-03-15T09:05:37-07:00",
+    "filename" : "",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "Xcode project generation is pretty great – here's how you can get started!",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Xcode Project Generation: A Primer"
+  },
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
