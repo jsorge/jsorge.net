@@ -9,4 +9,6 @@ Some notes:
 
 There was video recorded as well, and once that is posted to the Xcoders Vimeo account I’ll be sure to update this post with a link to it.
 
+Update: [Here is the video on Vimeo](https://vimeo.com/156185164)
+
 Lastly, I love talking about this stuff. If you have questions hit me up on [Twitter or via email](http://jsorge.net/about/).
