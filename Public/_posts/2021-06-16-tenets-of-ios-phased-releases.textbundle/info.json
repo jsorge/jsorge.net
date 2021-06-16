@@ -1,0 +1,16 @@
+{
+  "io_taphouse_maverick" : {
+    "date" : "2021-06-16T17:23:35Z",
+    "filename" : "",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "Things I've learned about phased releases on the iOS App Store.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Tenets of iOS Phased Releases"
+  },
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
