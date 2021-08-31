@@ -1,101 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-	<title>#(title)</title>
-
-	<meta name="description" content="#(site.metaDescription)" />
-	<meta name="HandheldFriendly" content="True" />
-	<meta name="MobileOptimized" content="320" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<link rel="shortcut icon" href="favicon.ico"">
-
-	<link rel="stylesheet" type="text/css" href="/styles/screen.css"" />
-
-	<link rel="authorization_endpoint" href="#(site.url)/auth">
-	<link rel="token_endpoint" href="#(site.url)/token">
-	<link rel="micropub" href="#(site.url)/micropub">
-
-	<script>
-	</script>
-</head>
-<body class="home-template">
-	<header class="site-head">
-		<link rel="icon" type="image/png" href="/favicon.ico" />
-		<div class="vertical">
-			<div class="site-head-content inner">
-				<a href="#(site.url)">
-					<h1 class="blog-title">#(site.title)</h1>
-					<h2 class="blog-description">#(site.description)</h2>
-				</a>
+#extend("base"):
+	#export("content"):
+		<main class="content" role="main">
+			<div id="outer">
+				<div id="postList">
+					#for(post in style.list.posts):
+						<div class="pt-4">
+							<article class="prose max-w-none font-sans">
+								#extend("post-partial")
+							</article>
+							<div class="relative">
+								<div class="absolute inset-0 flex items-center" aria-hidden="true">
+									<div class="w-full border-t border-gray-300"></div>
+								</div>
+							</div>
+						</div>
+					#endfor
+				</div>
 			</div>
-			<div class="headerLinks">
-				<a href="/about">About</a>
-				<span class="blog-description">|</span>
-				<a href="http://taphouse.io/?utm_source=jsorge.net">Taphouse Software</a>
-				<span class="blog-description">|</span>
-				<a href="#(site.url)/rss/">RSS</a>
-				<span class="blog-description">|</span>
-				<a href="https://twitter.com/jsorge">Twitter</a>
-			</div>
-		</div>
-	</header>
+		</main>
 
-	<main class="content" role="main">
-		<div id="outer">
-			<div id="postList">
-				#for(post in style.list.posts):
-					<main class="content" role="main">
-						<article class="post">
-							#if(post.title):
-								<a href=#(post.url)>
-									<h2 class="post-title">#(post.title)</h1>
-								</a>
-							#endif
-							<section class="post-content">
-								#(post.content)
-							</section>
-							<span class="post-meta"><time datetime="#(post.date)">#(post.formattedDate)</time></span>
-						</article>
-					</main>
-				#endfor
-			</div>
-		</div>
-	</main>
-
-	<nav class="pagination" role="navigation">
-		#if(style.list.pagination.newerLink):
-			<a class="newer-posts" href="#(style.list.pagination.newerLink)"><span aria-hidden="true">&larr;</span> Newer Posts</a>
-		#endif
-		<span class="page-number">#(style.list.pagination.pageNumber)</span>
-		#if(style.list.pagination.olderLink):
-			<a class="older-posts" href="#(style.list.pagination.olderLink)">Older Posts <span aria-hidden="true">&rarr;</span></a>
-		#endif
-	</nav>
-
-	<footer class="site-footer">
-		<div class="inner">
-			<form method="get" id="search" action="https://duckduckgo.com/">
-			   <input type="hidden" name="sites"value="jsorge.net"/>
-			   <input type="hidden" name="ka" value="h"/>
-			   <input type="hidden" name="k7" value="#fafafa"/>
-			   <input type="hidden" name="kj" value="#3f3f3f"/>
-			   <input type="hidden" name="ky" value="#fafafa"/>
-			   <input type="hidden" name="kx" value="b"/>
-			   <input type="text" name="q" maxlength="255"/>
-			   <input type="submit" value="Search" />
-			</form>
-
-			<section class="copyright">All content copyright <a href="#(site.url)/">#(site.title)</a> &copy; #(site.year) &bull; All rights reserved.</section>
-		</div>
-	</footer>
-
-	<script type="text/javascript" src="/scripts/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="/scripts/jquery.fitvids.js"></script>
-	<script type="text/javascript" src="/scripts/index.js"></script>
-	<script type="text/javascript" src="/scripts/prism.js"></script>
-</body>
-</html>
+		<nav class="border-t border-gray-200 py-5 px-4 flex items-center justify-between sm:px-0">
+			  <div class="-mt-px w-0 flex-1 flex">
+			  	#if(style.list.pagination.newerLink):
+					<a href="#(style.list.pagination.newerLink)" class="border-t-2 border-transparent pt-4 pr-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+					  <!-- Heroicon name: solid/arrow-narrow-left -->
+					  <svg class="mr-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+						<path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+					  </svg>
+					  Newer
+					</a>
+				#endif
+			  </div>
+			  <div class="flex">
+				<span class="border-transparent text-gray-500 hover:text-gray-700 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium">
+				  Page #(style.list.pagination.pageNumber)
+				</span>
+			  </div>
+			  <div class="-mt-px w-0 flex-1 flex justify-end">
+				#if(style.list.pagination.olderLink):
+					<a href="#(style.list.pagination.olderLink)" class="border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+					  Older
+					  <!-- Heroicon name: solid/arrow-narrow-right -->
+					  <svg class="ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+						<path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+					  </svg>
+					</a>
+				#endif
+			  </div>
+			</nav>
+	#endexport
+#endextend

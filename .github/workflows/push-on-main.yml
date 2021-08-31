@@ -1,0 +1,19 @@
+name: Publish to Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run_tests:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Add remote to known_hosts
+      run: for ip in $(dig @8.8.8.8 jsorge.net +short); do ssh-keyscan jsorge.net,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts
+    - name: Set up SSH agent
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.JSN_PRIVATE_KEY }}
+    - name: Push to Remote
+      run: ssh jsorge@jsorge.net 'cd /var/www/jsorge.net/; git fetch && git pull'
