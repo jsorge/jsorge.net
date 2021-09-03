@@ -1,17 +1,19 @@
-*updated 3/11/2019*
+*updated 9/3/2021*
 
-### Lyft
-* I've been at Lyft since December, 2017.
-* I spent year 1 on the communications platform team doing behind the scenes work that you probably wouldn't notice.
-* I joined the Driver Onboarding team in January and am gearing up to launch my first new feature as part of that team: a new driver license scanning workflow.
+### Zulily
+* I'm on the Core Site & Apps (CSA) squad as an iOS Engineer
+* My projects lately have been largely focused on our Jenkins CI infrastructure recently
+* I've also been working on rebuilding parts of our codebase to be more modern and easier to use – starting with analytics.
 
 ### Other Projects
-* [Scorebook](https://taphouse.io/scorebook) has returned to the app store, and I'll be keeping it updated regularly.
+* [Scorebook](https://taphouse.io/scorebook) has been languishing a bit. I want to come back to it and rebuild it in SwiftUI.
 * [Maverick](https://github.com/jsorge/maverick) is the blog engine powering this site, and I've got a few things I still want to do to enhance it. Mostly this isn't directly Maverick related but more around tooling for writing posts on iOS and the Mac.
+* I've been working on a new app which is part of the Maverick support effort but is a bit more generalized to be something usable by more people.
+* I have a client that I've been working with for a few months where I'm helping to build out and maintain their CI infrastructure (Bitrise & GitHub Actions).
 * I'm co-organizing the [Seattle Xcoders](https://xcoders.org) meetup group.
-
+    * I also do [our podcast](https://podcasts.apple.com/us/podcast/xcoders/id1470146564)!
 
 ### Home
-* Atticus (5) is in preschool, and will be going in to developmental kindergarten in the fall.
-* Finnian (2.5) will be going in to part-time preschool in the fall.
-* Both boys are super busy and fun, giving my wife and me lots of joy along the way.
+* Atticus (7.5) is in 2nd grade.
+* Finnian (5) is in pre-k.
+
