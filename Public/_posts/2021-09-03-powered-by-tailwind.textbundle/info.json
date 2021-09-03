@@ -1,0 +1,16 @@
+{
+  "io_taphoue_maverick" : {
+    "date" : "2021-09-03T21:34:40Z",
+    "filename" : "",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "I got to play with Tailwind CSS this week, and updated my layout to use it.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Powered by Tailwind"
+  },
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
