@@ -25,4 +25,4 @@ jobs:
     - name: Push to Remote
       run: |
         #!/bin/bash
-        ssh jsorge@jsorge.net 'cd /var/www/jsorge.net/; git fetch && git pull'
+        ssh -o "StrictHostKeyChecking=no" jsorge@jsorge.net 'cd /var/www/jsorge.net/; git fetch && git pull'
