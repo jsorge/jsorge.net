@@ -1,4 +1,17 @@
 #extend("base"):
+	#export("meta"):
+		<!-- Twitter Cards -->
+		<meta property="twitter:card" content="summary" />
+		<meta property="twitter:site" content="@jsorgenet" />
+		<meta property="twitter:creator" content="@jsorge" />
+		<meta property="twitter:title" content="#(style.post.title)" />
+		<meta property="twitter:description" content="#(style.post.shortDescription)" />
+		<!-- Facebook Open Graph -->
+		<meta property="og:title" content="#(title)" />
+		<meta property="og:site_name" content="jsorge.net" />
+		<meta property="og:url" content="#(style.post.url)" />
+		<meta property="og:description" content="#(style.post.shortDescription)" />
+	#endexport
 	#export("content"):
 		<main class="content" role="main">
 			#extend("post-partial")

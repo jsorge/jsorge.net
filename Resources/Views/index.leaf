@@ -1,4 +1,6 @@
 #extend("base"):
+	#export("meta"):
+	#endexport
 	#export("content"):
 		<main class="content" role="main">
 			<div id="outer">
