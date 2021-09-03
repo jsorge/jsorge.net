@@ -1,0 +1,30 @@
+<article class="mt-5 prose max-w-none font-sans dark:text-white">
+    #if(post):
+        <!-- This post come from a list of posts -->
+        <span><time datetime="#(post.date)">#(post.formattedDate)</time></span>
+        #if(post.title):
+            <a href=#(post.url)>
+                <h2 class="font-display">#(post.title)</h1>
+            </a>
+        #endif
+        <section>
+            #unsafeHTML(post.content)
+        </section>
+    #else:
+        <!-- This post comes from a single-post page -->
+        #if(style.post.isBlogPost):
+            <span class="post-meta"><time datetime="#(style.post.date)">#(style.post.formattedDate)</time></span>
+        #else:
+            <p class="mt-4" />
+        #endif
+
+        #if(style.post.title):
+            <h2 class="font-display">#(style.post.title)</h1>
+        #else:
+            <p class="pt-5">
+        #endif
+        <section>
+            #unsafeHTML(style.post.content)
+        </section>
+    #endif
+</article>

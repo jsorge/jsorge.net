@@ -41,3 +41,11 @@ ensure-swift-sh:
 renew-ssl: down
 	@ sudo rm -rf ./.tools/nginx/ssl
 	@ make serve
+
+.PHONY: build-css
+build-css:
+	@npx tailwindcss \
+	-i ./styles/styles.source.css \
+	-c ./tailwind.config.js \
+	-o ./Public/styles/styles.css \
+	--minify

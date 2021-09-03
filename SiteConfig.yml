@@ -1,5 +1,5 @@
 title: jsorge.net
-description: Christian, husband, dad, developer, batman aficianado
+description: Christian, husband, dad, developer, batman aficionado
 url: https://jsorge.net
 metaDescription: By Jared Sorge.
 batchSize: 10
@@ -8,4 +8,5 @@ ssl:
 feedSize: 20
 sitesToPing:
   - https://micro.blog/ping?url=https%3A%2F%2Fjsorge.net%2Ffeed.json
-maverickVersion: 3.0.2
+maverickVersion: 3.1.0
+disablePageCaching: true

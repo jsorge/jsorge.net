@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>#(title)</title>
+
+    <meta name="description" content="#(site.metaDescription)" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="favicon.ico"">
+
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/prism-light.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/prism-dark.css" />
+
+    <link rel="authorization_endpoint" href="#(site.url)/auth">
+    <link rel="token_endpoint" href="#(site.url)/token">
+    <link rel="micropub" href="#(site.url)/micropub">
+</head>
+<body class="bg-white dark:bg-darkGray">
+    <header class="bg-darkGray p-10 md:p-20">
+        <link rel="icon" type="image/png" href="/favicon.ico" />
+        <div class="text-center">
+            <a class="no-underline" href="#(site.url)">
+                <p class="text-5xl font-display mt-1 text-white sm:tracking-tight">#(site.title)</p>
+            </a>
+            <p class="mt-5 mx-auto text-sm text-orange md:text-xl">#(site.description)</p>
+            <div class="pt-4">
+                <a class="header-link" href="/about">About</a>
+                <span class="header-separator">|</span>
+                <a class="header-link" href="http://taphouse.io/?utm_source=jsorge.net">Taphouse Software</a>
+                <span class="header-separator">|</span>
+                <a class="header-link" href="#(site.url)/rss/">RSS</a>
+                <span class="header-separator">|</span>
+                <a class="header-link" href="https://twitter.com/jsorge">Twitter</a>
+            </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            #import("content")
+        </div>
+    </div>
+
+    <footer class="bg-darkGray p-20 text-center">
+        <section class="text-white">
+            All content copyright <a href="#(site.url)/">#(site.title)</a> &copy; #(site.year) &bull; All rights reserved.
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="/scripts/prism.js"></script>
+</body>
+</html>
