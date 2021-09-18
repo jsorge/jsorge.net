@@ -1,0 +1,16 @@
+{
+  "io_taphouse_maverick" : {
+    "date" : "2021-09-14T05:10:28Z",
+    "filename" : "",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "<Short Description Goes Here>",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Found in Translation"
+  },
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
