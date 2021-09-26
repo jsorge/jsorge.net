@@ -1,0 +1,16 @@
+{
+  "io_taphouse_maverick" : {
+    "date" : "2021-03-18T19:56:25Z",
+    "filename" : "",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "<Short Description Goes Here>",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Better Fastlane With Environments"
+  },
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}

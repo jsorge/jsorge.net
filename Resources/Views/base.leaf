@@ -36,7 +36,7 @@
                 <span class="header-separator">|</span>
                 <a class="header-link" href="http://taphouse.io/?utm_source=jsorge.net">Taphouse Software</a>
                 <span class="header-separator">|</span>
-                <a class="header-link" href="#(site.url)/rss/">RSS</a>
+                <a class="header-link" href="#(site.url)/rss">RSS</a>
                 <span class="header-separator">|</span>
                 <a class="header-link" href="https://twitter.com/jsorge">Twitter</a>
             </div>
