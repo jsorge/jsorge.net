@@ -1,0 +1,16 @@
+{
+  "io_taphouse_maverick" : {
+    "date" : "2022-03-04T16:31:51Z",
+    "filename" : "",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "I got a new job as an iOS engineer at Adobe!",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "self.employer = Adobe()"
+  },
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
