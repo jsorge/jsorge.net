@@ -22,6 +22,7 @@
     <link rel="authorization_endpoint" href="#(site.url)/auth">
     <link rel="token_endpoint" href="#(site.url)/token">
     <link rel="micropub" href="#(site.url)/micropub">
+    <link rel="me" href="https://mastodon.social/@jsorge">
 </head>
 <body class="bg-white dark:bg-darkGray">
     <header class="bg-darkGray p-10 md:p-20">
