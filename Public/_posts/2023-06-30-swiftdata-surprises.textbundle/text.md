@@ -13,7 +13,7 @@ final class Company {
 My surprises came when I started adding some tests around my new models. For somewhat contrived reasons, let's say that when a company gets created there is 1 employee.
 
 ```swift
-func test_newCompany_hasYearAttached() throws {
+func test_newCompany_hasEmployeeAttached() throws {
     let company = Company(name: "Great Co.")
     XCTAssertEqual(1, company.employees.count)
 }
@@ -26,7 +26,7 @@ This test fails in 2 ways:
 I fix the test by adding the container, and then inserting the `company` in to the container's context:
 
 ```swift
-func test_newCompany_hasYearAttached() throws {
+func test_newCompany_hasEmployeeAttached() throws {
     let context = // create the container
 
     let company = Company(name: "Great Co.")
