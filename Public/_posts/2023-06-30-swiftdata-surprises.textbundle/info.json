@@ -1,0 +1,16 @@
+{
+  "io_taphouse_maverick" : {
+    "date" : "2023-07-01T05:11:53Z",
+    "filename" : "",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "I'm playing with SwiftData and got suprised by a couple of things.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "SwiftData Suprises"
+  },
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
