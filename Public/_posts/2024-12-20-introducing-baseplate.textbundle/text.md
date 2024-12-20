@@ -1,6 +1,6 @@
 I love indie software. It's one of the things that I love about Apple's platforms. And being an indie is something that I've wanted to do for a long time (no this isn't a post where I say I'm quitting my job). So when a really cool opportunity crossed my path to acquire an exsiting app I decided to take the leap.
 
-Meet Baseplate! It's a fun app for LEGO collectors to manage their collections. Over the past few years I've gotten pretty heavy into collecting and building and I've had a great time getting to know Baseplate. I hope you love it too. Check it out on the App Store](https://apps.apple.com/us/app/brick-catalog-baseplate/id6737250348)!
+Meet Baseplate! It's a fun app for LEGO collectors to manage their collections. Over the past few years I've gotten pretty heavy into collecting and building and I've had a great time getting to know Baseplate. I hope you love it too. Check it out [on the App Store](https://apps.apple.com/us/app/brick-catalog-baseplate/id6737250348)!
 
 ![Screenshot of Baseplate](assets/baseplate.jpeg)
 <div align="center">[Go get Baseplate on the App Store](https://apps.apple.com/us/app/brick-catalog-baseplate/id6737250348)</div>
