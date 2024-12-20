@@ -1,0 +1,16 @@
+{
+  "io_taphouse_maverick" : {
+    "date" : "2024-12-20T18:01:45Z",
+    "filename" : "2024-12-20-introducing-baseplate.textbundle",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "I have a new app: Baseplate, which helps you organize your LEGO collection!",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Meet Baseplate"
+  },
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
