@@ -23,6 +23,6 @@ jobs:
       - name: Deploy via SSH
         run: |
           ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "\
-            cd /var/www/jsorge.net && \
-            git fetch && \
-            git pull"
+            cd /path/to/your/repository && \
+            GIT_SSH_COMMAND='ssh -i ~/.ssh/github_deploy_key' git fetch && \
+            GIT_SSH_COMMAND='ssh -i ~/.ssh/github_deploy_key' git pull origin main"
