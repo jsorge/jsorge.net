@@ -1,5 +1,3 @@
-const plugin = require('tailwindcss/plugin')
-
 module.exports = {
   content: [
     "./Resources/Views/*.leaf",
@@ -7,16 +5,6 @@ module.exports = {
   darkMode: 'media',
   theme: {
     extend: {
-      fontFamily: {
-        'sans': ['Palanquin-Regular'],
-        'display': ['Palanquin-Semibold'],
-        'code': ['IBM Plex Mono'],
-        'mono': ['IBM Plex Mono'],
-      },
-      colors: {
-        'darkGray': '#2a2828',
-        'orange': '#e8804b',
-      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
@@ -28,12 +16,12 @@ module.exports = {
             'pre code::before': null,
             'pre code::after': null,
             a: {
-              color: theme('colors.orange'),
+              color: '#e8804b',
             },
             h2: {
               'margin-top': 0,
               'margin-bottom': 0,
-              color: theme('colors.orange'),
+              color: '#e8804b',
               a: {
                 link: {
                   'text-decoration': 'none',
@@ -45,7 +33,4 @@ module.exports = {
       })
     }
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-  ],
 }
