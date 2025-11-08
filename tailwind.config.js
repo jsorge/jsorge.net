@@ -1,12 +1,9 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-  purge: {
-    enabled: true,
-    content: [
-      "./Resources/Views/*.leaf",
-    ]
-  },
+  content: [
+    "./Resources/Views/*.leaf",
+  ],
   darkMode: 'media',
   theme: {
     extend: {
@@ -47,9 +44,6 @@ module.exports = {
         }
       })
     }
-  },
-  variants: {
-    extend: {},
   },
   plugins: [
     require("@tailwindcss/typography"),
