@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(wc:*)",
+      "Bash(ls:*)",
+      "Bash(git -C /Users/jsorge/Developer/jsorge.net log --oneline)",
+      "Bash(/opt/homebrew/bin/magick identify:*)",
+      "Skill(review-post)",
+      "Skill(resize-images)"
+    ]
+  }
+}
