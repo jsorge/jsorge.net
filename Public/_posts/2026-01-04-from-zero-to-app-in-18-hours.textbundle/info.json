@@ -1,0 +1,16 @@
+{
+  "io_taphouse_maverick" : {
+    "date" : "2026-01-04T22:03:41Z",
+    "filename" : "2026-01-04-from-zero-to-app-in-18-hours",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "I made a new app in a very short amount of time, and had a lot of fun doing it.",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Meet Baseplate"
+  },
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}
