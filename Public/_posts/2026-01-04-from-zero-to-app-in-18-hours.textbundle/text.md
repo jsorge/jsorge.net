@@ -25,7 +25,7 @@ I figured that it could be fun to see what it might take to get this app on the 
 
 Next came the app icon. I've used Bakery in the past to make quick icons using SF Symbols, but that's disallowed in the App Store. Claude can't create images, but it can create SVGs. Since Decoder is basically a full-window code scanner I came up with the concept of a Mac window with a QR code inside and Claude generated the code to make an SVG. This process actually took quite a few iterations but I got to a place I was happy enough with. The biggest creative change I had to make was putting the macOS window stoplights in the center of the title bar because otherwise Tahoe's roundrect clipping would slice the red one right off. It took a few iterations to get the sizing correct for Icon Composer so that the SVG would fill the icon but we got there. I'm actually pretty happy with how the icon turned out.
 
-![Decoder app icon](decoder-icon.png)
+![Decoder app icon](assets/decoder-icon.png)
 
 ### Business Time
 While I wanted Decoder to be free, I also knew that having a way to get a few dollars for it would be nice. I've used RevenueCat with Baseplate already and I've seen other apps implement a tip jar feature so I asked Claude to add a tip jar, with a primary action button in the toolbar. Claude spun for a little bit and did a very nice job of producing a view with buttons that can act as individual "tip" buying buttons, hooked up to RevenueCat (after having added RevenueCat's SDK to my XcodeGen manifest).
@@ -41,6 +41,7 @@ I have a separate repository for my web services (there's the website and a smal
 This project began at about 5pm PST on December 29. By 11am on December 30 I had the app in a good state, tested the in-app purchase flow, and updated my website. I asked Claude to give me the marketing spiel, looked it over, and submitted it for review.
 
 > **A Brief In-App Purchase Aside**
+>
 > The workflow for adding in-app purchases to an app is strange and easily confusing. I say this having gone through it with Baseplate at the end of 2024, and at Adobe having gone through it with [Premiere's](https://apps.apple.com/us/app/adobe-premiere-video-editor/id6742757464) launch in September of last year. In-app purchases (consumable, non-consumable, or subscriptions) need to be approved by Apple before they can be sold in an app and the process for getting them approved gets bundled up with an app's submission.
 >
 > After I submitted Decoder for app review I found a couple of bugs that I wanted to take care of. So I did that, made a new build, and developer-rejected the existing build that I had submitted before. This took my app (which also had the 3 tip jar in-app purchases submitted as well) back to the "Prepare for Submission" state. However when I went back to submit the updated build I couldn't find the 3 tip jar items to add back and looking at their product pages in App Store Connect showed them still waiting for review.
