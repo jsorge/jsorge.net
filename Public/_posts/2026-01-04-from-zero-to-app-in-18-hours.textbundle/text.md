@@ -15,7 +15,7 @@ I've been working with AI coding tools more (Claude Code and Codex are my curren
 >
 > Once we have the basic shell up and running we can talk about other features.
 
-I think that's pretty close to the prompt I used and the result took just a couple of minutes and out popped an app that interacted with the camera and scanned the code. I showed Emily the app and she confused it with one that I had sent her way (she had already paid the bill, I was just having fun). Her surprised look when I said that I just made this was a lot of fun to see.
+The result took just a couple of minutes and out popped an app that interacted with the camera and scanned the code. I showed Emily the app and she confused it with one that I had sent her way (she had already paid the bill, I was just having fun). Her surprised look when I said that I just made this was a lot of fun to see.
 
 ### Claude's Initial Output
 I have had a bit of experience with Claude over the past year, and I've built up a decently extensive set of rules in my `.claude` folder. But I have to say that the initial output from my meager prompt above was _very good_. It made an XcodeGen yml manifest similar to my other apps, and I was able to easily generate the project the first time. My monorepo is anything but conventional but it works very well for me. Claude plugged in to it and added the new app structure seamlessly.
