@@ -1,3 +1,5 @@
+**Updated to include the prompt that I used**
+
 Over the years I've always been very impressed when I hear stories of developers building and shipping an app very quickly. But for me that experience had never come together – getting the idea (which I could execute quickly), actually making the app to a standard that I'm happy with as a simple 1.0, updating all the marketing materials, and the 28 other steps that all go in to making a release. It's a lot of work!
 
 However, on Monday last week things came together. And I'd say it was a highlight of my Christmas break from work.
@@ -7,11 +9,11 @@ TL;DR: I've got a new Mac app – Decoder. It will use your Mac's camera to scan
 ### Backstory
 My wife Emily had gotten a bill in the mail that had a QR code on it so that you can pay by phone. However (and I've had this feeling often as well) entering the data associated with the bill is easier done on the Mac. The problem is that the Mac has no built-in QR code scanner, unlike the iPhone. So I went searching on the App Store for an app that could help her utilize her webcam to scan the code. There are a couple out there but neither seemed all that great.
 
-I've been working with AI coding tools more (Claude Code and Codex are my current weapons of choice) and so I created a new git worktree in my monorepo and opened Claude code to it and gave a simple prompt. I really wish I had written down the prompt I used but it was something to the effect of:
+I've been working with AI coding tools more (Claude Code and Codex are my current weapons of choice) and so I created a new git worktree in my monorepo and opened Claude code to it and gave a simple prompt:
 
-> I want to make a Mac app which can use the built-in camera to scan a QR code, barcode, or any other similar code. Once it's recognized it should show the value of the code to the user with options such as "Copy" or "Go to Link" (if the decoded value is a URL). I want the app to feel at home on the Mac.
+> I'd like to make a new app for the Mac which turns on the camera and lets the user scan a QR or barcode. Let's call the app `Decoder`. Take a look at the pattern of my other apps and make a new one in the Apps directory with an Xcodegen definition file. The app should also follow common Mac patterns and fit in well with the rest of the ecosystem.
 >
-> Note that in my monorepo I have my apps located in the `/Apps` directory and I use XcodeGen to generate Xcode projects. Look at Baseplate to see how this is done.
+> Once we have the basic shell up and running we can talk about other features.
 
 I think that's pretty close to the prompt I used and the result took just a couple of minutes and out popped an app that interacted with the camera and scanned the code. I showed Emily the app and she confused it with one that I had sent her way (she had already paid the bill, I was just having fun). Her surprised look when I said that I just made this was a lot of fun to see.
 
