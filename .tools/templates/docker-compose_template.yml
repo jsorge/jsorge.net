@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   maverick:
-    image: ghcr.io/jsorge/maverick:{MAVERICK_VERSION}
+    image: {MAVERICK_REGISTRY}:{MAVERICK_VERSION}
     restart: on-failure
     volumes:
       - ../Public:/app/Public

@@ -13,9 +13,10 @@ trimmedurl=$(echo "$url" | awk -F/ '{print $3}')
 config="${config/'{CONFIG_DOMAIN}'/$trimmedurl}"
 config="${config/'{CONFIG_EMAIL}'/$ssl_contactEmail}"
 config="${config/'{MAVERICK_VERSION}'/$maverickVersion}"
+config="${config/'{MAVERICK_REGISTRY}'/$MAVERICK_REGISTRY}"
 config="${config/'CA_SSL: "true"'/CA_SSL: "false"}"
 echo "$config" >$wd/.tools/docker-compose.yml
 
-docker pull "ghcr.io/jsorge/maverick:$maverickVersion"
+docker pull "$MAVERICK_REGISTRY:$maverickVersion"
 
 docker-compose -f .tools/docker-compose.yml up --build
