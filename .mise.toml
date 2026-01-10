@@ -1,5 +1,5 @@
 [env]
-MAVERICK_REGISTRY = "ghcr.io/jsorge/maverick"
+MAVERICK_REGISTRY = "ghcr.io/taphouseio/maverick"
 
 [tasks.serve]
 description = "Start production server with SSL"
