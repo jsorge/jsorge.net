@@ -18,6 +18,10 @@ run = "docker compose -f ./.tools/docker-compose.yml down"
 description = "View Maverick container logs"
 run = "docker compose -f ./.tools/docker-compose.yml logs maverick"
 
+[tasks.docker-errors]
+description = "Show recent Swift fatal errors from Maverick"
+run = "docker compose -f ./.tools/docker-compose.yml logs maverick 2>&1 | grep -B 5 'Fatal error' | tail -100"
+
 [tasks.build-css]
 description = "Rebuild Tailwind CSS"
 run = """
