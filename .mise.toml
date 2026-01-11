@@ -2,16 +2,12 @@
 MAVERICK_REGISTRY = "ghcr.io/taphouseio/maverick"
 
 [tasks.serve]
-description = "Start production server with SSL"
+description = "Start the site (Cloudflare handles SSL)"
 run = "./.tools/spin_up.sh"
 
 [tasks.down]
 description = "Stop Docker containers"
 run = "docker-compose -f ./.tools/docker-compose.yml down"
-
-[tasks.dev]
-description = "Start local dev server (no SSL)"
-run = "./.tools/spin_up_dev.sh"
 
 [tasks.docker-logs]
 description = "View Maverick container logs"
@@ -46,6 +42,3 @@ run = "./vendor/swift-sh ./tools/PublishWorkingCopy.swift"
 description = "Optimize images in committed textbundles"
 run = "bash mise/scripts/resize-images.sh"
 
-[tasks.renew-ssl]
-description = "Renew Let's Encrypt certificates"
-run = "bash mise/scripts/renew-ssl.sh"
