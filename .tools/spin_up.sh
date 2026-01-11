@@ -20,4 +20,9 @@ echo "$config" > $wd/.tools/docker-compose.yml
 
 docker pull "$MAVERICK_REGISTRY:$maverickVersion"
 
+# Ensure directories are writable by the Maverick container.
+# The container runs as vapor (uid 999) but files are owned by the host user.
+# Maverick needs write access for caching/compiled templates.
+chmod -R o+w "$wd/Public" "$wd/Resources" 2>/dev/null || true
+
 docker compose -f .tools/docker-compose.yml up --build -d
