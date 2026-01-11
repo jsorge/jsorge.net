@@ -12,11 +12,11 @@ run = "./.tools/spin_up.sh"
 
 [tasks.down]
 description = "Stop Docker containers"
-run = "docker compose -f ./.tools/docker compose.yml down"
+run = "docker compose -f ./.tools/docker-compose.yml down"
 
 [tasks.docker-logs]
 description = "View Maverick container logs"
-run = "docker compose -f ./.tools/docker compose.yml logs maverick"
+run = "docker compose -f ./.tools/docker-compose.yml logs maverick"
 
 [tasks.build-css]
 description = "Rebuild Tailwind CSS"
