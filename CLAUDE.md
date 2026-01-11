@@ -4,27 +4,29 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is the source repository for jsorge.net, a personal blog powered by Maverick (a Swift-based blog engine). Content is stored as textbundle files and served via Docker containers running Maverick with an Nginx reverse proxy.
+This is the source repository for jsorge.net, a personal blog powered by Maverick (a Swift-based blog engine). Content is stored as textbundle files and served via Docker containers running Maverick with an Nginx reverse proxy. SSL is handled by Cloudflare (Flexible mode).
 
 ## Key Commands
 
 ```bash
 # Content management
-make newpost              # Create a new blog post (prompts for title)
-make publish              # Commit, push, and deploy to production
+mise run newpost          # Create a new blog post (prompts for title)
+mise run publish          # Commit, push, and deploy to production
 
-# Development
-make dev                  # Start local dev server (no SSL)
-make serve                # Start production server with SSL
-make down                 # Stop Docker containers
-make docker-logs          # View Maverick container logs
+# Server
+mise run serve            # Start the site (Cloudflare handles SSL)
+mise run down             # Stop Docker containers
+mise run docker-logs      # View Maverick container logs
 
 # Styling
-make build-css            # Rebuild Tailwind CSS (required after style changes)
+mise run build-css        # Rebuild Tailwind CSS (required after style changes)
 
 # Utilities
-make resize-images        # Optimize images in committed textbundles
-make renew-ssl            # Renew Let's Encrypt certificates
+mise run resize-images    # Optimize images in committed textbundles
+
+# Server management
+mise run new-server       # Create and configure a new Digital Ocean droplet
+mise run update-ssh-host  # Update GitHub SSH_HOST secret with new server IP
 ```
 
 ## Textbundle Post Format
@@ -58,11 +60,21 @@ The `info.json` structure includes Maverick-specific metadata under `io_taphouse
 
 The site deploys automatically via GitHub Actions on push to main. The workflow SSHs into the production server and runs `git pull`. Maverick processes textbundles dynamically—there's no static site build step for content.
 
+## Server Infrastructure
+
+- **Host**: Digital Ocean droplet (Ubuntu LTS)
+- **SSH**: `ssh jsorge-net` (configured in ~/.ssh/config)
+- **Website location**: `/var/www/jsorge.net`
+- **SSL**: Handled by Cloudflare (Flexible mode) - server runs HTTP only on port 80
+- **Deployment keys**: Stored in 1Password, installed at `~/.ssh/github_deploy_key` on server
+
+The `new-server` task creates a droplet with Docker, configures SSH keys, and sets up the directory structure. After running, you need to clone the repo and start services manually.
+
 ## Creating Posts
 
 New posts can be created via:
 ```bash
-make newpost
+mise run newpost
 # or directly:
 ./vendor/swift-sh ./tools/NewBlogPost.swift "Post Title"
 ./vendor/swift-sh ./tools/NewBlogPost.swift --draft "Draft Title"
