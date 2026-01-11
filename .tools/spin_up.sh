@@ -1,6 +1,9 @@
 #! /usr/bin/env bash
 source .tools/parse_yaml.sh
 
+# Default registry if not set in environment (e.g., via mise)
+MAVERICK_REGISTRY="${MAVERICK_REGISTRY:-ghcr.io/taphouseio/maverick}"
+
 # setup variables
 wd=$(pwd)
 siteConfigPath="$wd/SiteConfig.yml"
