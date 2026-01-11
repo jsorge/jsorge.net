@@ -9,3 +9,4 @@ logs
 /.tools/docker-compose.yml
 vendor/
 /node_modules
+.last-droplet-ip

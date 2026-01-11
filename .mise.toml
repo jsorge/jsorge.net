@@ -1,3 +1,8 @@
+[tools]
+doctl = "latest"
+"1password-cli" = "latest"
+gh = "latest"
+
 [env]
 MAVERICK_REGISTRY = "ghcr.io/taphouseio/maverick"
 
@@ -42,3 +47,10 @@ run = "./vendor/swift-sh ./tools/PublishWorkingCopy.swift"
 description = "Optimize images in committed textbundles"
 run = "bash mise/scripts/resize-images.sh"
 
+[tasks.new-server]
+description = "Create and configure a new Digital Ocean droplet"
+run = "bash mise/scripts/new-server.sh"
+
+[tasks.update-ssh-host]
+description = "Update GitHub SSH_HOST secret with new server IP"
+run = "bash mise/scripts/update-ssh-host.sh"
