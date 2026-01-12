@@ -1,0 +1,14 @@
+This weekend has been quite the ordeal. In an effort to distract myself from having to say a [permanent goodbye to our beloved cat Molly](https://mastodon.social/@jsorge/115874577725112641) I decided to dust off the code to Maverick – my blog engine – and update all the things: from Swift 5.3 -> 6.2 and the newest versions of Vapor and its dependencies. It's been a few years since I've worked on Maverick so I figured there was some work to be done.
+
+Boy, was I right. And boy, did it get more complicated than I thought it would.
+
+Honestly, in the whirlwind of emotions I don't know if I remember all the steps I went though. It did lead to [my first Swift Forums post](https://forums.swift.org/t/how-to-troubleshoot-upgrading-docker-and-swift-deployments/84062) because I was getting crashes I couldn't make heads or tails of. The first part of it had to deal with Swift's Docker images (or libraries that I link to in newer versions of Swift, it's hard for me to tell) using "CPU flags" – a term I'm not familiar with – which my Digital Ocean server doesn't have.
+
+I was able to solve that by statically linking the Swift standard library in my executable. At least I think that's what solved it. Then came thread creation crashes, and then Docker permission crashes. What I ended up doing was this:
+
+* Created a new server, and took the opportunity to automate that process. The automation part wasn't strictly needed, but it's one of those things that had been in my head a while so I took the chance to do it.
+* Simplified my SSL approach. If I was going to create a new server to check if it built there, I would need to update my infrastructure because it built all the SSL pieces for me. I didn't have a way for it _not_ to do that. Instead I went with Cloudflare and removed SSL from the game entirely. This simplified a lot of my spin up process and made it identical whether in production or locally on my Mac. This was a big win.
+* Because It's Always DNS, I had to point my nameservers at Cloudflare (and Cloudflare at my new server too). My old server was too old – 7 years at this point – so it was time to make the switch there too.
+* Once I deployed the new server I got some Swift runtime crashes in my code (a first for this project) and I had to fix that by updating permissions of some mounts that get made in my app's container. The problem was Maverick couldn't read the site's configuration and crashed. Once the permissions were set, my site was happy again.
+
+There are probably steps along the way that I'm missing, but the gist is that my blog is back after a couple of days down. The next time I update the engine I'll be dang sure to do it on a test server first. Live and learn.
