@@ -10,8 +10,7 @@ This is the source repository for jsorge.net, a personal blog powered by Maveric
 
 ```bash
 # Content management
-mise run newpost          # Create a new blog post (prompts for title)
-mise run publish          # Commit, push, and deploy to production
+mise run prepare-post     # Add Maverick metadata to newest textbundle
 
 # Server
 mise run serve            # Start the site (Cloudflare handles SSL)
@@ -54,7 +53,7 @@ The `info.json` structure includes Maverick-specific metadata under `io_taphouse
 - **Templates**: `Resources/Views/*.leaf` (Vapor's Leaf templating)
 - **Styles**: `styles/styles.source.css` (Tailwind source) → `Public/styles/styles.css` (built)
 - **Configuration**: `SiteConfig.yml` (site metadata, Maverick version, feed settings)
-- **Tools**: `tools/` contains Swift scripts using swift-sh, `.tools/` contains Docker/deployment configs
+- **Tools**: `mise/scripts/` contains bash scripts for tasks, `.tools/` contains Docker/deployment configs
 
 ## Deployment
 
@@ -72,12 +71,10 @@ The `new-server` task creates a droplet with Docker, configures SSH keys, and se
 
 ## Creating Posts
 
-New posts can be created via:
+Posts are created using an external textbundle editor app. After creating a post, add Maverick metadata:
+
 ```bash
-mise run newpost
-# or directly:
-./vendor/swift-sh ./tools/NewBlogPost.swift "Post Title"
-./vendor/swift-sh ./tools/NewBlogPost.swift --draft "Draft Title"
+mise run prepare-post     # Interactive: prompts for title, description, tags
 ```
 
-This creates the textbundle structure with proper metadata and opens it in BBEdit.
+Or use the Claude skill `/prepare-post` for AI-suggested tags based on post content.

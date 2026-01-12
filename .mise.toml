@@ -32,6 +32,9 @@ npx tailwindcss \
   --minify
 """
 
+[tasks.prepare-post]
+description = "Add Maverick metadata to newest textbundle"
+run = "bash mise/scripts/prepare-post.sh"
 
 [tasks.resize-images]
 description = "Optimize images in committed textbundles"
