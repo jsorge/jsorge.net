@@ -32,20 +32,6 @@ npx tailwindcss \
   --minify
 """
 
-[tasks.ensure-swift-sh]
-description = "Ensure swift-sh is installed"
-run = "./tools/ensure-swift-sh.sh"
-hide = true
-
-[tasks.newpost]
-description = "Create a new blog post"
-depends = ["ensure-swift-sh"]
-run = "./vendor/swift-sh ./tools/NewBlogPost.swift"
-
-[tasks.publish]
-description = "Commit, push, and deploy to production"
-depends = ["ensure-swift-sh"]
-run = "./vendor/swift-sh ./tools/PublishWorkingCopy.swift"
 
 [tasks.resize-images]
 description = "Optimize images in committed textbundles"
