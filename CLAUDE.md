@@ -12,6 +12,11 @@ This is the source repository for jsorge.net, a personal blog powered by Maveric
 # Content management
 mise run prepare-post     # Add Maverick metadata to newest textbundle
 
+# Local preview (uses Apple's container tool, not Docker)
+mise run preview          # Preview the site at http://localhost:8080
+mise run preview-down     # Stop the preview container
+mise run preview-logs     # View preview container logs
+
 # Server
 mise run serve            # Start the site (Cloudflare handles SSL)
 mise run down             # Stop Docker containers

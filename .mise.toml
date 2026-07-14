@@ -32,6 +32,18 @@ npx tailwindcss \
   --minify
 """
 
+[tasks.preview]
+description = "Preview the site locally at http://localhost:8080 (uses Apple's container tool)"
+run = "bash mise/scripts/preview.sh"
+
+[tasks.preview-down]
+description = "Stop the local preview container"
+run = "container delete --force maverick-preview"
+
+[tasks.preview-logs]
+description = "View local preview container logs"
+run = "container logs maverick-preview"
+
 [tasks.prepare-post]
 description = "Add Maverick metadata to newest textbundle"
 run = "bash mise/scripts/prepare-post.sh"
