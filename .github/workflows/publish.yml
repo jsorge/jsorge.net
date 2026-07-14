@@ -24,4 +24,4 @@ jobs:
         run: |
           ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "\
             cd /var/www/jsorge.net && \
-            git fetch && git pull origin main"
+            git fetch origin main && git reset --hard origin/main"
