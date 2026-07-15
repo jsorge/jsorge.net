@@ -17,7 +17,8 @@ https://prismjs.com/download.html#themes=prism-twilight&languages=markup+css+cli
         word-spacing: normal;
         word-break: normal;
         word-wrap: normal;
-        line-height: 1.5;
+        font-size: 0.9375rem;
+        line-height: 1.6;
 
         -moz-tab-size: 4;
         -o-tab-size: 4;

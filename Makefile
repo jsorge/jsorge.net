@@ -44,8 +44,7 @@ renew-ssl: down
 
 .PHONY: build-css
 build-css:
-	@npx tailwindcss \
+	@npx @tailwindcss/cli \
 	-i ./styles/styles.source.css \
-	-c ./tailwind.config.js \
 	-o ./Public/styles/styles.css \
 	--minify

@@ -1,10 +1,10 @@
-<article class="mt-5 prose max-w-none font-sans dark:text-white">
+<article class="mt-5 prose max-w-[72ch] mx-auto font-sans dark:text-white">
     #if(post):
         <!-- This post come from a list of posts -->
-        <span><time datetime="#(post.date)">#(post.formattedDate)</time></span>
+        <span class="post-meta"><time datetime="#(post.date)">#(post.formattedDate)</time></span>
         #if(post.title):
-            <a href=#(post.url)>
-                <h2 class="font-display">#(post.title)</h1>
+            <a class="no-underline" href=#(post.url)>
+                <h2 class="post-title">#(post.title)</h2>
             </a>
         #endif
         <section>
@@ -19,7 +19,7 @@
         #endif
 
         #if(style.post.title):
-            <h2 class="font-display">#(style.post.title)</h1>
+            <h1 class="post-title">#(style.post.title)</h1>
         #else:
             <p class="pt-5">
         #endif
