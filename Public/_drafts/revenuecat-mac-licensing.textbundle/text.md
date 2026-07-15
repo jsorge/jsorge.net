@@ -93,6 +93,8 @@ func handleDeepLinkPurchase() async throws {
 }
 ```
 
+Don't miss the first line of that method: `Purchases.shared.customerInfo(fetchPolicy: .fetchCurrent)`. The fetch policy here is critical because without specifying `.fetchCurrent` the SDK will return cached data, and if a customer has made a purchase that won't be reflected instantly like they'll expect. Instructing the SDK to bust out of its cached data is the thing that will make this process feel seamless to my customers (and yours!).
+
 There's also code that looks a lot like this which runs on app launch to validate a user against their iCloud ID. If this is their first launch of Arborist and they have bought a license using the same iCloud account on a different Mac then Arborist will be unlocked automatically (there's no "Restore purchases" button or workflow to even worry about!).
 
 ## Wrapping Up
