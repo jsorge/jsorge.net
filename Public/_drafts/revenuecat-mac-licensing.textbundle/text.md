@@ -83,10 +83,10 @@ func handleDeepLinkPurchase() async throws {
         let entitlement = customerInfo.entitlements[entitlementID],
         entitlement.isActive
     else {
-            // Handle a missing entitlement; this means the
-            // transaction did not succeed
-            return
-        }
+        // Handle a missing entitlement; this means the
+        // transaction did not succeed
+        return
+    }
 
 	// Once we get here we have a validated customer who has
 	// made a purchase and the app can be unlocked.
