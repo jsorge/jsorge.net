@@ -45,7 +45,7 @@ One thing that has scared the daylights out of me in all this is sales taxes. I'
 
 ## Hooking up the app
 
-The last piece to completes the puzzle is hooking all of this up in the app. It's important to note that while the RevenueCat SDK is great, it's also geared towards apps which use StoreKit. For my needs I'm not using StoreKit, so fetching things like my Offering can't be done with their library. This means that I have to hard-code the URLs I need to hit (and I have both production and sandbox URLs in there for testing). So when a user clicks the buy button, this happens in my licensing view model:
+The last piece to complete the puzzle is hooking all of this up in the app. It's important to note that while the RevenueCat SDK is great, it's also geared towards apps which use StoreKit. For my needs I'm not using StoreKit, so fetching things like my Offering can't be done with their library. This means that I have to hard-code the URLs I need to hit (and I have both production and sandbox URLs in there for testing). So when a user clicks the buy button, this happens in my licensing view model:
 
 ```swift
 func startCheckout() async {
