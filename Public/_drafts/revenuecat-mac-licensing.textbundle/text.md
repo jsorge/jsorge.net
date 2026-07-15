@@ -15,7 +15,7 @@ The big bullet of note there is the second one. I didn't want to have to spin up
 
 The eagle-eyed among you may notice that my _entire licensing strategy_ hinges on the customer being logged in to iCloud. That's true for my 1.0. I don't think this is too big of a leap to make for a power-user app like Arborist. But I am working on a way to sign in to iCloud using the web so that folks who don't have iCloud set up on their machines can still buy a copy. That should land not super long after 1.0, but it does have some more moving parts to it and so I deferred it to post-launch.
 
-## Setting it up
+## Setting up the backend
 
 Getting these details in place was not immediately obvious to me, and I actually went down one path first before partly reverting and going another direction. At first I set up [RevenueCat Billing](https://www.revenuecat.com/billing), but that ended up being the route I didn't want to take. I had never heard the term [merchant of record (MoR)](https://stripe.com/resources/more/merchant-of-record) before and when I first did I didn't know it was something to care about (spoiler alert: it very much is). RevenueCat's product does not take care of being the MoR for me and thus would leave me on the hook for things like taxes and refunds. Being a solo developer embarking on my first direct-sale app this became a dealbreaker.
 
@@ -42,6 +42,58 @@ So the whole flow goes from Settings -> License -> Buy -> Safari -> Complete pur
 ### An Aside on Taxes
 
 One thing that has scared the daylights out of me in all this is sales taxes. I've never had to collect them before, let alone distribute them back to a government. Throw in dealing with non-US countries and that's even more terrifying. I was originally looking at [Stripe Tax](https://stripe.com/tax) to take care of things for me but something felt strange as I was exploring that route. I couldn't ever get it working in the sandbox environment and when I did some more research I was still going to have to file on my own. Thankfully I found Managed Payments and from everything I can tell, making Stripe my MoR puts all the burden of these collections and distributions on Stripe. So I'm happy to give them a few extra percent of each sale to handle that for me.
+
+## Hooking up the app
+
+The last piece to completes the puzzle is hooking all of this up in the app. It's important to note that while the RevenueCat SDK is great, it's also geared towards apps which use StoreKit. For my needs I'm not using StoreKit, so fetching things like my Offering can't be done with their library. This means that I have to hard-code the URLs I need to hit (and I have both production and sandbox URLs in there for testing). So when a user clicks the buy button, this happens in my licensing view model:
+
+```swift
+func startCheckout() async {
+    guard isStartingCheckout == false else { return }
+
+    isStartingCheckout = true
+    actionMessage = nil
+    defer { isStartingCheckout = false }
+
+    do {
+        let checkoutURL = try await licenseManager.checkoutURL()
+        guard NSWorkspace.shared.open(checkoutURL) else {
+            throw LicenseCheckoutOpenError.failedToOpenBrowser
+        }
+        actionMessage = "Checkout opened in your browser."
+    } catch {
+        displayState = LicenseDisplayState.resolved(
+            from: nil,
+            previous: displayState,
+            error: error
+        )
+    }
+}
+```
+
+There's some state to handle to show the user that the process has started, we assemble the checkout URL (which looks something like `https://pay.rev.cat/{web_link_id}/{user_id}`) and that gets kicked out to the system in their browser of choice with the `NSWorkspace` API call.
+
+When a purchase is successful on the web, RevenueCat's backend will associate the user ID that I passed in my link above with the entitlement in step 1 above and call back Arborist with the registered deep link I put in the web purchase link. The callback handler then runs a re-fetch of the customer and validates that the entitlement to unlock the license exists:
+
+```swift
+func handleDeepLinkPurchase() async throws {
+    let customerInfo = try await Purchases.shared.customerInfo(fetchPolicy: .fetchCurrent)
+
+    guard
+        let entitlement = customerInfo.entitlements[entitlementID],
+        entitlement.isActive
+    else {
+            // Handle a missing entitlement; this means the
+            // transaction did not succeed
+            return
+        }
+
+	// Once we get here we have a validated customer who has
+	// made a purchase and the app can be unlocked.
+}
+```
+
+There's also code that looks a lot like this which runs on app launch to validate a user against their iCloud ID. If this is their first launch of Arborist and they have bought a license using the same iCloud account on a different Mac then Arborist will be unlocked automatically (there's no "Restore purchases" button or workflow to even worry about!).
 
 ## Wrapping Up
 
