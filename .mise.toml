@@ -48,6 +48,14 @@ run = "container logs maverick-preview"
 description = "Add Maverick metadata to newest textbundle"
 run = "bash mise/scripts/prepare-post.sh"
 
+[tasks.new-draft]
+description = "Create a new draft textbundle (prompts for the title)"
+run = "bash mise/scripts/new-draft.sh"
+
+[tasks.preview-draft]
+description = "Open a draft in the local preview (starts the preview if needed)"
+run = "bash mise/scripts/preview-draft.sh"
+
 [tasks.publish-draft]
 description = "Publish a draft textbundle and commit it"
 run = "bash mise/scripts/publish-draft.sh"

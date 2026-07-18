@@ -10,10 +10,13 @@ This is the source repository for jsorge.net, a personal blog powered by Maveric
 
 ```bash
 # Content management
+mise run new-draft        # Create a new draft textbundle (prompts for title)
 mise run prepare-post     # Add Maverick metadata to newest textbundle
+mise run publish-draft    # Move a draft to _posts and commit it
 
 # Local preview (uses Apple's container tool, not Docker)
 mise run preview          # Preview the site at http://localhost:8080
+mise run preview-draft    # Open a draft at /draft/<slug> (picker if multiple drafts)
 mise run preview-down     # Stop the preview container
 mise run preview-logs     # View preview container logs
 
