@@ -2,6 +2,7 @@
 doctl = "latest"
 "1password-cli" = "latest"
 gh = "latest"
+imagemagick = "latest"
 
 [env]
 MAVERICK_REGISTRY = "ghcr.io/taphouseio/maverick"
