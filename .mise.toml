@@ -2,7 +2,6 @@
 doctl = "latest"
 "1password-cli" = "latest"
 gh = "latest"
-imagemagick = "latest"
 
 [env]
 MAVERICK_REGISTRY = "ghcr.io/taphouseio/maverick"
@@ -63,6 +62,7 @@ run = "bash mise/scripts/publish-draft.sh"
 
 [tasks.resize-images]
 description = "Optimize images in committed textbundles"
+tools = { imagemagick = "latest" }
 run = "bash mise/scripts/resize-images.sh"
 
 [tasks.new-server]
