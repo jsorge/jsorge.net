@@ -12,7 +12,7 @@ run = "./mise/deploy/spin_up.sh"
 
 [tasks.down]
 description = "Stop Docker containers"
-run = "docker compose -f ./mise/deploy/docker-compose.yml down"
+run = "docker compose -p jsorge-net down"
 
 [tasks.docker-logs]
 description = "View Maverick container logs"

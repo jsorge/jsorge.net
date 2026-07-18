@@ -1,3 +1,5 @@
+name: jsorge-net
+
 services:
   maverick:
     image: {MAVERICK_REGISTRY}:{MAVERICK_VERSION}
