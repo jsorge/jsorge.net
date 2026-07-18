@@ -4,9 +4,9 @@ services:
     platform: linux/amd64
     restart: on-failure
     volumes:
-      - ../Public:/app/Public
-      - ../Resources:/app/Resources
-      - ../SiteConfig.yml:/app/SiteConfig.yml
+      - ../../Public:/app/Public
+      - ../../Resources:/app/Resources
+      - ../../SiteConfig.yml:/app/SiteConfig.yml
   nginx:
     build:
       context: .
@@ -16,7 +16,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - ../Public:/home/maverick/Public
+      - ../../Public:/home/maverick/Public
       - ./nginx/logs:/var/log/nginx
     depends_on:
       - maverick

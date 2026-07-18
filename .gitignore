@@ -3,10 +3,7 @@
 *feed.json
 *rss
 *.marked
-/.tools/nginx/ssl
 logs
-/.tools/vendor/*
-/.tools/docker-compose.yml
-vendor/
+/mise/deploy/docker-compose.yml
 /node_modules
 .last-droplet-ip

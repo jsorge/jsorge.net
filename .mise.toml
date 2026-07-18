@@ -9,19 +9,19 @@ MAVERICK_REGISTRY = "ghcr.io/taphouseio/maverick"
 
 [tasks.serve]
 description = "Start the site (Cloudflare handles SSL)"
-run = "./.tools/spin_up.sh"
+run = "./mise/deploy/spin_up.sh"
 
 [tasks.down]
 description = "Stop Docker containers"
-run = "docker compose -f ./.tools/docker-compose.yml down"
+run = "docker compose -f ./mise/deploy/docker-compose.yml down"
 
 [tasks.docker-logs]
 description = "View Maverick container logs"
-run = "docker compose -f ./.tools/docker-compose.yml logs maverick"
+run = "docker compose -f ./mise/deploy/docker-compose.yml logs maverick"
 
 [tasks.docker-errors]
 description = "Show recent Swift fatal errors from Maverick"
-run = "docker compose -f ./.tools/docker-compose.yml logs maverick 2>&1 | grep -B 5 'Fatal error' | tail -100"
+run = "docker compose -f ./mise/deploy/docker-compose.yml logs maverick 2>&1 | grep -B 5 'Fatal error' | tail -100"
 
 [tasks.build-css]
 description = "Rebuild Tailwind CSS"

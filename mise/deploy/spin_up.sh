@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-source .tools/parse_yaml.sh
+source mise/deploy/parse_yaml.sh
 
 # Default registry if not set in environment (e.g., via mise)
 MAVERICK_REGISTRY="${MAVERICK_REGISTRY:-ghcr.io/taphouseio/maverick}"
@@ -7,7 +7,7 @@ MAVERICK_REGISTRY="${MAVERICK_REGISTRY:-ghcr.io/taphouseio/maverick}"
 # setup variables
 wd=$(pwd)
 siteConfigPath="$wd/SiteConfig.yml"
-template="$wd/.tools/templates/docker-compose_template.yml"
+template="$wd/mise/deploy/templates/docker-compose_template.yml"
 
 # copy config
 eval $(parse_yaml $siteConfigPath)
@@ -16,7 +16,7 @@ trimmedurl=$(echo "$url" | awk -F/ '{print $3}')
 config="${config/'{CONFIG_DOMAIN}'/$trimmedurl}"
 config="${config/'{MAVERICK_VERSION}'/$maverickVersion}"
 config="${config/'{MAVERICK_REGISTRY}'/$MAVERICK_REGISTRY}"
-echo "$config" > $wd/.tools/docker-compose.yml
+echo "$config" > $wd/mise/deploy/docker-compose.yml
 
 docker pull "$MAVERICK_REGISTRY:$maverickVersion"
 
@@ -25,4 +25,4 @@ docker pull "$MAVERICK_REGISTRY:$maverickVersion"
 # Maverick needs write access for caching/compiled templates.
 chmod -R o+w "$wd/Public" "$wd/Resources" 2>/dev/null || true
 
-docker compose -f .tools/docker-compose.yml up --build -d
+docker compose -f mise/deploy/docker-compose.yml up --build -d

@@ -61,7 +61,7 @@ The `info.json` structure includes Maverick-specific metadata under `io_taphouse
 - **Templates**: `Resources/Views/*.leaf` (Vapor's Leaf templating)
 - **Styles**: `styles/styles.source.css` (Tailwind source) → `Public/styles/styles.css` (built)
 - **Configuration**: `SiteConfig.yml` (site metadata, Maverick version, feed settings)
-- **Tools**: `mise/scripts/` contains bash scripts for tasks, `.tools/` contains Docker/deployment configs
+- **Tools**: `mise/scripts/` contains bash scripts for tasks, `mise/deploy/` contains Docker/deployment configs
 
 ## Deployment
 
