@@ -1,0 +1,15 @@
+{
+  "io_taphouse_maverick": {
+    "date": "2026-07-29T17:28:00Z",
+    "filename": "",
+    "layout": "post",
+    "microblog": false,
+    "shortdescription": "Arborist 1.1 brings Grove, additional terminal support, iCloud web login, and more!",
+    "staticpage": false,
+    "tags": [],
+    "title": "Arborist 1.1 is out"
+  },
+  "transient": false,
+  "type": "net.daringfireball.markdown",
+  "version": 2
+}
