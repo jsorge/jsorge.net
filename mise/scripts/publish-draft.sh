@@ -73,7 +73,14 @@ jq --arg date "$timestamp" '.io_taphouse_maverick.date = $date' \
 mv "$temporary_info" "$info_json"
 trap - EXIT
 
+git add -- "$source_relative"
 git mv "$source" "$destination"
-git commit -m "published $name" -- "$source_relative" "$destination_relative"
+
+staged_paths=()
+while IFS= read -r path; do
+    staged_paths+=("$path")
+done < <(git diff --cached --name-only -- "$source_relative" "$destination_relative")
+
+git commit -m "published $name" -- "${staged_paths[@]}"
 
 echo "Published $published_bundle at $timestamp"
