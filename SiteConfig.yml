@@ -8,7 +8,7 @@ ssl:
 feedSize: 20
 sitesToPing:
   - https://micro.blog/ping?url=https%3A%2F%2Fjsorge.net%2Ffeed.json
-maverickVersion: 5.0.1
+maverickVersion: 5.0.2
 disablePageCaching: true
 broadcasting:
   enabled: true
