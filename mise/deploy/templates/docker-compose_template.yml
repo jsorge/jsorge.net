@@ -9,6 +9,8 @@ services:
       - ../../Public:/app/Public
       - ../../Resources:/app/Resources
       - ../../SiteConfig.yml:/app/SiteConfig.yml
+      - ../../.maverick-secrets:/run/secrets:ro
+      - ../../.maverick-data:/app/Data
   nginx:
     build:
       context: .

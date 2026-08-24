@@ -34,6 +34,7 @@ fi
 
 # Replace any previous preview container
 container delete --force "$CONTAINER_NAME" >/dev/null 2>&1 || true
+mkdir -p "$PWD/.maverick-secrets" "$PWD/.maverick-data"
 
 container run --detach --rm \
     --name "$CONTAINER_NAME" \
@@ -42,6 +43,8 @@ container run --detach --rm \
     --volume "$PWD/Public:/app/Public" \
     --volume "$PWD/Resources:/app/Resources" \
     --volume "$PWD/SiteConfig.yml:/app/SiteConfig.yml" \
+    --mount "type=bind,source=$PWD/.maverick-secrets,target=/run/secrets,readonly" \
+    --volume "$PWD/.maverick-data:/app/Data" \
     "$MAVERICK_REGISTRY:$version"
 
 # Wait for Maverick to start answering
