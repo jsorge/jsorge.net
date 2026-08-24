@@ -20,13 +20,6 @@ echo "$config" > $wd/mise/deploy/docker-compose.yml
 
 docker pull "$MAVERICK_REGISTRY:$maverickVersion"
 
-# Maverick's local broadcast state is only a cache; Cloudflare R2 is authoritative.
-# Secret files are provisioned separately (normally from 1Password) and never committed.
-mkdir -p "$wd/.maverick-secrets" "$wd/.maverick-data"
-sudo chown -R 999:999 "$wd/.maverick-secrets" "$wd/.maverick-data"
-sudo chmod 700 "$wd/.maverick-secrets" "$wd/.maverick-data"
-sudo find "$wd/.maverick-secrets" -type f -exec chmod 400 {} \;
-
 # Ensure directories are writable by the Maverick container.
 # The container runs as vapor (uid 999) but files are owned by the host user.
 # Maverick needs write access for caching/compiled templates.

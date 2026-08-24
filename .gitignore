@@ -7,5 +7,3 @@ logs
 /mise/deploy/docker-compose.yml
 /node_modules
 .last-droplet-ip
-/.maverick-secrets/
-/.maverick-data/

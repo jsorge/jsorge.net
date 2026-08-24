@@ -18,23 +18,9 @@ jobs:
         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
       - name: Restart services
-        env:
-          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.ONE_PASSWORD_TOKEN }}
         run: |
-          test -n "$OP_SERVICE_ACCOUNT_TOKEN" || {
-            echo "ONE_PASSWORD_TOKEN is not configured"
-            exit 1
-          }
-          printf '%s\n' "$OP_SERVICE_ACCOUNT_TOKEN" | \
-            ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} '
-              set -e
-              IFS= read -r OP_SERVICE_ACCOUNT_TOKEN
-              export OP_SERVICE_ACCOUNT_TOKEN
-              cd /var/www/jsorge.net
-              git fetch origin main
-              git reset --hard origin/main
-              ~/.local/bin/mise run broadcast-secrets-install
-              unset OP_SERVICE_ACCOUNT_TOKEN
-              ~/.local/bin/mise run down
-              ~/.local/bin/mise run serve
-            '
+          ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "\
+            cd /var/www/jsorge.net && \
+            git fetch origin main && git reset --hard origin/main && \
+            ~/.local/bin/mise run down && \
+            ~/.local/bin/mise run serve"

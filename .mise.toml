@@ -69,14 +69,6 @@ run = "bash mise/scripts/resize-images.sh"
 description = "Create and configure a new Digital Ocean droplet"
 run = "bash mise/scripts/new-server.sh"
 
-[tasks.broadcast-secrets-check]
-description = "Validate the Maverick Broadcast fields in 1Password without installing them"
-run = "bash mise/deploy/provision_broadcast_secrets.sh --check"
-
-[tasks.broadcast-secrets-install]
-description = "Install Maverick Broadcast secrets from 1Password for the production container"
-run = "bash mise/deploy/provision_broadcast_secrets.sh"
-
 [tasks.update-ssh-host]
 description = "Update GitHub SSH_HOST secret with new server IP"
 run = "bash mise/scripts/update-ssh-host.sh"
