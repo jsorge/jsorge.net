@@ -11,8 +11,8 @@ sitesToPing:
 maverickVersion: 5.0.1
 disablePageCaching: true
 broadcasting:
-  enabled: false
-  autoPublishAfter: 2026-09-01T00:00:00Z
+  enabled: true
+  autoPublishAfter: 2026-08-23T00:00:00Z
   admin:
     usernameSecret: maverick-admin-username
     passwordSecret: maverick-admin-password

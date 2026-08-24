@@ -68,7 +68,16 @@ fi
 timestamp=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 temporary_info="$info_json.tmp"
 trap 'rm -f "$temporary_info"' EXIT
-jq --arg date "$timestamp" '.io_taphouse_maverick.date = $date' \
+jq --arg date "$timestamp" '
+    .io_taphouse_maverick.date = $date |
+    .io_taphouse_maverick_broadcast = ({
+        providers: {
+            bluesky: {skip: false},
+            mastodon: {skip: false},
+            linkedin: {skip: false}
+        }
+    } * (.io_taphouse_maverick_broadcast // {}))
+' \
     "$info_json" > "$temporary_info"
 mv "$temporary_info" "$info_json"
 trap - EXIT

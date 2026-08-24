@@ -48,6 +48,13 @@ jq -n \
             staticpage: false,
             tags: [],
             title: $title
+        },
+        io_taphouse_maverick_broadcast: {
+            providers: {
+                bluesky: {skip: false},
+                mastodon: {skip: false},
+                linkedin: {skip: false}
+            }
         }
     }' > "$bundle/info.json"
 

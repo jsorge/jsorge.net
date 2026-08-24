@@ -50,7 +50,7 @@ if jq -e '.io_taphouse_maverick' "$INFO_JSON" > /dev/null 2>&1; then
     echo "Current metadata:"
     jq '.io_taphouse_maverick' "$INFO_JSON"
     echo ""
-    read -p "Overwrite? (y/N): " overwrite
+    read -r -p "Overwrite? (y/N): " overwrite
     if [[ "$overwrite" != "y" && "$overwrite" != "Y" ]]; then
         echo "Aborted."
         exit 0
@@ -70,14 +70,14 @@ if [[ -f "$newest_post/text.md" ]]; then
 fi
 
 # Prompt for title
-read -p "Title: " title
+read -r -p "Title: " title
 
 # Prompt for short description
-read -p "Short description: " shortdescription
+read -r -p "Short description: " shortdescription
 
 # Prompt for tags (comma-separated)
 echo "Enter tags (comma-separated, or leave empty):"
-read -p "Tags: " tags_input
+read -r -p "Tags: " tags_input
 
 # Convert comma-separated tags to JSON array
 if [[ -z "$tags_input" ]]; then
@@ -107,9 +107,20 @@ maverick_obj=$(jq -n \
         title: $title
     }')
 
-# Update the info.json with the new io_taphouse_maverick object
-jq --argjson maverick "$maverick_obj" '.io_taphouse_maverick = $maverick' "$INFO_JSON" > "$INFO_JSON.tmp" && mv "$INFO_JSON.tmp" "$INFO_JSON"
+# Update the post metadata and add any missing provider broadcast defaults.
+# Existing overrides win so preparing a post never resets an intentional skip.
+jq --argjson maverick "$maverick_obj" '
+    .io_taphouse_maverick = $maverick |
+    .io_taphouse_maverick_broadcast = ({
+        providers: {
+            bluesky: {skip: false},
+            mastodon: {skip: false},
+            linkedin: {skip: false}
+        }
+    } * (.io_taphouse_maverick_broadcast // {}))
+' "$INFO_JSON" > "$INFO_JSON.tmp" && mv "$INFO_JSON.tmp" "$INFO_JSON"
 
 echo ""
 echo "Updated $INFO_JSON with Maverick metadata:"
 jq '.io_taphouse_maverick' "$INFO_JSON"
+jq '.io_taphouse_maverick_broadcast' "$INFO_JSON"
