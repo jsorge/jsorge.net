@@ -1,0 +1,28 @@
+{
+  "io_taphouse_maverick": {
+    "date": "2026-08-24T05:14:42Z",
+    "filename": "",
+    "layout": "post",
+    "microblog": false,
+    "shortdescription": "I've been making some really good updates to my Maverick blog engine recently and wanted to talk about them.",
+    "staticpage": false,
+    "tags": [],
+    "title": "Maverick Engine Updates"
+  },
+  "io_taphouse_maverick_broadcast": {
+    "providers": {
+      "bluesky": {
+        "skip": false
+      },
+      "mastodon": {
+        "skip": false
+      },
+      "linkedin": {
+        "skip": false
+      }
+    }
+  },
+  "transient": false,
+  "type": "net.daringfireball.markdown",
+  "version": 2
+}

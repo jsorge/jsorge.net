@@ -1,0 +1,8 @@
+I've been hard at work on some updates to my textbundle blog engine [Maverick](https://github.com/taphouseio/maverick) over the past couple of weeks:
+
+* I'm working on adding a support section to my Taphouse website for Arborist and decided to take a crack at seeing how textbundles could work for that kind of content. It turns out that it works quite well! I'm not ready to roll it out there as I'm building out the articles now but suffice to say that Maverick is doing the job really nicely (and that's what the 4.x releases were about).
+* I've also wanted to bring social cross-posting in-house. For a while now I leaned on the micro.blog cross-posting features to send my posts to Mastodon, Bluesky, and LinkedIn. Micro.blog is fantastic, but I wanted more from how my posts showed up in those contexts and so I added cross-posting to Maverick. This post is the first test of how that all worked, so my fingers are crossed 🤣
+
+I've always enjoyed working on Maverick, and since [my first post using it](https://jsorge.net/2018/07/11/welcome-to-the-new-age) 8 years ago I'm really happy with how it's performed. I love textbundle files too, and I have a Mac app that I've been working on for a while that is tailored to that format that I may be able to get polished up enough for release this year. No promises on that though 🙂
+
+So this post is partly to talk about the work I've been up to behind the scenes, and also partly to test the cross-posting features of Maverick. Let's hope things went well on the latter front!
