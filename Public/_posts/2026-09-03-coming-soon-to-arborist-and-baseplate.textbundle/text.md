@@ -26,4 +26,4 @@ It's basically a rebuild of the UI. The current interface is very custom, and wo
 
 I've also saved the best for last: Baseplate has a brand new icon that _I am in love with_. The fine folks at [The Iconfactory](https://seadev.slack.com/archives/C04DUMZRY/p1785261580651979) had a great offer recently to help indie apps remake their icons and I jumped on it. I could not be happier with the result and can't wait for you to see it on your home screen!
 
-I'm targeting the iOS 27 launch day for Baseplate 2.0, though it may be the end of September. We'll find out that date [on September 9th](https://www.apple.com/newsroom/in-the-loop/2026/08/surprise-and-shine/) 😀.
+I'm targeting the iOS 27 launch day for Baseplate 2.0, though it may be the end of September. We'll find out the OS launch date [on September 9th](https://www.apple.com/newsroom/in-the-loop/2026/08/surprise-and-shine/) 😀.
