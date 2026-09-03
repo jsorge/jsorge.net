@@ -34,8 +34,6 @@ broadcasting:
       postTemplate: |-
         New blog post: {{title}}
 
-        {{description}}
-
         {{url}}
     - id: mastodon
       type: mastodon
