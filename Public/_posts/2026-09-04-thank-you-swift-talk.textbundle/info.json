@@ -1,0 +1,28 @@
+{
+  "io_taphouse_maverick": {
+    "date": "2026-09-04T17:40:18Z",
+    "filename": "",
+    "layout": "post",
+    "microblog": false,
+    "shortdescription": "Thank you to Chris and Florian for 10 years of Swift Talk",
+    "staticpage": false,
+    "tags": [],
+    "title": "Thank You Swift Talk"
+  },
+  "io_taphouse_maverick_broadcast": {
+    "providers": {
+      "bluesky": {
+        "skip": false
+      },
+      "mastodon": {
+        "skip": false
+      },
+      "linkedin": {
+        "skip": false
+      }
+    }
+  },
+  "transient": false,
+  "type": "net.daringfireball.markdown",
+  "version": 2
+}
