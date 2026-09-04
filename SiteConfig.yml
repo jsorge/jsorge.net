@@ -43,8 +43,6 @@ broadcasting:
       postTemplate: |-
         New blog post: {{title}}
 
-        {{description}}
-
         {{url}}
     - id: linkedin
       type: linkedin
