@@ -1,28 +1,30 @@
 {
-  "io_taphouse_maverick": {
-    "date": "2026-09-09T00:24:53Z",
-    "filename": "",
-    "layout": "post",
-    "microblog": false,
-    "shortdescription": "",
-    "staticpage": false,
-    "tags": [],
-    "title": "Arborist 1.2"
+  "io_taphouse_maverick" : {
+    "date" : "2026-09-09T00:24:53Z",
+    "filename" : "",
+    "layout" : "post",
+    "microblog" : false,
+    "shortdescription" : "Arborist 1.2 is out with task running ability, a new help section to the website, and a lot more!",
+    "staticpage" : false,
+    "tags" : [
+
+    ],
+    "title" : "Arborist 1.2"
   },
-  "io_taphouse_maverick_broadcast": {
-    "providers": {
-      "bluesky": {
-        "skip": false
+  "io_taphouse_maverick_broadcast" : {
+    "providers" : {
+      "bluesky" : {
+        "skip" : false
       },
-      "mastodon": {
-        "skip": false
+      "linkedin" : {
+        "skip" : false
       },
-      "linkedin": {
-        "skip": false
+      "mastodon" : {
+        "skip" : false
       }
     }
   },
-  "transient": false,
-  "type": "net.daringfireball.markdown",
-  "version": 2
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
 }
