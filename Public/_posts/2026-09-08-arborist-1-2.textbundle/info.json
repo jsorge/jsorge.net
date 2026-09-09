@@ -1,0 +1,28 @@
+{
+  "io_taphouse_maverick": {
+    "date": "2026-09-09T00:24:53Z",
+    "filename": "",
+    "layout": "post",
+    "microblog": false,
+    "shortdescription": "",
+    "staticpage": false,
+    "tags": [],
+    "title": "Arborist 1.2"
+  },
+  "io_taphouse_maverick_broadcast": {
+    "providers": {
+      "bluesky": {
+        "skip": false
+      },
+      "mastodon": {
+        "skip": false
+      },
+      "linkedin": {
+        "skip": false
+      }
+    }
+  },
+  "transient": false,
+  "type": "net.daringfireball.markdown",
+  "version": 2
+}
