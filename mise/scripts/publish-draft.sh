@@ -27,22 +27,28 @@ for draft in "${drafts[@]}"; do
     draft_names+=("$(basename "$draft")")
 done
 
-echo "Choose a draft to publish:"
-PS3="> "
-select bundle in "${draft_names[@]}" "Cancel"; do
-    if [[ "$bundle" == "Cancel" ]]; then
-        echo "Cancelled."
-        exit 0
-    fi
+if [[ ${#drafts[@]} -eq 1 ]]; then
+    bundle="${draft_names[0]}"
+    source="${drafts[0]}"
+    echo "Publishing the only draft found: $bundle"
+else
+    echo "Choose a draft to publish:"
+    PS3="> "
+    select bundle in "${draft_names[@]}" "Cancel"; do
+        if [[ "$bundle" == "Cancel" ]]; then
+            echo "Cancelled."
+            exit 0
+        fi
 
-    if [[ -n "$bundle" ]]; then
-        break
-    fi
+        if [[ -n "$bundle" ]]; then
+            break
+        fi
 
-    echo "Please enter a number from 1 to $((${#drafts[@]} + 1))."
-done
+        echo "Please enter a number from 1 to $((${#drafts[@]} + 1))."
+    done
 
-source=${drafts[$((REPLY - 1))]}
+    source=${drafts[$((REPLY - 1))]}
+fi
 name=${bundle%.textbundle}
 published_bundle="$(date +%Y-%m-%d)-$bundle"
 destination="$posts_dir/$published_bundle"
@@ -57,6 +63,11 @@ fi
 
 if ! jq -e '.io_taphouse_maverick | type == "object"' "$info_json" >/dev/null; then
     echo "Missing io_taphouse_maverick metadata in $info_json" >&2
+    exit 1
+fi
+
+if ! jq -e '.io_taphouse_maverick.shortdescription | (type == "string") and (length > 0)' "$info_json" >/dev/null; then
+    echo "Missing shortdescription in $info_json. Run 'mise run prepare-post' first." >&2
     exit 1
 fi
 
