@@ -1,0 +1,28 @@
+{
+  "io_taphouse_maverick": {
+    "date": "2026-09-21T03:21:39Z",
+    "filename": "",
+    "layout": "post",
+    "microblog": false,
+    "shortdescription": "Inside the development of Baseplate 2.0, my Lego collecting app",
+    "staticpage": false,
+    "tags": [],
+    "title": "Baseplate 2.0 is Out"
+  },
+  "io_taphouse_maverick_broadcast": {
+    "providers": {
+      "bluesky": {
+        "skip": false
+      },
+      "mastodon": {
+        "skip": false
+      },
+      "linkedin": {
+        "skip": false
+      }
+    }
+  },
+  "transient": false,
+  "type": "net.daringfireball.markdown",
+  "version": 2
+}
